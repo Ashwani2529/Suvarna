@@ -1,0 +1,55 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "shade-colour": "var(--shade-colour)",
+        "variable-collection-black": "var(--variable-collection-black)",
+        "variable-collection-blue-primary": "var(--variable-collection-blue-primary)",
+        "variable-collection-brand-blue": "var(--variable-collection-brand-blue)",
+        "variable-collection-brand-secondary": "var(--variable-collection-brand-secondary)",
+        "variable-collection-grey-05": "var(--variable-collection-grey-05)",
+        "variable-collection-grey-10": "var(--variable-collection-grey-10)",
+        "variable-collection-grey-40": "var(--variable-collection-grey-40)",
+        "variable-collection-illustration-blue": "var(--variable-collection-illustration-blue)",
+        "variable-collection-success-green": "var(--variable-collection-success-green)",
+        "variable-collection-testimonial-card": "var(--variable-collection-testimonial-card)",
+      },
+      fontFamily: {
+        "b1-header-16": "var(--b1-header-16-font-family)",
+        "b1-header-18": "var(--b1-header-18-font-family)",
+        "blog-card-title": "var(--blog-card-title-font-family)",
+        "blogpost-page-header": "var(--blogpost-page-header-font-family)",
+        "body-text-b1": "var(--body-text-b1-font-family)",
+        "body-text-b2": "var(--body-text-b2-font-family)",
+        "button-text": "var(--button-text-font-family)",
+        "header-h0": "var(--header-h0-font-family)",
+        "header-h1": "var(--header-h1-font-family)",
+        "header-h1-5": "var(--header-h1-5-font-family)",
+        "header-h2": "var(--header-h2-font-family)",
+        "header-h3": "var(--header-h3-font-family)",
+        "menu-header": "var(--menu-header-font-family)",
+        "menu-header-selected": "var(--menu-header-selected-font-family)",
+        metric: "var(--metric-font-family)",
+        "metric-descriptor": "var(--metric-descriptor-font-family)",
+        "metric-descriptor-2": "var(--metric-descriptor-2-font-family)",
+        "sh1-medium": "var(--sh1-medium-font-family)",
+        "sh2-medium": "var(--sh2-medium-font-family)",
+        "sub-header-sh1": "var(--sub-header-sh1-font-family)",
+        "sub-header-sh2": "var(--sub-header-sh2-font-family)",
+      },
+      boxShadow: {
+        "header-menu-dropdown": "var(--header-menu-dropdown)",
+        "product-image-shadow": "var(--product-image-shadow)",
+        "shadow-video": "var(--shadow-video)",
+        "thumbnail-shadow": "var(--thumbnail-shadow)",
+        "video-shadow": "var(--video-shadow)",
+      },
+    },
+  },
+  plugins: [],
+}
+

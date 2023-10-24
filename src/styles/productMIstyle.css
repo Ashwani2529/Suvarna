@@ -1,0 +1,47 @@
+.product-module-image {
+  /* background-image: url(../../public/assets/surgery1.jpg); */
+    height: 304px;
+    width: 304px;
+  }
+  
+  .product-module-image .overlap-group {
+    height: 304px;
+    position: relative;
+  }
+  
+  .product-module-image .vectorimg {
+    /* background-image: url(../../public/assets/vec.png); */
+    height: 285px;
+    left: 9px;
+    position: absolute;
+    top: 19px;
+    width: 285px;
+  }
+  
+  .product-module-image .mask-group {
+    /* background-image: url(../../public/assets/mask1.jpg); */
+    height: 147px;
+    left: 107px;
+    position: absolute;
+    top: 157px;
+    width: 147px;
+  }
+  
+  .product-module-image .img {
+    /* background-image: url(../../public/assets/mask2.jpg); */
+    height: 147px;
+    left: 157px;
+    position: absolute;
+    top: 0;
+    width: 147px;
+  }
+  
+  .product-module-image .mask-group-2 {
+    /* background-image: url(../../public/assets/mask3.jpg); */
+    height: 147px;
+    left: 0;
+    position: absolute;
+    top: 45px;
+    width: 147px;
+  }
+  

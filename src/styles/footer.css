@@ -1,0 +1,270 @@
+ .footer {
+    background-color: #393c3f;
+    height: 536px;
+    overflow: hidden;
+    position: relative;
+    width: 1366px;
+  }
+  
+   .frame-50 {
+    height: 84px;
+    left: 0;
+    position: absolute;
+    top: 452px;
+    width: 1366px;
+  }
+  
+   .line-2 {
+    height: 1px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: -1px;
+    width: 1366px;
+  }
+  
+   .element-suvarna {
+    color: #ffffff;
+    font-family: "NotoSans-Regular", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 24px;
+    left: 527px;
+    letter-spacing: 0px;
+    line-height: 150%;
+    position: absolute;
+    text-align: center;
+    top: 29px;
+    white-space: nowrap;
+  }
+  
+   .frame-51 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 16px;
+    left: 735px;
+    position: absolute;
+    top: 150px;
+  }
+  
+   .text-wrapper-17 {
+    color: #ffffff;
+    font-family:"HelveticaNeue-Medium", Helvetica;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
+   .frame-52 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+  }
+  
+   .text-wrapper-18 {
+    color: #ffffff;
+    font-family: "NotoSans-Regular", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 150%;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+   .text-wrapper-19 {
+    color: #ffffff;
+    font-family: "NotoSans-Regular", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 150%;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+   .frame-53 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 16px;
+    left: 1068px;
+    position: absolute;
+    top: 150px;
+  }
+  
+   .frame-54 {
+    flex: 0 0 auto;
+    position: relative;
+  }
+  
+   .frame-55 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 16px;
+    left: 60px;
+    position: absolute;
+    top: 150px;
+  }
+  
+   .frame-56 {
+    height: 42px;
+    position: relative;
+    width: 528px;
+  }
+  
+   .img-2 {
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    width: 16px;
+  }
+  
+   .text-wrapper-20 {
+    color: #ffffff;
+    font-family: "NotoSans-Regular", Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400px;
+    height: 42px;
+    left: 28px;
+    letter-spacing: 0px;
+    line-height: 150%;
+    position: absolute;
+    top: -1px;
+    width: 500px;
+  }
+  
+   .frame-57 {
+    height: 24px;
+    position: relative;
+    width: 144px;
+  }
+  
+   .text-wrapper-21 {
+    color: #ffffff;
+    font-family: "NotoSans-Regular", Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400px;
+    height: 21px;
+    left: 28px;
+    letter-spacing: 0px;
+    line-height: 150%;
+    position: absolute;
+    top: -1px;
+    white-space: nowrap;
+  }
+  
+   .suvarna-logo-footer {
+    height: 48px;
+    left: 60px;
+    object-fit: cover;
+    position: absolute;
+    top: 38px;
+    width: 219px;
+  }
+  .searching{
+    border-radius: 6px;
+    border: none;
+    height: 48px;
+    overflow: hidden;
+    background-color: transparent;
+    margin-left:25.6px;
+    padding: 2%;
+    position:absolute;
+    width: 460px;
+  }
+  
+   .frame-58 {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 16px;
+    border: none;
+    left: 396px;
+    position: absolute;
+    top: 38px;
+  }
+  
+   .frame-59 {
+    border: 1px solid;
+    border-color: rgba(235, 237, 240, 1);
+    border-radius: 6px;
+    height: 48px;
+    overflow: hidden;
+    position: relative;
+    width: 505px;
+  }
+  
+   .frame-60 {
+    align-items: center;
+    display: inline-flex;
+    gap: 16px;
+    left: 14px;
+    position: relative;
+    top: 12px;
+  }
+  
+   .search {
+    height: 20px;
+    position: relative;
+    width: 20px;
+  }
+  
+   .text-wrapper-22 {
+    color: #c2c2c2;
+    font-family: "NotoSans-Regular", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 150%;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+   .frame-61 {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 48px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 12px 24px;
+    position: relative;
+    width: 127px;
+  }
+  
+   .text-wrapper-23 {
+    color: rgba(43, 105, 151, 1);
+    font-family: "HelveticaNeue-Bold", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }

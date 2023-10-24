@@ -1,0 +1,15 @@
+.vector {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.vector.default {
+  height: 920px;
+  width: 1366px;
+}
+
+.vector.small {
+  height: 266px;
+  width: 1366px;
+}

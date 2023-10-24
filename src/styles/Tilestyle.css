@@ -1,0 +1,462 @@
+.tile {
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color: rgb(241, 241, 241);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  padding: 36px 24px;
+  position: relative;
+}
+
+.tile .div {
+  font-family: "Helvetica Neue-Medium", Helvetica;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: -2px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.tile .component {
+  height: 48px !important;
+  position: relative !important;
+  width: 48px !important;
+}
+
+.tile .thumb-up-fill {
+  position: relative;
+}
+
+.tile .our-solutions-are {
+  position: relative;
+  text-align: center;
+  width: 264px;
+}
+
+.tile .frame {
+  background-color:rgba(103, 195, 128, 1);
+  position: relative;
+}
+
+.tile .text-wrapper {
+  color: #ffffff;
+  font-family: "Helvetica Neue-Bold", Helvetica;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.56px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+}
+
+.tile .we-firmly-believe {
+  position: relative;
+  text-align: center;
+  width: 264px;
+}
+
+.tile.simple {
+  height: 360px;
+  width: 312px;
+}
+
+.tile.proven {
+  height: 360px;
+  width: 312px;
+}
+
+.tile.affordable-l {
+  height: 376px;
+  width: 328px;
+}
+
+.tile.relaible-l {
+  height: 376px;
+  width: 328px;
+}
+
+.tile.affordable {
+  height: 360px;
+  width: 312px;
+}
+
+.tile.proven-l {
+  height: 376px;
+  width: 328px;
+}
+
+.tile.simple-l {
+  height: 376px;
+  width: 328px;
+}
+
+.tile.reliable {
+  height: 360px;
+  width: 312px;
+}
+
+.tile.simple .div {
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0.48px;
+}
+
+.tile.proven .div {
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0.48px;
+}
+
+.tile.affordable-l .div {
+  color: rgba(20, 109, 250, 1);
+  transition: ease-in-out 0.3s;
+  transform: scale(1.11);
+  font-size: 26px;
+  letter-spacing: 0.52px;
+}
+
+.tile.relaible-l .div {
+  color: rgba(20, 109, 250, 1);
+  transition: ease-in-out 0.3s;
+  transform: scale(1.11);
+  font-size: 26px;
+  letter-spacing: 0.52px;
+}
+
+.tile.affordable .div {
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0.48px;
+}
+
+.tile.proven-l .div {
+  color: rgba(20, 109, 250, 1);
+  transition: ease-in-out 0.3s;
+  transform: scale(1.11);
+  font-size: 26px;
+  letter-spacing: 0.52px;
+}
+
+.tile.simple-l .div {
+  color: rgba(20, 109, 250, 1);
+    transition: ease-in-out 0.3s;
+  transform: scale(1.11);
+  font-size: 26px;
+  letter-spacing: 0.52px;
+}
+
+.tile.reliable .div {
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0.48px;
+}
+
+.tile.simple .thumb-up-fill {
+  height: 52px;
+  width: 52px;
+}
+
+.tile.proven .thumb-up-fill {
+  height: 48px;
+  width: 48px;
+}
+
+.tile.affordable-l .thumb-up-fill {
+  height: 52px;
+  width: 52px;
+}
+
+.tile.relaible-l .thumb-up-fill {
+  height: 52px;
+  width: 52px;
+}
+
+.tile.affordable .thumb-up-fill {
+  height: 52px;
+  width: 52px;
+}
+
+.tile.proven-l .thumb-up-fill {
+  height: 52px;
+  width: 52px;
+}
+
+.tile.simple-l .thumb-up-fill {
+  height: 52px;
+  width: 52px;
+}
+
+.tile.reliable .thumb-up-fill {
+  height: 48px;
+  width: 48px;
+}
+
+.tile.simple .our-solutions-are {
+  color: rgba(109, 116, 122, 1);
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing:0px;
+  line-height:150%;
+  
+}
+
+.tile.proven .our-solutions-are {
+  color: rgba(109, 116, 122, 1);
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing:0px;
+  line-height:150%;
+  
+}
+
+.tile.affordable-l .our-solutions-are {
+  color: rgba(109, 116, 122, 1);
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing:0px;
+  line-height:150%;
+  
+}
+
+.tile.relaible-l .our-solutions-are {
+  color: rgba(60, 64, 67, 1);
+  font-family: "Noto Sans", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 25.5px;
+}
+
+.tile.affordable .our-solutions-are {
+  color: rgba(109, 116, 122, 1);
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing:0px;
+  line-height:150%;
+  
+}
+
+.tile.proven-l .our-solutions-are {
+  color: rgba(60, 64, 67, 1);
+  font-family: "Noto Sans", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 25.5px;
+}
+
+.tile.simple-l .our-solutions-are {
+  color: rgba(60, 64, 67, 1);
+  font-family: "Noto Sans", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 25.5px;
+}
+
+.tile.reliable .our-solutions-are {
+  color: rgba(109, 116, 122, 1);
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing:0px;
+  line-height:150%;
+  
+}
+
+.tile.simple .frame {
+  border-radius: 24px;
+  height: 48px;
+  width: 48px;
+}
+
+.tile.proven .frame {
+  border-radius: 24px;
+  height: 48px;
+  width: 48px;
+}
+
+.tile.affordable-l .frame {
+  border-radius: 26px;
+  height: 52px;
+  width: 52px;
+}
+
+.tile.relaible-l .frame {
+  border-radius: 24px;
+  height: 48px;
+  width: 48px;
+}
+
+.tile.affordable .frame {
+  border-radius: 24px;
+  height: 48px;
+  width: 48px;
+}
+
+.tile.proven-l .frame {
+  border-radius: 24px;
+  height: 48px;
+  width: 48px;
+}
+
+.tile.simple-l .frame {
+  border-radius: 24px;
+  height: 48px;
+  width: 48px;
+}
+
+.tile.reliable .frame {
+  border-radius: 24px;
+  height: 48px;
+  width: 48px;
+}
+
+.tile.simple .text-wrapper {
+  height: 34px;
+  left: 16px;
+  top: 6px;
+}
+
+.tile.proven .text-wrapper {
+  height: 34px;
+  left: 16px;
+  top: 6px;
+}
+
+.tile.affordable-l .text-wrapper {
+  height: 37px;
+  left: 17px;
+  top: 7px;
+  width: 17px;
+}
+
+.tile.relaible-l .text-wrapper {
+  height: 34px;
+  left: 16px;
+  top: 6px;
+}
+
+.tile.affordable .text-wrapper {
+  height: 34px;
+  left: 16px;
+  top: 6px;
+}
+
+.tile.proven-l .text-wrapper {
+  height: 34px;
+  left: 16px;
+  top: 6px;
+}
+
+.tile.simple-l .text-wrapper {
+  height: 34px;
+  left: 16px;
+  top: 6px;
+}
+
+.tile.reliable .text-wrapper {
+  height: 34px;
+  left: 16px;
+  top: 6px;
+}
+
+.tile.simple .we-firmly-believe {
+  color: rgba(109, 116, 122, 1);
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing:0px;
+  line-height:150%;
+  
+}
+
+.tile.proven .we-firmly-believe {
+  color: rgba(109, 116, 122, 1);
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing:0px;
+  line-height:150%;
+  
+}
+
+.tile.affordable-l .we-firmly-believe {
+  color: rgba(60, 64, 67, 1);
+  font-family: "Noto Sans", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 25.5px;
+}
+
+.tile.relaible-l .we-firmly-believe {
+  color: rgba(109, 116, 122, 1);
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing:0px;
+  line-height:150%;
+  
+}
+
+.tile.affordable .we-firmly-believe {
+  color: rgba(109, 116, 122, 1);
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing:0px;
+  line-height:150%;
+  
+}
+
+.tile.proven-l .we-firmly-believe {
+  color: rgba(109, 116, 122, 1);
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing:0px;
+  line-height:150%;
+  
+}
+
+.tile.simple-l .we-firmly-believe {
+  color: rgba(109, 116, 122, 1);
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing:0px;
+  line-height:150%;
+  
+}
+
+.tile.reliable .we-firmly-believe {
+  color: rgba(109, 116, 122, 1);
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing:0px;
+  line-height:150%;
+  
+}
