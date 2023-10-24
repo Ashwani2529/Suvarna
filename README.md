@@ -26,7 +26,7 @@ To get started with Suvarna, follow these steps:
 
 ## Usage
 
-- Visit our website [www.suvarnahealthcare.com](https://www.suvarnahealthcare.com) for more information about our products and services.
+- Visit our website [www.suvarnahealthcare.com](https://suvarnahealthcare.netlify.app) for more information about our products and services.
 
 - Explore the demo or request a demo by contacting our sales team at [sales@suvarnahealthcare.com](mailto:sales@suvarnahealthcare.com).
 
@@ -50,7 +50,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or support, please email us at [info@suvarnahealthcare.com](mailto:info@suvarnahealthcare.com). Visit our [contact page](https://www.suvarnahealthcare.com) for more information.
+For any inquiries or support, please email us at [info@suvarnahealthcare.com](mailto:info@suvarnahealthcare.com). Visit our [contact page](https://suvarnahealthcare.netlify.app) for more information.
 
 ---
 
