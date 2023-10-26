@@ -25,12 +25,18 @@ import { useNavigate } from "react-router-dom";
 
 export const Homepage = () => {
   let navigate = useNavigate();
+  const [white,setWhite]=useState("#EBEDF0")
+  const [black,setBlack]=useState("#001E41" )
   const [left,setLeft]=useState(0);
   const handleRight=()=>{
     setLeft(1)
+    setWhite("#001E41");
+    setBlack("#EBEDF0");
   }
   const handleLeft=()=>{
     setLeft(0)
+    setWhite("#EBEDF0");
+    setBlack("#001E41");
   }
   return (
     <div className="index">
@@ -70,15 +76,15 @@ export const Homepage = () => {
               <div className="flex product-slider">
      <div onClick={handleLeft}> <Property1LeftDisabled
       className="slider-3"
-        color={"#001E41" }
-        stroke={"white"}
+        color={white }
+        stroke={black}
        
       /></div>
     
     <div onClick={handleRight}><Property1Right
         className="slider-3"
-        color={ "#EBEDF0" }
-        stroke={"#001E41"}
+        color={black }
+        stroke={white}
        
        
       /></div>

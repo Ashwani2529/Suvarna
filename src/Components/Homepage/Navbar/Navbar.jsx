@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
   let navigate=useNavigate();
   return (
-    <div className='flex bg-white text-black'>
-        <nav className="navbar navbar-expand-lg">
-    <div className="container-fluid">
-      <div className="navbar" id="navbarNavDropdown">
-        <ul id="navB" className="navbar-nav grid grid-rows-1 grid-cols-7 gap-3">
+    <div className='flex bg-white text-black md:flex lg:flex'>
+        <nav className="navbar navbar-expand-lg md:navbar-expand-lg lg:navbar-expand-lg">
+    <div className="container-fluid md:container-fluid lg:container-fluid">
+      <div className="navbar">
+      <ul id="navB" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 gap-3">
           <li className="nav-item">
             <a className="nav-link active" aria-current="page" onClick={() => navigate("/")}>Home</a>
           </li>

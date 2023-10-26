@@ -21,3 +21,11 @@ p {
     align-items: center;
     justify-content: center;
 }
+@media (min-width: 640px) {
+    #navB {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
