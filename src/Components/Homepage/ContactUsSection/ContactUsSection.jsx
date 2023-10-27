@@ -7,7 +7,7 @@ import ReCaptchaV2 from 'react-google-recaptcha';
 
 export const ContactUsSection = () => {
   return (
-    <div className="contact-us-section">
+    <div className="contact-us-section" id="contactus">
       <div className="frame-27" />
       <div className="frame-28">
         <div className="div-6">

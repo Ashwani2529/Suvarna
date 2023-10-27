@@ -91,6 +91,7 @@
   .blog .frame-24 {
     height: 20px;
     position: relative;
+    cursor: pointer;
     width: 110px;
   }
   

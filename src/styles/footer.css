@@ -1,9 +1,10 @@
  .footer {
     background-color: #393c3f;
     height: 536px;
+    right: 8px;
     overflow: hidden;
     position: relative;
-    width: 1366px;
+    width: 1350px;
   }
   
    .frame-50 {
@@ -11,7 +12,7 @@
     left: 0;
     position: absolute;
     top: 452px;
-    width: 1366px;
+    width: 1350px;
   }
   
    .line-2 {
@@ -20,7 +21,7 @@
     object-fit: cover;
     position: absolute;
     top: -1px;
-    width: 1366px;
+    width: 1350px;
   }
   
    .element-suvarna {

@@ -16,7 +16,7 @@ export const Integration = () => {
         <div className="sections">
           <div className="frame-5">
             <div className="div-2">
-              <div className="header">
+              <div className="headerint">
                 <p className="compliance-header">
                   <span className="span">Supercharge your business with </span>
                   <span className="text-wrapper-4">integrations.</span>
@@ -180,7 +180,7 @@ export const Integration = () => {
             <div className="menu-2">
             <Navbar/>
             </div>
-            <Button className="design-component-instance-node right-2" property1="default-small-icon" />
+            {/* <Button className="design-component-instance-node right-2" property1="default-small-icon" /> */}
           </div>
         </div>
       </div>

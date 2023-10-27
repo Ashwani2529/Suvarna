@@ -19,7 +19,6 @@ function App() {
         <Routes>
         <Route path="/" element={<Homepage/>} />
         <Route path="/about" element={<AboutUs/>} />
-
         <Route path="/integration" element={<Integration/>} />
          <Route path="/products/rispacs" element={<RISPACS/>} />
          <Route path="/products/dms" element={<DMS/>} />

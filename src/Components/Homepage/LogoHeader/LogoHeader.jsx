@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export const LogoHeader = ({ className }) => {
   let navigate=useNavigate();
   return (
-    <div onClick={() => navigate("/")} className={`logo-header ${className}`}>
+    <div onClick={() => navigate("/")} className={`logo-header ${className} cursor-pointer`}>
       <img
         className="suvarna-s"
         alt="Suvarna s"

@@ -22,6 +22,7 @@ export const SliderV = ({
   override = <Component25 className="component-2" />,
   frameIcon1 = <Component27 className="component-2" />,
   frameIcon2 = <Component217 className="component-2" />,
+
 }) => {
   return (
     <div className={`slider-v ${property1} ${className}`}>
@@ -78,7 +79,7 @@ export const SliderV = ({
                     </p>
                   </div>
                 </div>
-                <LargeButton className="instance-node" property1="solid-white" text="EXPLORE PRODUCTS" />
+                <LargeButton className="instance-node text-center" property1="solid-white" text="EXPLORE PRODUCTS" />
               </>
             )}
 

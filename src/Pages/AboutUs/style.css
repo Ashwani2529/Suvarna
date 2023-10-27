@@ -1,8 +1,8 @@
 .about {
   background-color: #ffffff;
-  height: 5186px;
+  height: 5167px;
   position: relative;
-  width: 1366px;
+  width: 1350px;
 }
 
 .about .sections {
@@ -21,9 +21,9 @@
   flex: 0 0 auto;
   flex-direction: column;
   gap: 28px;
-  padding: 84px 60px 0px;
+  padding: 60px 60px 0px;
   position: relative;
-  width: 1366px;
+  width: 1322px;
 }
 
 .about .compliance-header {
@@ -88,14 +88,13 @@
   background-color: #ffffff;
   height: 690px;
   position: relative;
-  width: 1366px;
+  width: 1345px;
 }
 
 .about .overlap {
   height: 690px;
-  margin-left: 30px;
   position: relative;
-  width: 1366px;
+  width: 1345px;
 }
 
 .about .frame-wrapper {
@@ -239,7 +238,7 @@
 .about .frame-11 {
   height: 882px;
   position: relative;
-  width: 1366px;
+  width: 1345px;
 }
 
 .about .frame-12 {
@@ -247,10 +246,9 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  left: 30px;
   position: absolute;
   top: 0;
-  width: 1366px;
+  width: 1345px;
 }
 
 .about .frame-13 {
@@ -295,17 +293,16 @@
 
 .about .overlap-group-wrapper {
   height: 540px;
-  margin-left: 30px;
   position: absolute;
   top: 342px;
-  width: 1366px;
+  width: 1345px;
 }
 
 .about .overlap-group-2 {
   height: 540px;
-  margin-left: -41px;
+  right: 26.5px;
   position: relative;
-  width: 1366px;
+  width: 1350px;
 }
 
 .about .div-wrapper {
@@ -376,7 +373,7 @@
   gap: 48px;
   padding: 0px 0px;
   position: relative;
-  width: 1366px;
+  width: 1350px;
 }
 
 .about .text-wrapper-6 {
@@ -405,7 +402,7 @@
 .about .story {
   height: 642px;
   position: relative;
-  width: 1366px;
+  width: 1350px;
 }
 
 .about .overlap-group-3 {
@@ -418,7 +415,7 @@
   left: 0;
   position: absolute;
   top: 111px;
-  width: 1366px;
+  width: 1350px;
 }
 
 .about .vector-2 {
@@ -426,7 +423,7 @@
   left: 0;
   position: absolute;
   top: 80px;
-  width: 1366px;
+  width: 1350px;
 }
 
 .about .vector-3 {
@@ -434,7 +431,7 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 1366px;
+  width: 1350px;
 }
 
 .about .frame-15 {
@@ -549,7 +546,7 @@
   justify-content: center;
   padding: 48px 0px;
   position: relative;
-  width: 1366px;
+  width: 1350px;
 }
 
 .about .frame-20 {
@@ -586,7 +583,8 @@
   height: 536px;
   overflow: hidden;
   position: relative;
-  width: 1366px;
+  width: 1350px;
+  right: -1.2px;
 }
 
 .about .frame-21 {
@@ -594,7 +592,7 @@
   left: 0;
   position: absolute;
   top: 452px;
-  width: 1366px;
+  width: 1350px;
 }
 
 .about .line-2 {
@@ -603,7 +601,7 @@
   object-fit: cover;
   position: absolute;
   top: -1px;
-  width: 1366px;
+  width: 1350px;
 }
 
 .about .element-suvarna {
@@ -846,10 +844,10 @@
   display: flex;
   justify-content: space-between;
   left: 0;
-  padding: 5px 17px;
+  padding: 7px 7px;
   position: absolute;
   top: 0;
-  width: 1366px;
+  width: 1350px;
 }
 
 .about .design-component-instance-node {
@@ -861,7 +859,6 @@
   display: inline-flex;
   flex: 0 0 auto;
   gap: 48px;
-  right: 2.2%;
   position: relative;
 }
 

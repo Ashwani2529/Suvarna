@@ -2,7 +2,8 @@
     background-color: #ffffff;
     height: 787px;
     position: relative;
-    width: 1366px;
+    width: 1328px;
+    right: 18px;
   }
   
   .contact-us-section .frame-27 {
@@ -20,8 +21,7 @@
     display: inline-flex;
     flex-direction: column;
     gap: 36px;
-    left: 676px;
-    padding: 0px 20px;
+    left: 694px;
     position: absolute;
     top: 0;
   }
@@ -97,6 +97,7 @@
   }
   
   .contact-us-section .check-square-svgrepo {
+    cursor: pointer;
     height: 16px;
     position: relative;
     width: 16px;
@@ -127,6 +128,7 @@
   }
   
   .contact-us-section .text-wrapper-11 {
+    cursor: pointer;
     color: #146dfa;
     font-family: "NotoSans-Regular", Helvetica;
     font-size: 14px;

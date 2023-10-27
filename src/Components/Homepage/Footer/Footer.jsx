@@ -1,5 +1,6 @@
 import React from 'react'
 import "../.../../../../Pages/Homepage/homestyle.css";
+import { useNavigate } from 'react-router-dom';
 export const Footer = () => {
   return (
     <footer className="footer">

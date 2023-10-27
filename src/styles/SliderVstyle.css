@@ -1,6 +1,6 @@
 .slider-v {
   position: relative;
-  width: 1366px;
+  width: 1350px;
 }
 
 .slider-v .overlap-group-2 {
@@ -14,7 +14,7 @@
   opacity: 0.5;
   position: absolute;
   top: 0;
-  width: 1366px;
+  width: 1350px;
 }
 
 .slider-v .slider-component {
@@ -26,16 +26,16 @@
   overflow: hidden;
   position: absolute;
   top: 0;
-  width: 1366px;
+  width: 1350px;
 }
 
 .slider-v .img {
   height: 682px;
-  left: 1366px;
+  left: 1350px;
   object-fit: cover;
   position: absolute;
   top: 0;
-  width: 1366px;
+  width: 1350px;
 }
 
 .slider-v .pexels-artem-podrez-2 {
@@ -44,7 +44,7 @@
   object-fit: cover;
   position: absolute;
   top: 0;
-  width: 1366px;
+  width: 1350px;
 }
 
 .slider-v .pexels-artem-podrez-3 {
@@ -53,7 +53,7 @@
   object-fit: cover;
   position: absolute;
   top: 0;
-  width: 1366px;
+  width: 1350px;
 }
 
 .slider-v .frame-wrapper {
@@ -62,7 +62,7 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 1366px;
+  width: 1350px;
 }
 
 .slider-v .frame-7 {
@@ -216,7 +216,7 @@
   left: 0;
   position: absolute;
   top: 696px;
-  width: 1366px;
+  width: 1350px;
 }
 
 .slider-v .slider-2 {

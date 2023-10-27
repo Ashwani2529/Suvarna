@@ -15,17 +15,15 @@ import { Component25 } from "../../Components/Homepage/icons/Component25/Compone
 import { Component27 } from "../../Components/Homepage/icons/Component27/Component27";
 import { Line51 } from "../../Components/Homepage/icons/Line51/Line51";
 import { Line52 } from "../../Components/Homepage/icons/Line52/Line52";
-import { ProductCardLogos27 } from "../../Components/Homepage/icons/ProductCardLogos27/ProductCardLogos27";
 import { Property1LeftDisabled } from "../../Components/Homepage/icons/Property1LeftDisabled/Property1LeftDisabled";
 import { Property1Right } from "../../Components/Homepage/icons/Property1Right/Property1Right";
 import "./homestyle.css";
 import Navbar from "../../Components/Homepage/Navbar/Navbar";
 import { Footer } from "../../Components/Homepage/Footer/Footer";
-import { useNavigate } from "react-router-dom";
+
 
 export const Homepage = () => {
-  let navigate = useNavigate();
-  const [white,setWhite]=useState("#EBEDF0")
+    const [white,setWhite]=useState("#EBEDF0")
   const [black,setBlack]=useState("#001E41" )
   const [left,setLeft]=useState(0);
   const handleRight=()=>{
@@ -69,7 +67,7 @@ export const Homepage = () => {
             <div className="frame-34">
               <div className="products-4">
                 <div className="frame-35">
-                  <div className="text-wrapper-13">Products</div>
+                  <div className="text-wrapper-13" id="products">Products</div>
                 </div>
                 <p className="text-wrapper-14">Explore our wide range of healthcare solutions</p>
               </div>
@@ -90,7 +88,7 @@ export const Homepage = () => {
       /></div>
     </div>
               </div>
-            {left===0?( <div className="product-cards" id="products">
+            {left===0?( <div className="product-cards">
               <Products
                 arrowRight="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/arrow-right-24.svg"
                 className="products-instance"
@@ -111,17 +109,9 @@ export const Homepage = () => {
                 className="products-6"
                 property1="SLIMS"
               />
-             
-              <Products
-                arrowRight="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/arrow-right-8@2x.png"
-                arrowRightClassName="products-11"
-                className="products-10"
-                pexelsDanielFrankClassName="products-9"
-                property1="edukares"
-              />
-              </div>
+                           </div>
              ):( 
-          <div className="product-cards" id="products">
+          <div className="product-cards">
              <Products
                 arrowRight="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/arrow-right-24.svg"
                 className="products-instance a"
@@ -142,15 +132,7 @@ export const Homepage = () => {
                 className="products-6 d"
                 property1="TRIMS"
               />
-             
-              <Products
-                arrowRight="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/arrow-right-8@2x.png"
-                arrowRightClassName="products-11"
-                className="products-10"
-                pexelsDanielFrankClassName="products-9"
-                property1="RIS-PACS"
-              />
-                        </div>)}
+             </div>)}
            
           </div>
         </div>
@@ -270,7 +252,7 @@ export const Homepage = () => {
             /> */}
           </div>
         </div>
-        <ContactUsSection id="contactus" checkSquareSvgrepo="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/check-square-svgrepo-com-1-1.svg" />
+        <ContactUsSection checkSquareSvgrepo="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/check-square-svgrepo-com-1-1.svg" />
        <Footer/>
       </div>
     </div>

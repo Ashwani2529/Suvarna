@@ -30,7 +30,7 @@ export const Products = ({
  const navigateProducts=(a)=>{
     switch (a) {
       case "products-5":
-        navigate("/products/bimis#top");
+        navigate("/products/bimis");
         break;
       case "products-2-instance":
         navigate("/products/edukares");
@@ -76,9 +76,9 @@ export const Products = ({
            {property1 === "TRIMS" && <>{text13}</>}
       </div>
  
-    <div className="frame-14">
-        <div className="text-wrapper-4" >Know more</div>
-        <img onClick={() => navigateProducts(className)} className='arrow-right' alt="Arrow right" src={arrowRight} />
+    <div onClick={() => navigateProducts(className)} className="frame-14">
+        <div  className="text-wrapper-4" >Know more</div>
+        <img className='arrow-right' alt="Arrow right" src={arrowRight} />
       </div>
       <div className="frame-15">
         {icon}

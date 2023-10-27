@@ -1,7 +1,9 @@
 p {
     font-weight: 300;
 }
-
+li{
+    cursor: pointer;
+}
 .nav-link {
     font-size: large;
 }
