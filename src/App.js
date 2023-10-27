@@ -14,7 +14,7 @@ import { Integration } from "./Pages/Integration/Integration";
 function App() {
   
   return (
-    <div className="App w-full">
+    <div className="App w-full" style={{overflow:"hidden"}}>
         <Router>
         <Routes>
         <Route path="/" element={<Homepage/>} />

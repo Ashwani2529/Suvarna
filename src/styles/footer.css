@@ -6,6 +6,14 @@
     position: relative;
     width: 1350px;
   }
+  .footerprod{
+    background-color: #393c3f;
+    height: 536px;
+    right: -2px;
+    overflow: hidden;
+    position: relative;
+    width: 1350px;
+  }
   
    .frame-50 {
     height: 84px;

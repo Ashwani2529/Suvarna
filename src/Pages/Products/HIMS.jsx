@@ -3,7 +3,7 @@ import {ProductsPre} from "../../Components/Products/ProductsPre/ProductsPre";
 import Navbar from "../../Components/Homepage/Navbar/Navbar";
 import { LogoHeader } from "../../Components/Homepage/LogoHeader/LogoHeader";
 import "../../styles/dmsstyle.css";
-import "../../styles/tailwind.css";
+import "../../styles/tailwind.css"
 import { ProductsProHIMS} from "../../Components/Products/ProductsPro/ProductsProHIMS";
 export const HIMS= () => {
    let cardHead1 = "Inpatient & ER Management";
@@ -13,8 +13,8 @@ export const HIMS= () => {
   let cardHead5 = "Operations Management";
   let cardHead6 = "Digital Presence";
   return (
-    <div className="relative w-[1366px] h-[4100px] bg-white">
-      <div className="inline-flex flex-col items-center gap-[120px] absolute top-[97px] left-0">
+    <div className="relative w-[1355px] h-[6710px] bg-white" style={{left:"2px"}}>
+      <div className="inline-flex flex-col items-center gap-[120px] absolute top-[97px] left-0" style={{right:"16px"}}>
      <ProductsPre head={"Hospital Information Management System"} paragraph={"Streamline operations, enhance patient care and transform patient engagement with Suvarna HIMS"}/>
      <ProductsProHIMS cardHead={"Outpatient Management"} cardHead1={cardHead1} cardHead2={cardHead2} 
      cardHead3={cardHead3} cardHead4={cardHead4}

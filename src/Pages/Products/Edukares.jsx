@@ -3,12 +3,12 @@ import {ProductsPre} from "../../Components/Products/ProductsPre/ProductsPre";
 import Navbar from "../../Components/Homepage/Navbar/Navbar";
 import { LogoHeader } from "../../Components/Homepage/LogoHeader/LogoHeader";
 import "../../styles/dmsstyle.css";
-import "../../styles/tailwind.css";
+import "../../styles/tailwind.css"
 import { ProductsPro } from "../../Components/Products/ProductsPro/ProductsPro";
 export const Edukares = () => {
   return (
-    <div className="relative w-[1366px] h-[3504px] bg-white">
-      <div className="inline-flex flex-col items-center gap-[120px] absolute top-[97px] left-0">
+    <div className="relative w-[1355px] h-[3504px] bg-white" style={{left:"2px"}}>
+      <div className="inline-flex flex-col items-center gap-[120px] absolute top-[97px] left-0" style={{right:"16px"}}>
      <ProductsPre head={"Digital Campus Management System"} paragraph={"Experience the new age Campus Management System"}/>
         <ProductsPro cardHead={"Designed to address the needs of management, staff, and student"}/>
       </div>

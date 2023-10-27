@@ -3,12 +3,12 @@ import {ProductsPre} from "../../Components/Products/ProductsPre/ProductsPre";
 import Navbar from "../../Components/Homepage/Navbar/Navbar";
 import { LogoHeader } from "../../Components/Homepage/LogoHeader/LogoHeader";
 import "../../styles/dmsstyle.css";
-import "../../styles/tailwind.css";
+import "../../styles/tailwind.css"
 import { ProductsPro } from "../../Components/Products/ProductsPro/ProductsPro";
 export const BIMIS = () => {
   return (
-    <div className="relative w-[1366px] h-[3504px] bg-white">
-      <div className="inline-flex flex-col items-center gap-[120px] absolute top-[97px] left-0">
+    <div className="relative w-[1355px] h-[3504px] bg-white" style={{left:"2px"}}>
+      <div className="inline-flex flex-col items-center gap-[120px] absolute top-[97px] left-0" style={{right:"16px"}}>
      <ProductsPre head={"Business Intelligence & MIS"} paragraph={"Measure, manage & grow your business with intelligent analytics and live dashboards"}/>
         <ProductsPro cardHead={"Reporting that grows with you"}/>
       </div>
