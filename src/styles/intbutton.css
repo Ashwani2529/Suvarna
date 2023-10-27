@@ -1,9 +1,7 @@
 .button {
     align-items: center;
-    border: 2px solid blue;
     gap: 36px;
     position: relative;
-    width: 30px;
   }
   
   .button .support {
