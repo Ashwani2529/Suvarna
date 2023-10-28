@@ -3,12 +3,11 @@ import { Button } from "../../Components/AboutUs/Button/Button";
 import { Founder } from "../../Components/AboutUs/Founder/Founder";
 import { LogoHeader } from "../../Components/AboutUs/LogoHeader/LogoHeader";
 import { Srpa } from "../../Components/AboutUs/Srpa/Srpa";
-import { useNavigate } from "react-router-dom";
 import "./style.css";
 import Navbar from "../../Components/Homepage/Navbar/Navbar";
+import { Footer } from "../../Components/Homepage/Footer/Footer";
 
 export const AboutUs = () => {
-  let navigate=useNavigate();
   return (
     <div className="about">
       <div className="sections">
@@ -203,89 +202,7 @@ export const AboutUs = () => {
               />
             </div>
           </div>
-          <footer className="footer">
-            <div className="frame-21">
-              <img
-                className="line-2"
-                alt="Line"
-                src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/line-1.svg"
-              />
-              <p className="element-suvarna">©&nbsp;&nbsp;2023 Suvarna Technosoft Inc. All rights reserved.</p>
-            </div>
-            <div className="frame-22">
-              <div className="text-wrapper-8">Useful Links</div>
-              <div className="frame-23">
-                <div className="text-wrapper-9">Privacy policy</div>
-                <div className="text-wrapper-10">Terms of service</div>
-                <div className="text-wrapper-10">Help</div>
-                <div className="text-wrapper-10">Careers</div>
-                <div className="text-wrapper-10">Contact Us</div>
-              </div>
-            </div>
-            <div className="frame-24">
-              <div className="text-wrapper-8">Stay up-to-date</div>
-              <img
-                className="frame-25"
-                alt="Frame"
-                src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/652628729ce07dec6d44e4db/img/frame-2-2.svg"
-              />
-            </div>
-            <div className="frame-26">
-              <div className="text-wrapper-8">Contact Us</div>
-              <div className="frame-23">
-                <div className="frame-27">
-                  <img
-                    className="img-2"
-                    alt="Location fill"
-                    src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/652628729ce07dec6d44e4db/img/location-fill-1-1.svg"
-                  />
-                  <p className="text-wrapper-11">
-                    6-3-191/C/1, Tower B, 4th Floor, Fortune 9, Raj Bhavan Road, Somajiguda, Hyderabad, Telangana,
-                    India-500082.
-                  </p>
-                </div>
-                <div className="frame-28">
-                  <img
-                    className="img-2"
-                    alt="Phone fill"
-                    src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/652628729ce07dec6d44e4db/img/phone-fill-1-1.svg"
-                  />
-                  <div className="text-wrapper-12">+91 8125772299</div>
-                </div>
-                <div className="frame-28">
-                  <img
-                    className="img-2"
-                    alt="Mail fill"
-                    src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/652628729ce07dec6d44e4db/img/mail-fill--1--1-1.svg"
-                  />
-                  <div className="text-wrapper-12">jagdeesh@suvarna.co.in</div>
-                </div>
-              </div>
-            </div>
-            <img onClick={() => {
-    navigate("/");
-    window.scrollTo(0, 0);
-  }}
-              className="suvarna-logo-footer"
-              alt="Suvarna logo footer"
-              src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/suvarna-logo-footer-1.png"
-            />
-            <div className="frame-29">
-              <div className="frame-30">
-                <div className="frame-31">
-                  <img
-                    className="search"
-                    alt="Search"
-                    src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/search.svg"
-                  />
-                  <p className="text-wrapper-13">Search products, blogs and more...</p>
-                </div>
-              </div>
-              <div className="frame-32">
-                <div className="text-wrapper-14">Search</div>
-              </div>
-            </div>
-          </footer>
+          <Footer/>
         </div>
       </div>
       <header className="header">

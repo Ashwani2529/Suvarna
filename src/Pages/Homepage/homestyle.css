@@ -28,7 +28,7 @@
 
 .index .slider-5 {
   border-color: unset !important;
-  left: 600px !important;
+  left: 838px !important;
   position: absolute !important;
   top: 471px !important;
 }
@@ -47,9 +47,8 @@
   display: flex;
   justify-content: space-between;
   left: 0;
-  position: sticky;
-  z-index: 2;
   padding: 5px 11px;
+  position: absolute;
   top: 0;
   width:100%;
 }
@@ -151,7 +150,8 @@
 .index .frame-34 {
   align-items: flex-end;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 60%;
   left: 0;
   position: absolute;
   top: 0;
@@ -202,6 +202,8 @@
 }
 
 .index .product-cards {
+  display: flex;
+  justify-content: space-around;
   height: 420px;
   left: 0;
   overflow: hidden;
@@ -211,25 +213,25 @@
 }
 
 .index .products-instance {
-  left: 0 !important;
+  left: 131.4px !important;
   position: absolute !important;
   top: 0 !important;
 }
 
 .index .products-2-instance {
-  left: 336px !important;
+  left: 574.6px !important;
   position: absolute !important;
   top: 0 !important;
 }
 
 .index .products-5 {
-  left: 672px !important;
+  left: 1018px !important;
   position: absolute !important;
   top: 0 !important;
 }
 
 .index .products-6 {
-  left: 1008px !important;
+  left: 1461.4px !important;
   position: absolute !important;
   top: 0 !important;
 }
@@ -339,7 +341,7 @@
 .index .overlap-group-4 {
   background-image: url(https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/frame-482626.svg);
   background-size: 100% 100%;
-  height: 274px;
+  height: 363px;
   left: 0;
   position: absolute;
   top: 0;
@@ -347,12 +349,12 @@
 }
 
 .index .frame-41 {
+  display: flex;
   align-items: center;
-  display: inline-flex;
+
   flex-direction: column;
   gap: 16px;
   justify-content: center;
-  margin-left: 344px;
   position: relative;
   top: 56px;
 }
@@ -391,7 +393,7 @@
   flex-direction: column;
   gap: 48px;
   position: absolute;
-  top: 320px;
+  top: 434px;
   width: 100%;
 }
 
@@ -400,6 +402,7 @@
   background-color: #ffffff;
   display: inline-flex;
   flex: 0 0 auto;
+  top:130px;
   flex-direction: column;
   width: 100%;
   gap: 64px;
@@ -486,6 +489,7 @@
   flex: 0 0 auto;
   flex-direction: column;
   gap: 48px;
+  top: 150px;
   overflow: hidden;
   position: relative;
   width:100%;
@@ -495,7 +499,8 @@
   align-items: flex-end;
   display: flex;
   flex: 0 0 auto;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 62%;
   position: relative;
   width:100%;
 }
@@ -525,7 +530,8 @@
 
 .index .frame-49 {
   align-items: flex-start;
-  display: inline-flex;
+  display: flex;
+  justify-content: space-around;
   flex: 0 0 auto;
   width: 100%;
   gap: 24px;
@@ -535,275 +541,4 @@
 .index .blog-instance {
   left: -8337px !important;
   top: -4606px !important;
-}
-
-.index .footer {
-  background-color: #393c3f;
-  height: 536px;
-  overflow: hidden;
-  position: relative;
-  width:100%;
-}
-
-.index .frame-50 {
-  height: 84px;
-  left: 0;
-  position: absolute;
-  top: 452px;
-  width:100%;
-}
-
-.index .line-2 {
-  height: 1px;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: -1px;
-  width:100%;
-}
-
-.index .element-suvarna {
-  color: #ffffff;
-  font-family: "NotoSans-Regular", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  height: 24px;
-  left: 527px;
-  letter-spacing: 0px;
-  line-height: 150%;
-  position: absolute;
-  text-align: center;
-  top: 29px;
-  white-space: nowrap;
-}
-
-.index .frame-51 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 16px;
-  left: 735px;
-  position: absolute;
-  top: 150px;
-}
-
-.index .text-wrapper-17 {
-  color: #ffffff;
-  font-family:"HelveticaNeue-Medium", Helvetica;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: 0px;
-  line-height: normal;
-  margin-top: -1px;
-  position: relative;
-  width: fit-content;
-}
-
-.index .frame-52 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 12px;
-  position: relative;
-}
-
-.index .text-wrapper-18 {
-  color: #ffffff;
-  font-family: "NotoSans-Regular", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 150%;
-  margin-top: -1px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.index .text-wrapper-19 {
-  color: #ffffff;
-  font-family: "NotoSans-Regular", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 150%;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.index .frame-53 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 16px;
-  left: 1068px;
-  position: absolute;
-  top: 150px;
-}
-
-.index .frame-54 {
-  flex: 0 0 auto;
-  position: relative;
-}
-
-.index .frame-55 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 16px;
-  left: 60px;
-  position: absolute;
-  top: 150px;
-}
-
-.index .frame-56 {
-  height: 42px;
-  position: relative;
-  width: 528px;
-}
-
-.index .img-2 {
-  height: 16px;
-  left: 0;
-  position: absolute;
-  top: 4px;
-  width: 16px;
-}
-
-.index .text-wrapper-20 {
-  color: #ffffff;
-  font-family: "NotoSans-Regular", Helvetica;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400px;
-  height: 42px;
-  left: 28px;
-  letter-spacing: 0px;
-  line-height: 150%;
-  position: absolute;
-  top: -1px;
-  width: 500px;
-}
-
-.index .frame-57 {
-  height: 24px;
-  position: relative;
-  width: 144px;
-}
-
-.index .text-wrapper-21 {
-  color: #ffffff;
-  font-family: "NotoSans-Regular", Helvetica;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400px;
-  height: 21px;
-  left: 28px;
-  letter-spacing: 0px;
-  line-height: 150%;
-  position: absolute;
-  top: -1px;
-  white-space: nowrap;
-}
-
-.index .suvarna-logo-footer {
-  height: 48px;
-  left: 60px;
-  object-fit: cover;
-  position: absolute;
-  top: 38px;
-  width: 219px;
-}
-.searching{
-  border-radius: 6px;
-  border: none;
-  height: 48px;
-  overflow: hidden;
-  background-color: transparent;
-  margin-left:25.6px;
-  padding: 2%;
-  position:absolute;
-  width: 460px;
-}
-
-.index .frame-58 {
-  align-items: flex-start;
-  display: inline-flex;
-  gap: 16px;
-  border: none;
-  left: 396px;
-  position: absolute;
-  top: 38px;
-}
-
-.index .frame-59 {
-  border: 1px solid;
-  border-color: rgba(235, 237, 240, 1);
-  border-radius: 6px;
-  height: 48px;
-  overflow: hidden;
-  position: relative;
-  width: 505px;
-}
-
-.index .frame-60 {
-  align-items: center;
-  display: inline-flex;
-  gap: 16px;
-  left: 14px;
-  position: relative;
-  top: 12px;
-}
-
-.index .search {
-  height: 20px;
-  position: relative;
-  width: 20px;
-}
-
-.index .text-wrapper-22 {
-  color: #c2c2c2;
-  font-family: "NotoSans-Regular", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 150%;
-  margin-top: -1px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.index .frame-61 {
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  overflow: hidden;
-  padding: 12px 24px;
-  position: relative;
-  width: 127px;
-}
-
-.index .text-wrapper-23 {
-  color: rgba(43, 105, 151, 1);
-  font-family: "HelveticaNeue-Bold", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0px;
-  line-height: normal;
-  position: relative;
-  width: fit-content;
 }

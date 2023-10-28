@@ -1,8 +1,6 @@
 import React from 'react'
 import "../.../../../../Pages/Homepage/homestyle.css";
-import { useNavigate } from 'react-router-dom';
 export const Footer = () => {
-  let navigate=useNavigate();
   return (
     <footer className="footer">
     <div className="frame-50">
@@ -63,11 +61,8 @@ export const Footer = () => {
         </div>
       </div>
     </div>
-    <img onClick={() => {
-    navigate("/");
-    window.scrollTo(0, 0);
-  }}
-      className="suvarna-logo-footer cursor-pointer"
+    <img
+      className="suvarna-logo-footer"
       alt="Suvarna logo footer"
       src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/suvarna-logo-footer-1.png"
     />
