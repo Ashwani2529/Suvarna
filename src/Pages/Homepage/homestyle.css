@@ -28,7 +28,7 @@
 
 .index .slider-5 {
   border-color: unset !important;
-  left: 838px !important;
+  /* left: 838px !important; */
   position: absolute !important;
   top: 471px !important;
 }
@@ -213,26 +213,26 @@
 }
 
 .index .products-instance {
-  left: 131.4px !important;
-  position: absolute !important;
+  /* left: 131.4px !important;
+  position: absolute !important; */
   top: 0 !important;
 }
 
 .index .products-2-instance {
-  left: 574.6px !important;
-  position: absolute !important;
+  /* left: 574.6px !important;
+  position: absolute !important; */
   top: 0 !important;
 }
 
 .index .products-5 {
-  left: 1018px !important;
-  position: absolute !important;
+  /* left: 1018px !important;
+  position: absolute !important; */
   top: 0 !important;
 }
 
 .index .products-6 {
-  left: 1461.4px !important;
-  position: absolute !important;
+  /* left: 1461.4px !important; */
+  /* position: absolute !important; */
   top: 0 !important;
 }
 
@@ -500,7 +500,7 @@
   display: flex;
   flex: 0 0 auto;
   justify-content: space-around;
-  gap: 62%;
+  gap: 50%;
   position: relative;
   width:100%;
 }

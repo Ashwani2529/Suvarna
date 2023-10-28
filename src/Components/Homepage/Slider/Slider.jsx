@@ -14,7 +14,7 @@ export const Slider = ({ property1, className }) => {
   //ellipse one
 
   return (
-    <div className={`slider ${className}`}>
+    <div style={{left:window.innerWidth/2-60}} className={`slider ${className}`}>
       <div className={(currentSlide===0)?`ellipse ${property1}`:`ellipse property-1-${property1}`} />
       <div className={(currentSlide===1)?`ellipse ${property1}`:`ellipse property-1-${property1}`} />
       <div className={(currentSlide===2)?`ellipse ${property1}`:`ellipse property-1-${property1}`} />

@@ -190,7 +190,7 @@
 }
 
 .slider-v .slider-instance {
-  left: 910px !important;
+  /* left: 910px !important; */
   position: absolute !important;
   top: 647px !important;
 }
