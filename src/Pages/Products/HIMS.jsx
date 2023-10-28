@@ -19,7 +19,7 @@ export const HIMS= () => {
      <ProductsProHIMS cardHead={"Outpatient Management"} cardHead1={cardHead1} cardHead2={cardHead2} 
      cardHead3={cardHead3} cardHead4={cardHead4}
       cardHead5={cardHead5} cardHead6={cardHead6}
-       h={642} t={1165}/>
+       h={3048} t={1165}/>
       </div>
       <div className="header flex">
         <LogoHeader className="design-component-instance-node-2" />

@@ -190,7 +190,7 @@
 }
 
 .slider-v .slider-instance {
-  left: 678px !important;
+  left: 910px !important;
   position: absolute !important;
   top: 647px !important;
 }
@@ -212,10 +212,10 @@
 }
 
 .slider-v .vector-2 {
-  height: 224px;
+  height: 297px;
   left: 0;
   position: absolute;
-  top: 696px;
+  top: 640px;
   width:100%;
 }
 

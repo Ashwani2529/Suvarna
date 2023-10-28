@@ -4,25 +4,16 @@ import "../../../styles/footer.css";
 import { ProductModuleCard } from '../ProductModuleCard/ProductModuleCard';
 import { ProductModuleImage } from '../ProductModuleImage/ProductModuleImage';
 import { Button } from '../../AboutUs/Button/Button';
+import bgImg from '../../../VectorDMS.png'
 import { Footer } from '../../Products/Footer/Footer';
-export const ProductsPro = ({cardHead,h,t}) => {
+export const ProductsPro = ({cardHead}) => {
   return (
     <>
-    <div className="relative w-full h-[950px] bg-white">
+    <div className="relative w-full h-[1050px] bg-white">
     <div className="relative h-[950px] w-[99%]">
-      <div style={{height:`${h}px`,top:`${t}px`}} className="absolute w-full left-px object-cover">
-      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="643" viewBox="0 0 100% 643" fill="none">
-  <path d="M389.599 120.145C369.15 119.428 347.584 118.992 326.912 117.999C258.734 114.72 181.794 94.9803 113.703 99.7418L104 100.42L0 108.742V600.087L684.119 641.906C700.313 642.896 716.567 641.912 732.523 638.975L1176.05 557.347C1199.17 553.092 1222.86 552.946 1246.03 556.916L1322.61 570.037C1383.7 580.503 1354 533.451 1354 471.474V159.427V0.37439L1363.72 45.4148C1328.74 66.2073 1288.25 75.8339 1247.65 73.0095L1157.34 66.7258C1130.72 64.8735 1103.99 68.368 1078.74 77.0033L982.617 109.875C951.041 120.674 917.266 123.399 884.367 117.804L681.869 83.3627C658.476 79.3841 634.562 79.6 611.246 84.0003L438.012 116.692C422.063 119.702 405.82 120.714 389.599 120.145Z" fill="url(#paint0_linear_2016_3346)" fill-opacity="0.4"/>
-  <defs>
-    <linearGradient id="paint0_linear_2016_3346" x1="124.827" y1="692.516" x2="1154.58" y2="654.441" gradientUnits="userSpaceOnUse">
-      <stop offset="0.161458" stop-color="#35954C"/>
-      <stop offset="1" stop-color="#526F85"/>
-    </linearGradient>
-  </defs>
-</svg>
-        </div>
+    <img src={bgImg} alt="" style={{position:'absolute',left:'9px',top:'410px',height:"580px",width:'100vw'}}/>
       <div id="pattern" className="absolute w-full h-[274px] top-0 left-0 bg-[100%_100%]">
-        <div className="inline-flex flex-col items-center justify-center gap-[16px] relative top-[40px] left-[344px]">
+        <div className="inline-flex flex-col items-center justify-center gap-[16px] relative top-[68px] left-[570px]">
           <div className="relative w-fit mt-[-1.00px] font-header-h0 font-[number:var(--header-h0-font-weight)] text-white text-[length:var(--header-h0-font-size)] text-center tracking-[var(--header-h0-letter-spacing)] leading-[var(--header-h0-line-height)] whitespace-nowrap [font-style:var(--header-h0-font-style)]">
             Key Modules
           </div>
@@ -31,7 +22,7 @@ export const ProductsPro = ({cardHead,h,t}) => {
           </p>
         </div>
       </div>
-      <div className="inline-flex flex-col items-start absolute top-[415px] left-56">
+      <div className="inline-flex flex-col items-start absolute top-[545px] right-16">
         <ProductModuleCard head={cardHead} 
           className="!flex-[0_0_auto]"
           icon={<ProductModuleImage className="!absolute !w-[304px] !h-[304px] !top-[88px] !left-0" />}

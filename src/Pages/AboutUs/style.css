@@ -1,6 +1,6 @@
 .about {
   background-color: #ffffff;
-  height: 5167px;
+  height: 5567px;
   position: relative;
   width:100%;
 }
@@ -87,7 +87,7 @@
 
 .about .mission {
   background-color: #ffffff;
-  height: 690px;
+  height: 845px;
   position: relative;
   width:100%;
 }
@@ -101,11 +101,11 @@
 .about .frame-wrapper {
   background: linear-gradient(180deg, rgb(52.68, 148.75, 76.17) 16.15%, rgb(82.45, 111.36, 132.81) 100%);
   border-radius: 16px;
-  height: 690px;
-  left: 0;
+  height: 860px;
+  left: 10%;
   position: absolute;
   top: 0;
-  width: 755px;
+  width: 925px;
 }
 
 .about .frame-8 {
@@ -195,49 +195,49 @@
   background-color: #d5dde6;
   border-radius: 16px;
   box-shadow: 0px 4px 24px 4px rgba(0, 0, 0, 0.15);
-  height: 510px;
-  left: 595px;
+  height: 680px;
+  left: 44%;
   overflow: hidden;
   position: absolute;
   top: 90px;
-  width: 755px;
+  width: 925px;
 }
 
 .about .overlap-group {
   background-image: url(https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/652628729ce07dec6d44e4db/img/pexels-thirdman-5327584-2.png);
   background-position: 50% 50%;
   background-size: cover;
-  height: 510px;
-  width: 765px;
+  height: 680px;
+  width: 935px;
 }
 
 .about .video-overlay {
   background-color: #0000004c;
-  height: 510px;
-  width: 760px;
+  height: 680px;
+  width: 935px;
 }
 
 .about .polygon-wrapper {
   border: 8px solid;
   border-color: rgba(235, 237, 240, 1);
-  border-radius: 67.5px;
-  height: 135px;
-  left: 313px;
+  border-radius: 100%;
+  height: 250px;
+  left: 335px;
   position: relative;
-  top: 187px;
-  width: 135px;
+  top: 209px;
+  width: 250px;
 }
 
 .about .polygon {
-  height: 52px;
-  left: 22px;
-  position: absolute;
-  top: 34px;
-  width: 46px;
+  height: 135px;
+    left: 63px;
+    position: absolute;
+    top: 48px;
+    width: 135px;
 }
 
 .about .frame-11 {
-  height: 882px;
+  height: 1110px;
   position: relative;
   width:100%;
 }
@@ -306,21 +306,20 @@
 }
 
 .about .div-wrapper {
-  background: linear-gradient(
-    180deg,
-    rgba(155.05, 211.44, 168.56, 0.56) 30.73%,
-    rgba(186.47, 211.43, 229.5, 0.51) 100%
-  );
+  
+  background: linear-gradient( 180deg, rgba(155.05, 211.44, 168.56, 0.56) 30.73%, rgba(186.47, 211.43, 229.5, 0.51) 100% );
   border-radius: 16px 16px 16px 16px;
-  height: 540px;
-  left: 594px;
+  height: 740px;
+  right: 2px;
   overflow: hidden;
   position: absolute;
   top: 0;
-  width: 754px;
+  width: 1014px;
+  
 }
 
 .about .frame-14 {
+  margin: 120px 100px 100px 100px;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -357,12 +356,12 @@
 }
 
 .about .pexels-pixabay {
-  height: 488px;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: 30px;
-  width: 704px;
+  height: 632px;
+    object-fit: cover;
+    position: absolute;
+    top: 12%;
+    right: 48%;
+    width: 848px;
 }
 
 .about .div-2 {
@@ -401,60 +400,62 @@
 }
 
 .about .story {
-  height: 642px;
+  height: 900px;
   position: relative;
   width:100%;
 }
 
 .about .overlap-group-3 {
-  height: 623px;
+  height: 792px;
   position: relative;
   width: 100%;
 }
 
 .about .vector {
-  height: 513px;
+  height: 792px;
   left: 0;
   position: absolute;
-  top: 111px;
+  top: 60px;
   width:100%;
 }
 
 .about .vector-2 {
-  height: 512px;
+  height: 792px;
   left: 0;
+  top: 60px;
   position: absolute;
-  top: 80px;
   width:100%;
 }
 
 .about .vector-3 {
-  height: 597px;
+  height: 790px;
   left: 0;
   position: absolute;
-  top: 0;
+  top: -2px;
   width:100%;
 }
 
 .about .frame-15 {
+ 
+  display: flex;
   align-items: center;
-  display: inline-flex;
+  justify-content: center;
   flex-direction: column;
-  gap: 16px;
+  gap: 40px;
+  top:86px;
   justify-content: center;
   width: 100%;
   position: absolute;
-  top: 56px;
 }
 
 .about .compliance-header-9 {
   color: #ffffff;
   font-family: "HelveticaNeue-Bold", Helvetica;
-  font-size: 48px;
+  font-size: 65px;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0px;
-  line-height:150%;
+  line-height:190%;
   margin-top: -1px;
   position: relative;
   text-align: center;
@@ -465,7 +466,7 @@
 .about .compliance-header-10 {
   color: #ffffff;
   font-family: "NotoSans-Regular", Helvetica;
-  font-size: 24px;
+  font-size: 27px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.24px;
@@ -547,7 +548,7 @@
   flex-direction: column;
   gap: 48px;
   justify-content: center;
-  padding: 48px 0px;
+  padding: 100px 0px;
   position: relative;
   width:100%;
 }
@@ -580,321 +581,6 @@
   flex: 0 0 auto !important;
   width: unset !important;
 }
-
-.about .footer {
-  background-color: #393c3f;
-  height: 536px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.about .frame-21 {
-  height: 84px;
-  left: 0;
-  position: absolute;
-  top: 452px;
-  width:100%;
-}
-
-.about .line-2 {
-  height: 1px;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: -1px;
-  width:100%;
-}
-
-.about .element-suvarna {
-  color: #ffffff;
-  font-family:  "NotoSans-Regular", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  height: 24px;
-  left: 527px;
-  letter-spacing: 0px;
-  line-height: 150%;
-  position: absolute;
-  text-align: center;
-  top: 29px;
-  white-space: nowrap;
-}
-
-.about .frame-22 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 16px;
-  left: 735px;
-  position: absolute;
-  top: 150px;
-}
-
-.about .text-wrapper-8 {
-  color: #ffffff;
-  font-family:"HelveticaNeue-Medium", Helvetica;
-  font-size: 18px;
-  font-style:normal;
-  font-weight: 500;
-  letter-spacing: 0px;
-  line-height: normal;
-  margin-top: -1px;
-  position: relative;
-  width: fit-content;
-}
-
-.about .frame-23 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 12px;
-  position: relative;
-}
-
-.about .text-wrapper-9 {
-  color: #ffffff;
-  font-family:  "NotoSans-Regular", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 150%;
-  margin-top: -1px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.about .text-wrapper-10 {
-  color: #ffffff;
-  font-family:  "NotoSans-Regular", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 150%;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.about .frame-24 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 16px;
-  left: 1068px;
-  position: absolute;
-  top: 150px;
-}
-
-.about .frame-25 {
-  flex: 0 0 auto;
-  position: relative;
-}
-
-.about .frame-26 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 16px;
-  left: 30px;
-  position: absolute;
-  top: 150px;
-}
-
-.about .frame-27 {
-  height: 42px;
-  position: relative;
-  width: 528px;
-}
-
-.about .img-2 {
-  height: 16px;
-  left: 0;
-  position: absolute;
-  top: 4px;
-  width: 16px;
-}
-
-.about .text-wrapper-11 {
-  color: #ffffff;
-  font-family:  "NotoSans-Regular", Helvetica;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  height: 42px;
-  left: 18px;
-  letter-spacing: 0px;
-  line-height: 150%;
-  position: absolute;
-  top: -1px;
-  width: 500px;
-}
-
-.about .frame-28 {
-  height: 24px;
-  position: relative;
-  width: 144px;
-}
-
-.about .text-wrapper-12 {
-  color: #ffffff;
-  font-family:  "NotoSans-Regular", Helvetica;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  height: 21px;
-  left: 18px;
-  letter-spacing: 0px;
-  line-height: 150%;
-  position: absolute;
-  top: -1px;
-  white-space: nowrap;
-}
-
-.about .suvarna-logo-footer {
-  height: 48px;
-  left: 30px;
-  object-fit: cover;
-  position: absolute;
-  top: 38px;
-  width: 219px;
-}
-
-.about .frame-29 {
-  align-items: flex-start;
-  display: inline-flex;
-  gap: 16px;
-  left: 396px;
-  position: absolute;
-  top: 38px;
-}
-
-.about .frame-30 {
-  border: 1px solid;
-  border-color: rgba(235, 237, 240, 1);
-  border-radius: 6px;
-  height: 48px;
-  overflow: hidden;
-  position: relative;
-  width: 505px;
-}
-
-.about .frame-31 {
-  align-items: center;
-  display: inline-flex;
-  gap: 16px;
-  left: 14px;
-  position: relative;
-  top: 12px;
-}
-
-.about .search {
-  height: 20px;
-  position: relative;
-  width: 20px;
-}
-
-.about .text-wrapper-13 {
-  color: #c2c2c2;
-  font-family:  "NotoSans-Regular", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 150%;
-  margin-top: -1px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.about .frame-32 {
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  overflow: hidden;
-  padding: 12px 24px;
-  position: relative;
-  width: 127px;
-}
-
-.about .text-wrapper-14 {
-  color: rgba(43, 105, 151, 1);
-  font-family: "HelveticaNeue-Bold", Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0px;
-  line-height: 150%;
-  position: relative;
-  width: fit-content;
-}
-
-.about .header {
-  align-items: center;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  left: 0;
-  padding: 7px 7px;
-  position: sticky;
-  z-index: 2;
-  top: 0;
-  width:100%;
-}
-
-.about .design-component-instance-node {
-  flex: 0 0 auto !important;
-}
-
-.about .frame-33 {
-  align-items: center;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 48px;
-  position: relative;
-}
-
-.about .menu-2 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 32px;
-  position: relative;
-}
-
-.about .support-wrapper {
-  all: unset;
-  align-items: center;
-  box-sizing: border-box;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 36px;
-  position: relative;
-}
-
-.about .support-3 {
-  align-items: center;
-  background-color:rgba(20, 109, 250, 1);
-  border-radius: 6px;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 10px;
-  justify-content: center;
-  padding: 12px 18px;
-  position: relative;
-}
-
 .about .frame-34 {
   align-items: center;
   display: inline-flex;
