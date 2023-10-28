@@ -13,7 +13,7 @@ export const ProductsPro = ({cardHead}) => {
     <div className="relative h-[950px] w-[99%]">
     <img src={bgImg} alt="" style={{position:'absolute',left:'9px',top:'410px',height:"580px",width:'100vw'}}/>
       <div id="pattern" className="absolute w-full h-[274px] top-0 left-0 bg-[100%_100%]">
-        <div className="inline-flex flex-col items-center justify-center gap-[16px] relative top-[68px] left-[570px]">
+        <div className="flex flex-col items-center justify-center gap-[16px] relative top-[68px]">
           <div className="relative w-fit mt-[-1.00px] font-header-h0 font-[number:var(--header-h0-font-weight)] text-white text-[length:var(--header-h0-font-size)] text-center tracking-[var(--header-h0-letter-spacing)] leading-[var(--header-h0-line-height)] whitespace-nowrap [font-style:var(--header-h0-font-style)]">
             Key Modules
           </div>
