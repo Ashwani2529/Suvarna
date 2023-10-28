@@ -6,10 +6,10 @@
 
 .vector.default {
   height: 920px;
-  width: 1350px;
+  width:100%;
 }
 
 .vector.small {
   height: 266px;
-  width: 1350px;
+  width:100%;
 }

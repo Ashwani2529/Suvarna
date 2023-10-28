@@ -1,7 +1,7 @@
 .intindex {
     background-color: #ffffff;
     height: 5751px;
-    width: 1345px;
+    width:100%;
   }
   
   .intindex .overlap-group {
@@ -14,6 +14,7 @@
     display: inline-flex;
     flex-direction: column;
     gap: 120px;
+    width: 100%;
     left: 0;
     position: absolute;
     top: 92px;
@@ -27,7 +28,7 @@
     gap: 28px;
     padding: 60px 60px 0px;
     position: relative;
-    width: 1345px;
+    width:100%;
   }
   
   .intindex .div-2 {
@@ -87,13 +88,12 @@
     gap: 16px;
     padding: 70px 26px;
     position: relative;
-    width: 1345px;
+    width:100%;
   }
   
   .intindex .frame-7 {
     align-items: flex-start;
     display: inline-flex;
-    right: 8px;
     flex: 0 0 auto;
     flex-direction: column;
     gap: 16px;
@@ -140,7 +140,6 @@
   .intindex .frame-9 {
     align-items: center;
     display: inline-flex;
-    right: 4px;
     flex: 0 0 auto;
     flex-direction: column;
     gap: 72px;
@@ -201,7 +200,7 @@
     height: 536px;
     overflow: hidden;
     position: relative;
-    width: 1345px;
+    width:100%;
   }
   
   .intindex .frame-11 {
@@ -209,7 +208,7 @@
     left: 0;
     position: absolute;
     top: 452px;
-    width: 1345px;
+    width:100%;
   }
   
   .intindex .line {
@@ -218,7 +217,7 @@
     object-fit: cover;
     position: absolute;
     top: -1px;
-    width: 1345px;
+    width:100%;
   }
   
   .intindex .element-suvarna {
@@ -464,7 +463,7 @@
     padding: 17px 10px;
     position: absolute;
     top: 0;
-    width: 1345px;
+    width:100%;
   }
   
   .intindex .frame-22 {

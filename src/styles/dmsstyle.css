@@ -7,7 +7,7 @@
     padding: 5px 17px;
     position: absolute;
     top: 0;
-    width: 1350px;
+    width:100%;
   }
  
 .design-component-instance-node-2 {
@@ -39,7 +39,7 @@
     justify-content: space-between;
     padding: 64px 60px;
 position: relative;
-    width: 1359px;
+width:100%;
   }
   
   .framedms .div {
@@ -129,5 +129,8 @@ position: relative;
 
   position: absolute;
   top: 0;
-  width: 1360px;
+  width:101%;
   }
+svg{
+  width: 100%;
+}

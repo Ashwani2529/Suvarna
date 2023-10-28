@@ -2,7 +2,7 @@
   background-color: #ffffff;
   height: 5167px;
   position: relative;
-  width: 1350px;
+  width:100%;
 }
 
 .about .sections {
@@ -13,6 +13,7 @@
   left: 0;
   position: absolute;
   top: 100px;
+  width: 100%;
 }
 
 .about .frame-6 {
@@ -23,7 +24,7 @@
   gap: 28px;
   padding: 60px 60px 0px;
   position: relative;
-  width: 1322px;
+  width: 100%;
 }
 
 .about .compliance-header {
@@ -88,13 +89,13 @@
   background-color: #ffffff;
   height: 690px;
   position: relative;
-  width: 1345px;
+  width:100%;
 }
 
 .about .overlap {
   height: 690px;
   position: relative;
-  width: 1345px;
+  width:100%;
 }
 
 .about .frame-wrapper {
@@ -104,7 +105,7 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 680px;
+  width: 755px;
 }
 
 .about .frame-8 {
@@ -195,11 +196,11 @@
   border-radius: 16px;
   box-shadow: 0px 4px 24px 4px rgba(0, 0, 0, 0.15);
   height: 510px;
-  left: 560px;
+  left: 595px;
   overflow: hidden;
   position: absolute;
   top: 90px;
-  width: 760px;
+  width: 755px;
 }
 
 .about .overlap-group {
@@ -238,7 +239,7 @@
 .about .frame-11 {
   height: 882px;
   position: relative;
-  width: 1345px;
+  width:100%;
 }
 
 .about .frame-12 {
@@ -248,7 +249,7 @@
   gap: 24px;
   position: absolute;
   top: 0;
-  width: 1345px;
+  width:100%;
 }
 
 .about .frame-13 {
@@ -295,14 +296,13 @@
   height: 540px;
   position: absolute;
   top: 342px;
-  width: 1345px;
+  width:100%;
 }
 
 .about .overlap-group-2 {
   height: 540px;
-  right: 26.5px;
   position: relative;
-  width: 1350px;
+  width:100%;
 }
 
 .about .div-wrapper {
@@ -373,7 +373,7 @@
   gap: 48px;
   padding: 0px 0px;
   position: relative;
-  width: 1350px;
+  width:100%;
 }
 
 .about .text-wrapper-6 {
@@ -394,6 +394,7 @@
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
+  width: 100%;
   flex-direction: column;
   gap: 48px;
   position: relative;
@@ -402,12 +403,13 @@
 .about .story {
   height: 642px;
   position: relative;
-  width: 1350px;
+  width:100%;
 }
 
 .about .overlap-group-3 {
   height: 623px;
   position: relative;
+  width: 100%;
 }
 
 .about .vector {
@@ -415,7 +417,7 @@
   left: 0;
   position: absolute;
   top: 111px;
-  width: 1350px;
+  width:100%;
 }
 
 .about .vector-2 {
@@ -423,7 +425,7 @@
   left: 0;
   position: absolute;
   top: 80px;
-  width: 1350px;
+  width:100%;
 }
 
 .about .vector-3 {
@@ -431,7 +433,7 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 1350px;
+  width:100%;
 }
 
 .about .frame-15 {
@@ -440,7 +442,7 @@
   flex-direction: column;
   gap: 16px;
   justify-content: center;
-  left: 110px;
+  width: 100%;
   position: absolute;
   top: 56px;
 }
@@ -534,6 +536,7 @@
   flex: 0 0 auto;
   flex-direction: column;
   position: relative;
+  width: 100%;
 }
 
 .about .contact-us {
@@ -546,7 +549,7 @@
   justify-content: center;
   padding: 48px 0px;
   position: relative;
-  width: 1350px;
+  width:100%;
 }
 
 .about .frame-20 {
@@ -583,8 +586,7 @@
   height: 536px;
   overflow: hidden;
   position: relative;
-  width: 1350px;
-  right: -1.2px;
+  width: 100%;
 }
 
 .about .frame-21 {
@@ -592,7 +594,7 @@
   left: 0;
   position: absolute;
   top: 452px;
-  width: 1350px;
+  width:100%;
 }
 
 .about .line-2 {
@@ -601,7 +603,7 @@
   object-fit: cover;
   position: absolute;
   top: -1px;
-  width: 1350px;
+  width:100%;
 }
 
 .about .element-suvarna {
@@ -847,7 +849,7 @@
   padding: 7px 7px;
   position: absolute;
   top: 0;
-  width: 1350px;
+  width:100%;
 }
 
 .about .design-component-instance-node {

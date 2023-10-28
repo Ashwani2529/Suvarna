@@ -2,6 +2,7 @@ p {
     font-weight: 300;
 }
 li{
+    margin-left: 5px;
     cursor: pointer;
 }
 .nav-link {

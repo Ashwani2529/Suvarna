@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    width: 1320px;
+    width:100%;
   }
   
   .client-logos .image {

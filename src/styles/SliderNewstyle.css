@@ -2,14 +2,14 @@
   height: 920px;
   overflow: hidden;
   position: relative;
-  width: 1350px;
+  width:100%;
 }
 
 .slider-new .div {
   height: 920px;
   position: absolute;
   top: 0;
-  width: 1350px;
+  width:100%;
 }
 
 .slider-new .class {
@@ -35,7 +35,7 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 1350px;
+  width:100%;
 }
 
 .slider-new .vector-8-4 {
@@ -43,7 +43,7 @@
   left: 0 !important;
   position: absolute !important;
   top: 0 !important;
-  width: 1350px !important;
+  width:100% !important;
 }
 
 .slider-new .rectangle-5 {
@@ -103,7 +103,7 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 1350px;
+  width:100%;
 }
 
 .slider-new .vector-8-13 {
@@ -128,7 +128,7 @@
   left: 1439px;
   position: absolute;
   top: 0;
-  width: 1350px;
+  width:100%;
 }
 
 .slider-new .pexels-artem-podrez {
@@ -169,7 +169,7 @@
   left: 1350px;
   position: absolute;
   top: 0;
-  width: 1350px;
+  width:100%;
 }
 
 .slider-new .frame-6 {
@@ -191,7 +191,7 @@
   left: 1px;
   position: absolute;
   top: 0;
-  width: 1350px;
+  width:100%;
 }
 
 .slider-new .vector-8-14 {
@@ -199,7 +199,7 @@
   left: 0 !important;
   position: absolute !important;
   top: 0 !important;
-  width: 1350px !important;
+  width:100% !important;
 }
 
 .slider-new .frame-482706 {
@@ -234,7 +234,7 @@
 
 .slider-new .property-1-frame-482704 {
   left: 0;
-  width: 1350px;
+  width:100%;
 }
 
 .slider-new .property-1-frame-482703 {
@@ -249,7 +249,7 @@
 
 .slider-new .property-1-1-frame-482706 {
   left: 0;
-  width: 1350px;
+  width:100%;
 }
 
 .slider-new .property-1-1-frame-482704 {
@@ -257,7 +257,7 @@
   background-position: 50% 50%;
   background-size: cover;
   left: 2881px;
-  width: 1350px;
+  width:100%;
 }
 
 .slider-new .property-1-1-frame-482703 {
@@ -265,7 +265,7 @@
   background-position: 50% 50%;
   background-size: cover;
   left: 4319px;
-  width: 1350px;
+  width:100%;
 }
 
 .slider-new .property-1-1-frame-482705 {
@@ -273,7 +273,7 @@
   background-position: 50% 50%;
   background-size: cover;
   left: 1441px;
-  width: 1350px;
+  width:100%;
 }
 
 .slider-new .overlap.property-1-frame-482706 .frame-5 {

@@ -10,12 +10,12 @@ export const SLIMS = () => {
   let cardHead2 = "Radiology  Information System";
   let cardHead3 = "Patient Engagement - (CRM)";
   return (
-    <div className="relative w-[1355px] h-[3504px] bg-white" style={{left:"2px"}}>
-      <div className="inline-flex flex-col items-center gap-[120px] absolute top-[97px] left-0"  style={{right:"16px"}}>
+    <div className="relative w-full h-[3504px] bg-white">
+      <div className="inline-flex flex-col items-center gap-[120px] absolute top-[97px] left-0 w-full">
      <ProductsPre head={"Suvarna Laboratory Information Management System"} paragraph={"Automate workflows, reduce TAT, error free reporting, achieve compliance and enhance customer satisfaction with SLIMS"}/>
      <ProductsProSli cardHead={"Laboratory Information System"} cardHead1={cardHead1} cardHead2={cardHead2} cardHead3={cardHead3} h={642} t={695}/>
       </div>
-      <div className="header flex ml-4">
+      <div className="header flex">
         <LogoHeader className="design-component-instance-node-2" />
         <div className="frame-31">
           <div className="menu-2 ml-40">

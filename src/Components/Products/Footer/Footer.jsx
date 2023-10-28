@@ -2,7 +2,7 @@ import React from 'react'
 import "../.../../../../Pages/Homepage/homestyle.css";
 export const Footer = () => {
   return (
-    <footer className="footerprod">
+    <footer className="footer">
     <div className="frame-50">
       <img
         className="line-2"

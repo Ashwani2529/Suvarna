@@ -2,7 +2,7 @@
   background-color: #ffffff;
   height: 6717px;
   position: relative;
-  width: 1350px;
+  width:100%;
 }
 
 .index .slider-v2 {
@@ -50,7 +50,7 @@
   padding: 5px 11px;
   position: absolute;
   top: 0;
-  width: 1350px;
+  width:100%;
 }
 
 .index .design-component-instance-node-2 {
@@ -128,6 +128,7 @@
   flex-direction: column;
   gap: 120px;
   left: 0;
+  width: 100%;
   position: absolute;
   top: 1048px;
 }
@@ -136,15 +137,14 @@
   background-color: #f9f9f9;
   height: 751px;
   position: relative;
-  width: 1350px;
+  width:100%;
 }
 
 .index .frame-33 {
   height: 583px;
   position: relative;
   top: 84px;
-  right: -12px;
-  width: 1320px;
+  width:100%;
 }
 
 .index .frame-34 {
@@ -154,7 +154,7 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 1320px;
+  width:100%;
 }
 
 .index .products-4 {
@@ -206,7 +206,7 @@
   overflow: hidden;
   position: absolute;
   top: 138px;
-  width: 1325px;
+  width:100%;
 }
 
 .index .products-instance {
@@ -319,7 +319,7 @@
 }
 
 .index .clients-testimonials {
-  width: 1348px;
+  width:100%;
   align-items: flex-start;
   background-color: #ffffff;
   display: inline-flex;
@@ -332,7 +332,7 @@
 .index .frame-40 {
   height: 496px;
   position: relative;
-  width: 1350px;
+  width:100%;
 }
 
 .index .overlap-group-4 {
@@ -342,7 +342,7 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 1350px;
+  width:100%;
 }
 
 .index .frame-41 {
@@ -391,6 +391,7 @@
   gap: 48px;
   position: absolute;
   top: 320px;
+  width: 100%;
 }
 
 .index .frame-43 {
@@ -399,6 +400,7 @@
   display: inline-flex;
   flex: 0 0 auto;
   flex-direction: column;
+  width: 100%;
   gap: 64px;
   position: relative;
 }
@@ -425,7 +427,7 @@
   gap: 36px;
   justify-content: center;
   position: relative;
-  width: 1350px;
+  width:100%;
 }
 
 .index .frame-45 {
@@ -485,7 +487,7 @@
   gap: 48px;
   overflow: hidden;
   position: relative;
-  width: 1320px;
+  width:100%;
 }
 
 .index .frame-47 {
@@ -494,7 +496,7 @@
   flex: 0 0 auto;
   justify-content: space-between;
   position: relative;
-  width: 1320px;
+  width:100%;
 }
 
 .index .text-wrapper-16 {
@@ -517,13 +519,14 @@
   gap: 5px;
   justify-content: flex-end;
   position: relative;
-  width: 120px;
+  /* width: 120px; */
 }
 
 .index .frame-49 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
+  width: 100%;
   gap: 24px;
   position: relative;
 }
@@ -538,8 +541,7 @@
   height: 536px;
   overflow: hidden;
   position: relative;
-  width: 1350.4px;
-  right: -1.1px;
+  width:100%;
 }
 
 .index .frame-50 {
@@ -547,7 +549,7 @@
   left: 0;
   position: absolute;
   top: 452px;
-  width: 1350px;
+  width:100%;
 }
 
 .index .line-2 {
@@ -556,7 +558,7 @@
   object-fit: cover;
   position: absolute;
   top: -1px;
-  width: 1350px;
+  width:100%;
 }
 
 .index .element-suvarna {

@@ -17,7 +17,7 @@ export const ProductsPre = ({head,paragraph}) => {
       <div className="overlap">
         <div className="video-overlay">
           <div className="overlap-group">
-            <img className="polygon" src="../assets/Polygon1.svg" />
+            <img className="polygon" src="../assets/Polygon1.svg" alt=''/>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@ export const ProductsPre = ({head,paragraph}) => {
   </div>
       <div className="inline-flex flex-col items-center gap-[120px] relative flex-[0_0_auto]">
         <div className="inline-flex flex-col items-center gap-[64px] relative flex-[0_0_auto]">
-          <div className="flex w-[1320px] gap-[24px] flex-col items-center relative flex-[0_0_auto]">
+          <div className="flex w-full gap-[24px] flex-col items-center relative flex-[0_0_auto]">
             <div className="relative w-[652px] mt-[-1.00px] [font-family:'Helvetica_Neue-Medium',Helvetica] font-medium text-variable-collection-brand-blue text-[48px] tracking-[0.96px] leading-[72px]">
               World class care, anywhere.
             </div>
@@ -36,7 +36,7 @@ export const ProductsPre = ({head,paragraph}) => {
           </div>
           <div className="flex w-[1096px] items-start justify-between relative flex-[0_0_auto]">
             <div className="inline-flex items-start gap-[16px] relative flex-[0_0_auto]">
-            <img src="../assets/archive.svg"/>
+            <img src="../assets/archive.svg" alt=''/>
               <div className="inline-flex flex-col items-start gap-[16px] relative flex-[0_0_auto]">
                 <div className="relative w-fit mt-[-1.00px] [font-family:'Helvetica_Neue-Medium',Helvetica] font-medium text-variable-collection-black text-[20px] tracking-[0.40px] leading-[30px] whitespace-nowrap">
                   Reach more patients
@@ -48,7 +48,7 @@ export const ProductsPre = ({head,paragraph}) => {
               </div>
             </div>
             <div className="inline-flex items-start gap-[16px] relative flex-[0_0_auto]">
-            <img src="../assets/heart.svg"/>
+            <img src="../assets/heart.svg" alt=''/>
               <div className="inline-flex flex-col items-start gap-[16px] relative flex-[0_0_auto]">
                 <div className="relative w-fit mt-[-1.00px] [font-family:'Helvetica_Neue-Medium',Helvetica] font-medium text-variable-collection-black text-[20px] tracking-[0.40px] leading-[30px] whitespace-nowrap">
                   Improve health outcomes
@@ -61,7 +61,7 @@ export const ProductsPre = ({head,paragraph}) => {
               </div>
             </div>
             <div className="inline-flex items-start gap-[16px] relative flex-[0_0_auto]">
-            <img src="../assets/activity.svg"/>
+            <img src="../assets/activity.svg" alt=''/>
               <div className="inline-flex flex-col items-start gap-[16px] relative flex-[0_0_auto]">
                 <div className="relative w-fit mt-[-1.00px] [font-family:'Helvetica_Neue-Medium',Helvetica] font-medium text-variable-collection-black text-[20px] tracking-[0.40px] leading-[30px] whitespace-nowrap">
                   Convenient Access
