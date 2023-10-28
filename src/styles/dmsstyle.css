@@ -3,9 +3,9 @@
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
-
     padding: 5px 17px;
-    position: absolute;
+    position: sticky;
+    z-index: 2;
     top: 0;
     width:100%;
   }

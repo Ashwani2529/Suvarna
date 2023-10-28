@@ -54,7 +54,7 @@ export const Products = ({
         navigate("/products/trims");
         break;
     }
-
+    window.scrollTo(0, 0);
  }
   return (
     <>
