@@ -1,6 +1,6 @@
 .index {
   background-color: #ffffff;
-  height: 6717px;
+  height: 6664px;
   position: relative;
   width:100%;
 }
@@ -48,7 +48,8 @@
   justify-content: space-between;
   left: 0;
   padding: 5px 11px;
-  position: absolute;
+  position: fixed;
+  z-index: 10;
   top: 0;
   width:100%;
 }
@@ -341,7 +342,10 @@
 .index .overlap-group-4 {
   background-image: url(https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/frame-482626.svg);
   background-size: 100% 100%;
-  height: 363px;
+  height: 261px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 0;
   position: absolute;
   top: 0;
@@ -356,7 +360,6 @@
   gap: 16px;
   justify-content: center;
   position: relative;
-  top: 56px;
 }
 
 .index .compliance-header-4 {

@@ -14,7 +14,7 @@ import { Integration } from "./Pages/Integration/Integration";
 function App() {
   
   return (
-    <div className="App w-full">
+    <div style={{scrollBehavior:"smooth"}} className="App w-full">
         <Router>
         <Routes>
         <Route path="/" element={<Homepage/>} />

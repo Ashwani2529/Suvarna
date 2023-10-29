@@ -53,7 +53,9 @@ export const Products = ({
       case "products-6 d":
         navigate("/products/trims");
         break;
-    }
+      default:
+        break;
+    }window.scrollTo(0, 0);
 
  }
   return (

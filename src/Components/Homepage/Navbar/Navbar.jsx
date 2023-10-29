@@ -8,9 +8,9 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg md:navbar-expand-lg lg:navbar-expand-lg">
     <div className="container-fluid md:container-fluid lg:container-fluid">
       <div className="navbar">
-      <ul id="navB" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 gap-3">
+      <ul id="navB" className="grid grid-cols-7 gap-3">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" onClick={() => navigate("/")}>Home</a>
+            <a className="nav-link active" aria-current="page" onClick={() => {navigate("/");window.scrollTo(0, 0);}}>Home</a>
           </li>
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="/#products" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -19,19 +19,19 @@ const Navbar = () => {
             <ul style={{minWidth:"max-content"}} className="dropdown-menu text-black">
               <li><a className="dropdown-item my-2" href="/products/hims">HIMS</a>
               <p className='text-sm ml-4'>Hospital Information Management System</p></li>
-              <li><a className="dropdown-item my-2" onClick={() => navigate("/products/rispacs")}>RIC-PACS</a>
+              <li><a className="dropdown-item my-2" onClick={() =>{navigate("/products/rispacs");window.scrollTo(0, 0);}}>RIC-PACS</a>
               <p className='text-sm ml-4'>Radiology Information System</p></li>
-              <li><a className="dropdown-item my-2" onClick={() => navigate("/products/dms")}>DMS</a>
+              <li><a className="dropdown-item my-2" onClick={() => {navigate("/products/dms");window.scrollTo(0, 0);}}>DMS</a>
               <p className='text-sm ml-4'>Document Management System</p></li>
-              <li><a className="dropdown-item my-2" onClick={() => navigate("/products/edukares")}>Edukares</a>
+              <li><a className="dropdown-item my-2" onClick={() => {navigate("/products/edukares");window.scrollTo(0, 0);}}>Edukares</a>
               <p className='text-sm ml-4'>Digital Campus Management System</p></li>
-              <li><a className="dropdown-item my-2" onClick={() => navigate("/products/bimis")}>BI & MIS</a>
+              <li><a className="dropdown-item my-2" onClick={() => {navigate("/products/bimis");window.scrollTo(0, 0);}}>BI & MIS</a>
               <p className='text-sm ml-4'>Business Intelligence & MIS</p></li>  
-              <li><a className="dropdown-item my-2" onClick={() => navigate("/products/slims")}>SLIMS</a>
+              <li><a className="dropdown-item my-2" onClick={() => {navigate("/products/slims");window.scrollTo(0, 0);}}>SLIMS</a>
               <p className='text-sm ml-4'>Suvarna Laboratory Information Management System</p></li>
-              <li><a className="dropdown-item my-2" onClick={() => navigate("/products/emr")}>EMS</a>
+              <li><a className="dropdown-item my-2" onClick={() => {navigate("/products/emr");window.scrollTo(0, 0);}}>EMS</a>
               <p className='text-sm ml-4'>Electronic Medical Record</p></li>
-              <li><a className="dropdown-item my-2" onClick={() => navigate("/integration")}>Integrations</a>
+              <li><a className="dropdown-item my-2" onClick={() => {navigate("/integration");window.scrollTo(0, 0);}}>Integrations</a>
              </li>
             </ul>
           </li>
@@ -50,7 +50,7 @@ const Navbar = () => {
              Company
             </a>
             <ul className="dropdown-menu">
-              <li><a className="dropdown-item my-1" onClick={() => navigate("/about")}>About Us</a></li>
+              <li><a className="dropdown-item my-1" onClick={() => {navigate("/about");window.scrollTo(0, 0);}}>About Us</a></li>
               <li><a className="dropdown-item my-1" href="/#contactus">Contact Us</a></li>
               <li><a className="dropdown-item my-1" href="/#">Careers</a></li>
               <li><a className="dropdown-item my-1" href="/#">Brochures & Collaterals</a></li>
