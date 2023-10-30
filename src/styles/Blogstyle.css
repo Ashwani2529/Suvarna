@@ -7,19 +7,26 @@
     padding: 0px 0px 45px;
     position: relative;
   }
-  
+  #shareimg:hover{
+    transform: scale(1.1) ;
+    transition: transform 0.3s ease-in-out;
+  }
+  #shareimg{
+    z-index: 1;
+    position: relative;
+    left: 85%;
+    top: 50px;}
   .blog .pexels-thirdman-wrapper {
     align-items: flex-start;
-    border-radius: 12px;
     display: inline-flex;
     flex: 0 0 auto;
     flex-direction: column;
-    gap: 10px;
     overflow: hidden;
     position: relative;
   }
   
   .blog .pexels-thirdman {
+    border-radius: 16px;
     height: 208px;
     position: relative;
     width: 312px;
@@ -111,8 +118,8 @@
   .blog .arrow-right-2 {
     height: 16px;
     left: 94px;
+    top: -1.5px;
     position: absolute;
-    top: 3px;
     width: 16px;
   }
   
@@ -121,10 +128,17 @@
   }
   
   .blog .property-1-9-variant-4 {
+    transform: scaleX(-1);
     object-fit: cover;
   }
   
   .blog .property-1-9-variant-2 {
+    transform: scaleX(-1);
+    object-fit: cover;
+  }
+  
+  .blog .property-1-9-variant-3 {
+    transform: scaleX(-1);
     object-fit: cover;
   }
   

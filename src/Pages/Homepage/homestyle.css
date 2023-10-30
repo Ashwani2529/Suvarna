@@ -152,7 +152,7 @@
   align-items: flex-end;
   display: flex;
   justify-content: space-around;
-  gap: 60%;
+  gap: 50%;
   left: 0;
   position: absolute;
   top: 0;
@@ -191,10 +191,12 @@
 }
 
 .index .text-wrapper-14 {
-  color: rgba(109, 116, 122, 1);
+  /* color: rgba(109, 116, 122, 1); */
+  color: #6D747A;
   font-family: "Helvetica Neue-Regular", Helvetica;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
   letter-spacing: 0.48px;
   line-height: normal;
   position: relative;
@@ -338,11 +340,14 @@
   position: relative;
   width:100%;
 }
+.product-slider{
+  gap:13%;
+}
 
 .index .overlap-group-4 {
   background-image: url(https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/frame-482626.svg);
   background-size: 100% 100%;
-  height: 261px;
+  height:100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -396,7 +401,7 @@
   flex-direction: column;
   gap: 50px;
   position: absolute;
-  top: 475px;
+  top: 100%;
   padding:2%;
   width: 100%;
 }
@@ -406,7 +411,7 @@
   background-color: #ffffff;
   display: inline-flex;
   flex: 0 0 auto;
-  top:130px;
+  top:180px;
   flex-direction: column;
   width: 100%;
   gap: 64px;
@@ -492,7 +497,7 @@
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  gap: 48px;
+  gap: 10px;
   top: 150px;
   overflow: hidden;
   position: relative;
@@ -526,7 +531,7 @@
 .index .frame-48 {
   align-items: center;
   display: flex;
-  gap: 5px;
+  gap: 13%;
   justify-content: flex-end;
   position: relative;
   /* width: 120px; */

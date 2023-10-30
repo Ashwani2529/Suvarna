@@ -1,5 +1,5 @@
 import React from 'react'
-import "../.../../../../Pages/Homepage/homestyle.css";
+import "../../../styles/footer.css";
 import { useNavigate } from 'react-router-dom';
 export const Footer = () => {
   let navigate=useNavigate();
@@ -25,11 +25,13 @@ export const Footer = () => {
     </div>
     <div className="frame-53">
       <div className="text-wrapper-17">Stay up-to-date</div>
-      <img
-        className="frame-54"
-        alt="Frame"
-        src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/6525973795dd5c4c0357416c/img/frame-2-2.svg"
-      />
+      <div className='social-icons'>
+      <i id='icon' className='bx bxl-facebook-circle' ></i>
+      <i id='icon' className='bx bxl-linkedin-square'></i>
+      <i id='icon' className='bx bxl-instagram-alt' ></i>
+      <i id='icon' className='bx bxl-twitter' ></i>
+      </div>
+     
     </div>
     <div className="frame-55">
       <div className="text-wrapper-17">Contact Us</div>

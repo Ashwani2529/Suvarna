@@ -11,6 +11,7 @@ export const Blog = ({
   return (
     <div className={`blog ${className}`}>
       <div className="pexels-thirdman-wrapper">
+      <img id="shareimg" alt="s" src="../assets/Share.svg" />
         <img
           className={`pexels-thirdman property-1-9-${property1}`}
           alt="Pexels thirdman"
@@ -40,7 +41,7 @@ export const Blog = ({
 
             {property1 === "variant-3" && (
               <p className="text-wrapper-24">
-                Enhancing Patient Engagement: How Suvarna&#39;s Solutions Empower Healthcare Providers
+                Enhancing Patient Engagement: How Suvarna&#39;s Solutions Empower
               </p>
             )}
 

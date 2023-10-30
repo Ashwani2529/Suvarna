@@ -12,7 +12,7 @@ export const Button = ({ property1, className, supportClassName, text = "Support
             : undefined
         }`}
       >
-        <div className="frame-3">
+        <div className="frame-3" style={{fontWeight:"500"}}>
           {property1 === "default-small-icon" && (
             <>
               <div className="support-2">{text}</div>

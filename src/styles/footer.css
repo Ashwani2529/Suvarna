@@ -81,16 +81,26 @@
     letter-spacing: 0px;
     line-height: 150%;
     margin-top: -1px;
+    cursor: pointer;
     position: relative;
     white-space: nowrap;
     width: fit-content;
   }
-  
+  #icon{
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+  .social-icons{
+    display: flex;
+    gap:1.25rem;
+  }
    .text-wrapper-19 {
     color: #ffffff;
     font-family: "NotoSans-Regular", Helvetica;
     font-size: 16px;
     font-style: normal;
+    cursor: pointer;
     font-weight: 400;
     letter-spacing: 0px;
     line-height: 150%;
@@ -182,14 +192,30 @@
     top: 38px;
     width: 219px;
   }
+  input{
+    border: none;
+    outline: none;
+   
+  }
   .searching{
+    text-decoration: none;
     border-radius: 6px;
+    display: flex;
+padding: 0.75rem 11.5rem 0.75rem 1.5rem;
+align-items: center;
+color: white;
+font-family: 'Noto Sans', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
     border: none;
     height: 48px;
     overflow: hidden;
     background-color: transparent;
     margin-left:25.6px;
     padding: 2%;
+    outline: none;
     position:absolute;
     width: 460px;
   }
@@ -247,6 +273,7 @@
     align-items: center;
     background-color: #ffffff;
     border-radius: 6px;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -260,6 +287,7 @@
   
    .text-wrapper-23 {
     color: rgba(43, 105, 151, 1);
+    
     font-family: "HelveticaNeue-Bold", Helvetica;
     font-size: 16px;
     font-style: normal;

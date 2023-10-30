@@ -2,7 +2,7 @@ import React from 'react';
 import "../../../styles/Navbarstyle.css";
 const Navbar = () => {
   return (
-    <div className='flex bg-white text-black md:flex lg:flex'>
+    <div className='flex bg-white md:flex lg:flex'>
         <nav className="navbar navbar-expand-lg md:navbar-expand-lg lg:navbar-expand-lg">
     <div className="container-fluid md:container-fluid lg:container-fluid">
       <div className="navbar">
@@ -14,7 +14,7 @@ const Navbar = () => {
             <a className="nav-link dropdown-toggle" href="/#products" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              Products
             </a>
-            <ul style={{minWidth:"max-content"}} className="dropdown-menu text-black">
+            <ul style={{minWidth:"max-content"}} className="dropdown-menu">
               <li><a className="dropdown-item my-2" href="/products/hims">HIMS</a>
               <p className='text-sm ml-4'>Hospital Information Management System</p></li>
               <li><a className="dropdown-item my-2" href="/products/rispacs">RIC-PACS</a>

@@ -1,6 +1,12 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { ProductCardLogos26 } from "../icons/ProductCardLogos26/ProductCardLogos26";
+import { ProductCardLogos1 } from "../icons/ProductCardLogos1/ProductCardLogos1";
+import { ProductCardLogos2 } from "../icons/ProductCardLogos2/ProductCardLogos2";
+import { ProductCardLogos5 } from "../icons/ProductCardLogos5/ProductCardLogos19";
+import { ProductCardLogos16 } from "../icons/ProductCardLogos16/ProductCardLogos16";
+import { ProductCardLogos19 } from "../icons/ProductCardLogos19/ProductCardLogos19";
+import { ProductCardLogos27 } from "../icons/ProductCardLogos27/ProductCardLogos27";
 import "../../../styles/Productstyle.css";
 
 export const Products = ({
@@ -8,6 +14,12 @@ export const Products = ({
   className,
   arrowRight = "https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/arrow-right.svg",
   icon = <ProductCardLogos26 className="product-card-logos" />,
+  icon1 = <ProductCardLogos27 className="product-card-logos" />,
+  icon2= <ProductCardLogos19 className="product-card-logos" />,
+  icon3= <ProductCardLogos1 className="product-card-logos" />,
+  icon4= <ProductCardLogos2 className="product-card-logos" />,
+  icon5= <ProductCardLogos5 className="product-card-logos" />,
+  icon6= <ProductCardLogos16 className="product-card-logos" />,
   pexelsDanielFrankClassName,
   text = "Business Intelligence & MIS",
   text1 = "BI & MIS",
@@ -71,8 +83,17 @@ export const Products = ({
         <div  className="text-wrapper-4" >Know more</div>
         <img className='arrow-right' alt="Arrow right" src={arrowRight} />
       </a>
+      
       <div className="frame-15">
-        {icon}
+      {className==="products-5" ?icon:
+      className==="products-2-instance" ?icon2:
+      className==="products-instance" ?icon6:
+      className==="products-6" ?icon4:
+      className==="products-instance a" ?icon1:
+      className==="products-2-instance b" ?icon3:
+      className==="products-5 c" ?icon5:
+      className==="products-6 d" ?icon6:icon}
+       
       <div className={`DMS-2 ${property1}`}>
         {property1 === "DMS" && <>{text6}</>}
 

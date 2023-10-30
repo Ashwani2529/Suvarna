@@ -1,9 +1,17 @@
 p {
     font-weight: 300;
 }
+.dropdown-item{color: #6D747A;}
+.dropdown-item:hover{color: rgb(32, 32, 238);text-decoration: none;}
+.nav-link:hover{
+    padding-bottom: 3px;
+    color: black;
+    text-decoration: underline blue;
+}
 li{
     margin-left: 5px;
     cursor: pointer;
+    color: #6D747A;
 }
 .nav-link {
     font-size: large;
@@ -17,6 +25,7 @@ li{
 
 #btnsup {
     display: flex;
+    background-color: #146DFA;
 }
 
 #navB {
