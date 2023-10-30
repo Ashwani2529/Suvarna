@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import React from "react";
 import { ProductCardLogos26 } from "../icons/ProductCardLogos26/ProductCardLogos26";
 import "../../../styles/Productstyle.css";
-import { useNavigate } from "react-router-dom";
 
 export const Products = ({
   property1,
@@ -26,37 +25,27 @@ export const Products = ({
   text13="TRI Mangement System",
   text14="TRIMS"
 }) => {
-    let navigate=useNavigate();
  const navigateProducts=(a)=>{
     switch (a) {
       case "products-5":
-        navigate("/products/bimis");
-        break;
+        return ("/products/bimis");
       case "products-2-instance":
-        navigate("/products/edukares");
-        break;
+        return("/products/edukares");
       case "products-instance":
-        navigate("/products/dms");
-        break;
+        return("/products/dms");
       case "products-6":
-        navigate("/products/slims");
-        break;
+        return("/products/slims");
       case "products-instance a":
-        navigate("/products/hims");
-        break;
+        return("/products/hims");
       case "products-2-instance b":
-        navigate("/products/rispacs");
-        break;
+        return("/products/rispacs");
       case "products-5 c":
-        navigate("/products/emr");
-        break;
+        return("/products/emr");
       case "products-6 d":
-        navigate("/products/trims");
-        break;
+        return("/products/trims");
       default:
-        break;
-    }window.scrollTo(0, 0);
-
+        return("/")
+    }
  }
   return (
     <>
@@ -78,10 +67,10 @@ export const Products = ({
            {property1 === "TRIMS" && <>{text13}</>}
       </div>
  
-    <div onClick={() => navigateProducts(className)} className="frame-14">
+    <a href={navigateProducts(className)} className="frame-14">
         <div  className="text-wrapper-4" >Know more</div>
         <img className='arrow-right' alt="Arrow right" src={arrowRight} />
-      </div>
+      </a>
       <div className="frame-15">
         {icon}
       <div className={`DMS-2 ${property1}`}>

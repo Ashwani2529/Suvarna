@@ -1,53 +1,41 @@
 .SRPA {
   height: 360px;
-  position: relative;
-  width:100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 3%;
+    justify-content: center;
+    width: 100%;
 }
 
 .SRPA .class {
-  left: -8px !important;
-  position: absolute !important;
   top: -8px !important;
 }
 
 .SRPA .class-2 {
-  left: 0 !important;
-  position: absolute !important;
   top: 0 !important;
 }
 
 .SRPA .class-3 {
-  left: 328px !important;
-  position: absolute !important;
   top: -8px !important;
 }
 
 .SRPA .class-4 {
-  left: 336px !important;
-  position: absolute !important;
   top: 0 !important;
 }
 
 .SRPA .class-5 {
-  left: 664px !important;
-  position: absolute !important;
   top: -8px !important;
 }
 
 .SRPA .class-6 {
-  left: 672px !important;
-  position: absolute !important;
   top: 0 !important;
 }
 
 .SRPA .class-7 {
-  left: 1000px !important;
-  position: absolute !important;
   top: -8px !important;
 }
 
 .SRPA .class-8 {
-  left: 1008px !important;
-  position: absolute !important;
   top: 0 !important;
 }

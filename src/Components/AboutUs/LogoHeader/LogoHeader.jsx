@@ -5,6 +5,7 @@ export const LogoHeader = ({ className }) => {
   let navigate=useNavigate();
   return (
     <div onClick={() => navigate("/")} className={`logo-header ${className}`}>
+      
       <img
         className="suvarna-s"
         alt="Suvarna s"

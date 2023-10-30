@@ -41,14 +41,14 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: -1px;
+  top: 0px;
 }
 
 .products .arrow-right {
   height: 16px;
   left: 94px;
   position: absolute;
-  top: -2px;
+  top: 0px;
   width: 16px;
 }
 
