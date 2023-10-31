@@ -84,6 +84,9 @@
   textarea{
     height: 120px;
     padding: 2%;
+    outline: none;
+    resize: none;
+    color: black;
     width: 624px;
   }
   
@@ -105,6 +108,7 @@
     align-items: center;
     display: flex;
     gap: 16px;
+    color: black;
     height: 48px;
     padding: 13px 16px;
     width: 300px;
