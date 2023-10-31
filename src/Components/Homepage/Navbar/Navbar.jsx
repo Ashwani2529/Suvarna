@@ -14,7 +14,7 @@ const Navbar = () => {
             <a className="nav-link dropdown-toggle" href="/#products" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              Products
             </a>
-            <ul style={{minWidth:"max-content"}} className="dropdown-menu">
+            <ul style={{ borderRadius: '0px', borderTop: '2px solid #4d7eed',minWidth:"max-content" }} className="dropdown-menu">
               <li><a className="dropdown-item my-2" href="/products/hims">HIMS</a>
               <p className='text-sm ml-4'>Hospital Information Management System</p></li>
               <li><a className="dropdown-item my-2" href="/products/rispacs">RIC-PACS</a>
@@ -37,7 +37,7 @@ const Navbar = () => {
             <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Clients
             </a>
-            <ul className="dropdown-menu">
+            <ul style={{ borderRadius: '0px', borderTop: '2px solid #4d7eed' }} className="dropdown-menu">
               <li><a className="dropdown-item my-1" href='/#clients'>Clients</a></li>
               <li><a className="dropdown-item my-1" href="/#testimonial">Testimonials</a></li>
               <li><a className="dropdown-item my-1" href="/#">Support Services</a></li>
@@ -47,7 +47,7 @@ const Navbar = () => {
             <a className="nav-link dropdown-toggle" href="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              Company
             </a>
-            <ul className="dropdown-menu">
+            <ul style={{ borderRadius: '0px', borderTop: '2px solid #4d7eed' }} className="dropdown-menu">
               <li><a className="dropdown-item my-1" href="/about">About Us</a></li>
               <li><a className="dropdown-item my-1" href="/#contactus">Contact Us</a></li>
               <li><a className="dropdown-item my-1" href="/#">Careers</a></li>
