@@ -25,7 +25,7 @@
   
    .element-suvarna {
     color: #ffffff;
-    font-family: "NotoSans-Regular", Helvetica;
+    font-family: "NotoSans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -51,7 +51,7 @@
   
    .text-wrapper-17 {
     color: #ffffff;
-    font-family:"HelveticaNeue-Medium", Helvetica;
+    font-family:"HelveticaNeue";
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -74,7 +74,7 @@
   
    .text-wrapper-18 {
     color: #ffffff;
-    font-family: "NotoSans-Regular", Helvetica;
+    font-family: "NotoSans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -97,7 +97,7 @@
   }
    .text-wrapper-19 {
     color: #ffffff;
-    font-family: "NotoSans-Regular", Helvetica;
+    font-family: "NotoSans";
     font-size: 16px;
     font-style: normal;
     cursor: pointer;
@@ -150,7 +150,7 @@
   
    .text-wrapper-20 {
     color: #ffffff;
-    font-family: "NotoSans-Regular", Helvetica;
+    font-family: "NotoSans";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -171,7 +171,7 @@
   
    .text-wrapper-21 {
     color: #ffffff;
-    font-family: "NotoSans-Regular", Helvetica;
+    font-family: "NotoSans";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -287,8 +287,7 @@ line-height: 150%;
   
    .text-wrapper-23 {
     color: rgba(43, 105, 151, 1);
-    
-    font-family: "HelveticaNeue-Bold", Helvetica;
+    font-family:"HelveticaNeue";
     font-size: 16px;
     font-style: normal;
     font-weight: 700;

@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { Button } from "../Button/Button";
 import { InputField } from "../InputField/InputField";
 import "../../../styles/ContactUSstyle.css";
 import ReCaptchaV2 from 'react-google-recaptcha';
@@ -46,7 +45,7 @@ export const ContactUsSection = () => {
           <div className="div-6">
           <ReCaptchaV2 sitekey="6Lc5m6MoAAAAAI6JEC1uBof42fSeF_2iTWIFAz5F" />
             <div className="frame-30">
-              <input className="check-square-svgrepo border-slate-950 border-2" alt="Check square svgrepo" type="checkbox"/>
+              <input className="check-square-svgrepo border-slate-950 border-2 cursor-pointer" alt="Check square svgrepo" type="checkbox"/>
               <p className="you-agree-to-our">
                 <span className="text-wrapper-10">You agree to our friendly </span>
                 <span className="text-wrapper-11">privacy policy</span>

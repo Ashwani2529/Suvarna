@@ -23,6 +23,7 @@
 }
 
 .index .slider-4 {
+  
   color: #2b6997 !important;
 }
 
@@ -193,7 +194,7 @@
 .index .text-wrapper-14 {
   /* color: rgba(109, 116, 122, 1); */
   color: #6D747A;
-  font-family: "Helvetica Neue-Regular", Helvetica;
+  font-family:"HelveticaNeue";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;

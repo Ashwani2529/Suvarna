@@ -12,6 +12,7 @@
     transition: transform 0.3s ease-in-out;
   }
   #shareimg{
+    cursor: pointer;
     z-index: 1;
     position: relative;
     left: 85%;
@@ -94,7 +95,16 @@
     position: relative;
     width: 4px;
   }
-  
+  .blog .text-wrapper-24{
+    color:#3C4043;
+    font-family:"HelveticaNeue";
+    font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; 
+letter-spacing: 0.02rem;
+
+  }
   .blog .frame-24 {
     height: 20px;
     position: relative;

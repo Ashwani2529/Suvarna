@@ -11,13 +11,12 @@
   }
   
   .large-button .REQUEST-a-DEMO {
-    font-family: "Helvetica Neue-Bold", Helvetica;
+    font-family:"HelveticaNeue";
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0;
     top:3.3px;
     line-height: 24px;
-    margin-top: -1px;
     position: relative;
     white-space: nowrap;
     width: fit-content;

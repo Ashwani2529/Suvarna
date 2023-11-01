@@ -36,10 +36,13 @@
     gap: 12px;
     position: relative;
   }
+  .recaptcha-checkbox-border{
+    cursor: pointer;
+  }
   
   .contact-us-section .text-wrapper-8 {
     color: rgba(8, 9, 10, 1);
-    font-family:"HelveticaNeue-Medium", Helvetica;
+    font-family:"HelveticaNeue";
     font-size:28px;
     font-style:normal;
     font-weight: 500;
