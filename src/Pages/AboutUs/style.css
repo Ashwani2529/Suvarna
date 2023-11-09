@@ -2,7 +2,7 @@
   background-color: #ffffff;
   height: 5567px;
   position: relative;
-  width:100%;
+  width: 100%;
 }
 
 .about .sections {
@@ -76,8 +76,8 @@
 .about .compliance-header-2 {
   color: rgba(60, 64, 67, 1);
   font-family: "NotoSans-Regular", Helvetica;
-  font-size:24px;
-  font-style:normal;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 400;
   letter-spacing: 0.24px;
   line-height: 150%;
@@ -89,17 +89,21 @@
   background-color: #ffffff;
   height: 845px;
   position: relative;
-  width:100%;
+  width: 100%;
 }
 
 .about .overlap {
   height: 690px;
   position: relative;
-  width:100%;
+  width: 100%;
 }
 
 .about .frame-wrapper {
-  background: linear-gradient(180deg, rgb(52.68, 148.75, 76.17) 16.15%, rgb(82.45, 111.36, 132.81) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(52.68, 148.75, 76.17) 16.15%,
+    rgb(82.45, 111.36, 132.81) 100%
+  );
   border-radius: 16px;
   height: 860px;
   left: 2%;
@@ -208,7 +212,7 @@
   background-position: 50% 50%;
   background-size: cover;
   height: 680px;
-  width:100%;
+  width: 100%;
 }
 
 .about .video-overlay {
@@ -231,16 +235,16 @@
 
 .about .polygon {
   height: 135px;
-    left: 63px;
-    position: absolute;
-    top: 48px;
-    width: 135px;
+  left: 63px;
+  position: absolute;
+  top: 48px;
+  width: 135px;
 }
 
 .about .frame-11 {
   height: 1110px;
   position: relative;
-  width:100%;
+  width: 100%;
 }
 
 .about .frame-12 {
@@ -250,7 +254,7 @@
   gap: 24px;
   position: absolute;
   top: 0;
-  width:100%;
+  width: 100%;
 }
 
 .about .frame-13 {
@@ -263,7 +267,7 @@
 }
 
 .about .compliance-header-5 {
-  color:rgba(43, 105, 151, 1);
+  color: rgba(43, 105, 151, 1);
   font-family: "Helvetica Neue-Bold", Helvetica;
   font-size: 48px;
   font-weight: 700;
@@ -282,7 +286,7 @@
 }
 
 .about .compliance-header-6 {
-  color:rgba(8, 9, 10, 1);
+  color: rgba(8, 9, 10, 1);
   font-family: "Noto Sans", Helvetica;
   font-size: 28px;
   font-weight: 400;
@@ -297,26 +301,29 @@
   height: 540px;
   position: absolute;
   top: 342px;
-  width:100%;
+  width: 100%;
 }
 
 .about .overlap-group-2 {
   height: 540px;
   position: relative;
-  width:100%;
+  width: 100%;
 }
 
 .about .div-wrapper {
-  
-  background: linear-gradient( 180deg, rgba(155.05, 211.44, 168.56, 0.56) 30.73%, rgba(186.47, 211.43, 229.5, 0.51) 100% );
+  background: linear-gradient(
+    180deg,
+    rgba(155.05, 211.44, 168.56, 0.56) 30.73%,
+    rgba(186.47, 211.43, 229.5, 0.51) 100%
+  );
   border-radius: 16px 16px 16px 16px;
   height: 740px;
-  right:3%;
-  overflow: hidden;
   position: absolute;
-  top: 0;
-  width: 50%;
-  
+  right: 0;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about .frame-14 {
@@ -340,7 +347,6 @@
   margin-top: -1px;
   position: relative;
   white-space: nowrap;
-  width: fit-content;
 }
 
 .about .compliance-header-8 {
@@ -352,16 +358,15 @@
   letter-spacing: 0.24px;
   line-height: 150%;
   position: relative;
-  width: 536px;
 }
 
 .about .pexels-pixabay {
   height: 632px;
-    object-fit: cover;
-    position: absolute;
-    top: 12%;
-    right: 48%;
-    width: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 12%;
+  right: 48%;
+  width: 50%;
 }
 
 .about .div-2 {
@@ -372,12 +377,12 @@
   gap: 48px;
   padding: 0px 0px;
   position: relative;
-  width:100%;
+  width: 100%;
 }
 
 .about .text-wrapper-6 {
-  color:rgba(60, 64, 67, 1);
-  font-family:"HelveticaNeue";
+  color: rgba(60, 64, 67, 1);
+  font-family: "NotoSans-Regular", Helvetica;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -402,7 +407,7 @@
 .about .story {
   height: 900px;
   position: relative;
-  width:100%;
+  width: 100%;
 }
 
 .about .overlap-group-3 {
@@ -416,7 +421,7 @@
   left: 0;
   position: absolute;
   top: 60px;
-  width:100%;
+  width: 100%;
 }
 
 .about .vector-2 {
@@ -424,7 +429,7 @@
   left: 0;
   top: 60px;
   position: absolute;
-  width:100%;
+  width: 100%;
 }
 
 .about .vector-3 {
@@ -432,17 +437,16 @@
   left: 0;
   position: absolute;
   top: -2px;
-  width:100%;
+  width: 100%;
 }
 
 .about .frame-15 {
- 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 40px;
-  top:18%;
+  top: 18%;
   justify-content: center;
   width: 100%;
   position: absolute;
@@ -455,7 +459,7 @@
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0px;
-  line-height:190%;
+  line-height: 190%;
   margin-top: -1px;
   position: relative;
   text-align: center;
@@ -496,11 +500,11 @@
 }
 
 .about .text-wrapper-7 {
-  color:rgba(60, 64, 67, 1);
+  color: rgba(60, 64, 67, 1);
   font-family: "HelveticaNeue-Bold", Helvetica;
   font-size: 36px;
   font-style: normal;
-  font-weight:700;
+  font-weight: 700;
   letter-spacing: 0px;
   line-height: 150%;
   margin-top: -1px;
@@ -515,7 +519,7 @@
   font-family: "HelveticaNeue-Regular", Helvetica;
   font-size: 20px;
   font-style: normal;
-  font-weight:400;
+  font-weight: 400;
   letter-spacing: 0.4px;
   line-height: 150%;
   position: relative;
@@ -550,7 +554,7 @@
   justify-content: center;
   padding: 100px 0px;
   position: relative;
-  width:100%;
+  width: 100%;
 }
 
 .about .frame-20 {
@@ -606,4 +610,39 @@
   height: 16px;
   position: relative;
   width: 16px;
+}
+
+.about .choose_card {
+  display: flex;
+  width: 312px;
+  height: 360px;
+  padding: 36px 24px;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 2px solid var(--Shade-Colour, #f1f7f9);
+  background: #fff;
+}
+
+.about .choose_card_header {
+  color: #000;
+  text-align: center;
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.about .choose_card_description {
+  color: #6d747a;
+  text-align: center;
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }

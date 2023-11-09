@@ -1,0 +1,56 @@
+.termsOfUse .heading {
+  color: #fff;
+  text-align: center;
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.termsOfUse .sub-header {
+  color: #000;
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.termsOfUse .regular-text {
+  color: #3c4043;
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.termsOfUse .last-updated-text {
+  color: #4c4b55;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.16px;
+}
+
+.termsOfUse .table-of-content-text {
+  color: #146dfa;
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.termsOfUse .sub-header-2 {
+  color: #000;
+  font-family: "NotoSans-Regular", Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.4px;
+}
