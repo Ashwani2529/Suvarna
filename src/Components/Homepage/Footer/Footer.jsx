@@ -14,7 +14,7 @@ export const Footer = () => {
       <div className="frame-51">
         <div className="text-wrapper-17">Useful Links</div>
         <div className="frame-52">
-          <div className="text-wrapper-18">Privacy policy</div>
+          <div className="text-wrapper-19">Privacy policy</div>
           <div className="text-wrapper-19">Terms of service</div>
           <div className="text-wrapper-19">Help</div>
           <div className="text-wrapper-19">Careers</div>

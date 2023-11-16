@@ -1,38 +1,58 @@
 import "./styles/App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Homepage } from "./Pages/Homepage/Homepage";
-import { AboutUs } from "./Pages/AboutUs/AboutUs";
-import { Clients } from "./Pages/Clients/Clients";
-import {TermsOfUse} from "./Pages/TermsOfUse/TermsOfUse";
-import { PrivacyPolicy } from "./Pages/PrivacyPolicy/PrivacyPolicy";
-import { ContactUs } from "./Pages/ContactUs/ContactUs";
-import {BrochuresAndCollateral} from "./Pages/BrochuresAndCollaterals/BrochuresAndCollaterals";
+
+// import components 
+import Header from "./Components/Header";
 
 
-import { RISPACS } from "./Pages/Products/RISPACS";
+//  import Pages
+
+import { Homepage } from "./Pages/Homepage";
+import { AboutUs } from "./Pages/AboutUs";
+import { Clients } from "./Pages/Clients";
+import {TermsOfUse} from "./Pages/TermsOfUse";
+import { PrivacyPolicy } from "./Pages/PrivacyPolicy";
+import { ContactUs } from "./Pages/ContactUs";
+import {BrochuresAndCollateral} from "./Pages/BrochuresAndCollaterals";
+import {UniqueJob} from "./Pages/UniqueJob";
+import { Integration } from "./Pages/Integration";
+import { Carrers } from "./Pages/Carrers";
+import Blogs from "./Pages/Blogs";
+import  UniqueBlog from "./Pages/UniqueBlog";
+import Gallery from "./Pages/Gallery";
+import Partners  from "./Pages/Partners";
+
+import { RISPACS } from "./Pages/Products/RISPACS.jsx";
 import { DMS } from "./Pages/Products/DMS";
 import { Edukares } from "./Pages/Products/Edukares";
 import { BIMIS } from "./Pages/Products/BIMIS";
 import { EMR } from "./Pages/Products/EMR";
 import { SLIMS } from "./Pages/Products/SLIMS";
 import { HIMS } from "./Pages/Products/HIMS";
-import { Integration } from "./Pages/Integration/Integration";
+
 
 
 function App() {
   return (
-    <div style={{ scrollBehavior: "smooth" }} className="App w-full">
+    <div style={{ scrollBehavior: "smooth" }} className="App w-screen relative">
       <Router>
+         <Header />
         <Routes>
           {/*  unique IDS */}
           <Route path="/" element={<Homepage />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/termsofuse" element={<TermsOfUse/>} />
-          <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
-          <Route path="/contactus" element={<ContactUs />} ></Route>
+           <Route path="/about" element={<AboutUs />} />
+           <Route path="/clients" element={<Clients />} />
+           <Route path="/termsofuse" element={<TermsOfUse/>} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy/>} /> 
+           <Route path="/contactus" element={<ContactUs />} ></Route> 
           <Route path="/integration" element={<Integration />} />
           <Route path="/brochuresandcollaterals" element={<BrochuresAndCollateral />} />
-
+          <Route path="/carrers" element={<Carrers />} />
+          <Route path="/apply/:id" element={<UniqueJob />} />
+          <Route path="/blogs" element={<Blogs />} ></Route>
+          <Route path="/blogs/:id" element={<UniqueBlog />}></Route>
+          <Route path="/gallery" element={<Gallery />}></Route>
+          <Route path="/partners" element={<Partners/>}></Route>
 
           {/* products  */}
           <Route path="/products/rispacs" element={<RISPACS />} />
@@ -42,8 +62,6 @@ function App() {
           <Route path="/products/emr" element={<EMR />} />
           <Route path="/products/slims" element={<SLIMS />} />
           <Route path="/products/hims" element={<HIMS />} />
-
-          <Route path="/clients" element={<Clients />} />
         </Routes>
       </Router>
     </div>

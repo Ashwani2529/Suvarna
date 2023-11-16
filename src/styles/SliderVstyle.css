@@ -213,7 +213,7 @@
 
 .slider-v .vector-2 {
   height: 297px;
-  left: 0;
+  left: -10px;
   position: absolute;
   top: 640px;
   width:100%;

@@ -57,7 +57,7 @@ export const SliderV = ({
                 </div>
               </div>
             </div>
-            <LargeButton className="large-button-instance" property1="solid-white" text="EXPLORE PRODUCTS" />
+            <LargeButton className="large-button-instance " property1="solid-white" text="EXPLORE PRODUCTS" />
           </>
         )}
 
