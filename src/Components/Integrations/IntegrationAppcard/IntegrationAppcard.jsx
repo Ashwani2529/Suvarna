@@ -15,7 +15,7 @@ export const IntegrationAppcard = ({
   text6 = "WhatsApp",
 }) => {
   return (
-    <div className="integration-app-card">
+    <div className="integration-app-card mr-[21px] mb-[21px]">
       <IntegrationLogo
         className={`${
           property1 === "payments"

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Footer } from "../Components/Homepage/Footer/Footer";
 import { Link } from "react-router-dom";
 import "../styles/Blogs.css";
@@ -130,6 +130,13 @@ const UniqueBlog = () => {
       type: "Legal & Regulatory",
     },
   ];
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    return(()=>{
+      return null
+    });
+  },[])
 
   return (
     <>
@@ -650,7 +657,7 @@ const UniqueBlog = () => {
                     Privacy Policy
                   </div>
                 </div>
-                <input type="submit" className="gradient-div-button" />
+                <input type="submit" className="gradient-div-button text-white" />
               </form>
             </div>
           </div>

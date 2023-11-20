@@ -19,7 +19,7 @@ const SmallGreenWave = (props) => {
         <div className="heading">
             {props.heading}
         </div>
-        <div className="sub-heading">
+        <div className="sub-heading w-3/4">
             {props.subheading}
         </div>
       </div>

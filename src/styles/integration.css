@@ -503,3 +503,7 @@
     line-height: 150%;
     letter-spacing: 0.64px;
   }
+
+  .removeDefaultScrollStyle::-webkit-scrollbar{
+     display: none;
+  }

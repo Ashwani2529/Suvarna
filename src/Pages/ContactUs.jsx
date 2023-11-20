@@ -65,7 +65,8 @@ export const ContactUs = () => {
       </div>
 
       <div className="h-[2050px] w-screen flex flex-col justify-start items-center  mt-40">
-        <div className="lg:w-10/12 md:w-11/12 w-full">
+        <div className="lg:w-10/12 md:w-11/12 w-full flex flex-col justify-center items-center">
+          {/*  details */}
           <div className="w-full h-[500px] flex items-center justify-center ">
             <div className="w-1/2 h-4/5 flex flex-col justify-start items-start">
               <div className="sub-header">Contact Details</div>
@@ -170,7 +171,7 @@ export const ContactUs = () => {
           </div>
 
            {/*  contact us form */}
-           <ContactUsSection checkSquareSvgrepo="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/check-square-svgrepo-com-1-1.svg" />
+           <ContactUsSection className="" checkSquareSvgrepo="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/check-square-svgrepo-com-1-1.svg" />
         </div>
       </div>
 

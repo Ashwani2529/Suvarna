@@ -106,27 +106,23 @@ const Header = () => {
                 aria-expanded="false"
                 onMouseOver={(e) => {
                   setDropdownVisible(true);
-                  var childNode = e.target.childNodes;
-                  if (childNode && e.target.tagName === "A")
-                    childNode[1].style.transform = "rotate(180deg)";
+                  
                 }}
                 onMouseLeave={(e) => {
                   setDropdownVisible(false);
-                  var childNode = e.target.childNodes;
+                  
 
-                  if (childNode && e.target.tagName === "A")
-                    childNode[1].style.transform = "rotate(0deg)";
                 }}
               >
                 Products
-                <FaChevronDown className={`mx-1 text-[16px] relative`} />
+                <FaChevronDown className={`mx-1 text-[12px] relative`} />
               </a>
               <ul
                 style={{
                   borderRadius: "0px",
                   borderTop: "2px solid #4d7eed",
                   minWidth: "max-content",
-                  marginTop : "600px"
+                  marginTop : "575px"
                 }}
                 className={`dropdown-menu ${isDropdownVisible ? "show" : ""}`}
                 onMouseOver={() => {
@@ -277,23 +273,16 @@ const Header = () => {
                 aria-expanded="false"
                 onMouseOver={(e) => {
                   setDropdownVisibleClients(true);
-                  var childNode = e.target.childNodes;
-                  console.log(childNode, e.target.tagName);
-                  if (childNode && e.target.tagName === "A")
-                    childNode[1].style.transform = "rotate(180deg)";
+                  
                 }}
                 onMouseLeave={(e) => {
                   setDropdownVisibleClients(false);
-                  var childNode = e.target.childNodes;
-                  if (childNode && e.target.tagName === "A")
-                    childNode[1].style.transform = "rotate(0deg)";
+                  
                 }}
               >
                 Clients
                 <FaChevronDown
-                  className={`mx-1 text-[16px] ${
-                    isDropdownVisibleClients ? "rotate-180" : "rotate-0"
-                  }`}
+                  className={`mx-1 text-[12px]`}
                 />
               </a>
               <ul
@@ -376,19 +365,15 @@ const Header = () => {
                 aria-expanded="false"
                 onMouseOver={(e) => {
                   setDropdownVisibleCompany(true);
-                  var childNode = e.target.childNodes;
-                  if (childNode && e.target.tagName === "A")
-                    childNode[1].style.transform = "rotate(180deg)";
+                  
                 }}
                 onMouseLeave={(e) => {
                   setDropdownVisibleCompany(false);
-                  var childNode = e.target.childNodes;
-                  if (childNode && e.target.tagName === "A")
-                    childNode[1].style.transform = "rotate(0deg)";
+                  
                 }}
               >
                 Company
-                <FaChevronDown className="mx-1 text-[16px]" />
+                <FaChevronDown className="mx-1 text-[12px]" />
               </a>
               <ul
                 style={{
@@ -545,7 +530,7 @@ const Header = () => {
       </header>
 
       {isSupportVisible ? (
-        <div className="w-screen h-screen fixed top-0 left-0 flex justify-center items-center support z-50 support-backdrop">
+        <div className="w-screen h-screen fixed top-0 left-0 flex justify-center items-center support support-backdrop" style={{zIndex : 999999}}>
           <div className="w-[376px] h-[388px] flex flex-col justify-start items-center bg-white p-4 support-card">
             <div className="p-2 w-full flex justify-center items-center relative">
               <span className="support-header font-medium">
