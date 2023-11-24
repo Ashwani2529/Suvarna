@@ -2,41 +2,45 @@ import PropTypes from "prop-types";
 import React from "react";
 import "../../../styles/Partnerstyle.css";
 
-export const Partners = ({ className, text = "Trusted by partners across the globe" }) => {
+export const Partners = ({ text = "Trusted by partners across the globe" }) => {
   return (
-    <div className={`partners ${className}`}>
-      <p className="compliance-header">{text}</p>
-      <div className="compliance-logos">
-        <img
-          className="image-7"
-          alt="Image"
-          src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-7@2x.png"
-        />
-        <img
-          className="image-8"
-          alt="Image"
-          src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-8.png"
-        />
-        <img
-          className="image-9"
-          alt="Image"
-          src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-12.png"
-        />
-        <img
-          className="image-10"
-          alt="Image"
-          src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-11.png"
-        />
-        <img
-          className="image-11"
-          alt="Image"
-          src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-9.png"
-        />
-        <img
-          className="image-12"
-          alt="Image"
-          src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-10.png"
-        />
+    <div className={`h-[300px] w-screen mb-[60px] flex justify-center items-center my-[60px]`}>
+      <div className="lg:w-10/12 md:w-11/12 w-full flex flex-col justify-center items-start ">
+        <div className="w-full  md:text-[28px] text-[30px] text-[#6D747A] font-medium mb-[64px] text-center">
+          {text}
+        </div>
+        <div className="w-full flex justify-evenly items-center">
+          <img
+            className="w-[81.809px] h-[56px]"
+            alt="partners_logo"
+            src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-7@2x.png"
+          />
+          <img
+            className="w-[81.809px] h-[56px]"
+            alt="partners_logo"
+            src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-8.png"
+          />
+          <img
+            className="w-[81.809px] h-[56px]"
+            alt="partners_logo"
+            src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-12.png"
+          />
+          <img
+            className="w-[81.809px] h-[56px]"
+            alt="partners_logo"
+            src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-11.png"
+          />
+          <img
+            className="w-[81.809px] h-[56px]"
+            alt="partners_logo"
+            src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-9.png"
+          />
+          <img
+            className="w-[81.809px] h-[56px]"
+            alt="partners_logo"
+            src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-10.png"
+          />
+        </div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import "../../../styles/Navbarstyle.css";
 import "../../../styles/SupportModalStyle.css";
 import { FaChevronDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isSupportVisible, setIsSupportVisible] = useState(false);
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -97,9 +98,9 @@ const Navbar = () => {
                       </p>
                     </li>
                     <li>
-                      <a className="dropdown-item my-2" href="/products/bimis">
+                      <Link className="dropdown-item my-2" to="/products/bims">
                         BI & MIS
-                      </a>
+                      </Link>
                       <p className="text-sm ml-4">
                         Business Intelligence & MIS
                       </p>

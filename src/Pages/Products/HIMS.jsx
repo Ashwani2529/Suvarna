@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect} from "react";
 import {ProductsPre} from "../../Components/Products/ProductsPre/ProductsPre";
 import Navbar from "../../Components/Homepage/Navbar/Navbar";
 import { LogoHeader } from "../../Components/Homepage/LogoHeader/LogoHeader";
@@ -12,6 +12,14 @@ export const HIMS= () => {
   let cardHead4 = "Supply Chain Management";
   let cardHead5 = "Operations Management";
   let cardHead6 = "Digital Presence";
+  
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    return(()=>{
+      return null
+    });
+  },[])
+
   return (
     <div className="relative w-full h-[6710px] bg-white" >
       <div className="inline-flex flex-col items-center gap-[120px] absolute top-[97px] left-0 w-full">

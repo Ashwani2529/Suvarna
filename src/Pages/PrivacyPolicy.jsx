@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect} from "react";
 
 import { LogoHeader } from "../Components/AboutUs/LogoHeader/LogoHeader";
 // import "./style.css";
@@ -11,6 +11,14 @@ import vector2 from "../assets/Vector 2.png";
 import vector3 from "../assets/Vector 3.png";
 
 export const PrivacyPolicy = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    return(()=>{
+      return null
+    });
+  },[])
+
   return (
     <div className="PrivacyPolicy h-auto flex-col justify-start items-center">
       {/*  vectors + heading */}

@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect} from "react";
 import {ProductsPre} from "../../Components/Products/ProductsPre/ProductsPre";
 import Navbar from "../../Components/Homepage/Navbar/Navbar";
 import { LogoHeader } from "../../Components/Homepage/LogoHeader/LogoHeader";
@@ -8,6 +8,14 @@ import { ProductsProRis } from "../../Components/Products/ProductsPro/ProductsPr
 export const RISPACS = () => {
    let cardHead1 = "PACS/ Modality Integration";
   let cardHead2 = "Radiology Workflow Management";
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    return(()=>{
+      return null
+    });
+  },[])
+
   return (
     <div className="relative w-full h-[3504px] bg-white">
       <div className="inline-flex flex-col items-center gap-[120px] absolute top-[97px] left-0 w-full">

@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect} from "react";
 import {ProductsPre} from "../../Components/Products/ProductsPre/ProductsPre";
 import Navbar from "../../Components/Homepage/Navbar/Navbar";
 import { LogoHeader } from "../../Components/Homepage/LogoHeader/LogoHeader";
@@ -9,6 +9,14 @@ export const SLIMS = () => {
    let cardHead1 = "Revenue Cycle Management";
   let cardHead2 = "Radiology  Information System";
   let cardHead3 = "Patient Engagement - (CRM)";
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    return(()=>{
+      return null
+    });
+  },[])
+
   return (
     <div className="relative w-full h-[3504px] bg-white">
       <div className="inline-flex flex-col items-center gap-[120px] absolute top-[97px] left-0 w-full">

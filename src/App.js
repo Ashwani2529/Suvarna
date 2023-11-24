@@ -25,14 +25,23 @@ import Partners  from "./Pages/Partners";
 import { RISPACS } from "./Pages/Products/RISPACS.jsx";
 import { DMS } from "./Pages/Products/DMS";
 import { Edukares } from "./Pages/Products/Edukares";
-import { BIMIS } from "./Pages/Products/BIMIS";
+import { BIMS } from "./Pages/Products/BIMS";
 import { EMR } from "./Pages/Products/EMR";
 import { SLIMS } from "./Pages/Products/SLIMS";
 import { HIMS } from "./Pages/Products/HIMS";
+import { useEffect } from "react";
 
 
 
 function App() {
+  
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    return(()=>{
+      return null
+    });
+  },[])
+
   return (
     <div style={{ scrollBehavior: "smooth" }} className="App w-screen relative">
       <Router>
@@ -58,7 +67,7 @@ function App() {
           <Route path="/products/rispacs" element={<RISPACS />} />
           <Route path="/products/dms" element={<DMS />} />
           <Route path="/products/edukares" element={<Edukares />} />
-          <Route path="/products/bimis" element={<BIMIS />} />
+          <Route path="/products/bimis" element={<BIMS />} />
           <Route path="/products/emr" element={<EMR />} />
           <Route path="/products/slims" element={<SLIMS />} />
           <Route path="/products/hims" element={<HIMS />} />

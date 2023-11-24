@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import { LogoHeader } from "../Components/AboutUs/LogoHeader/LogoHeader";
 // import "./style.css";
@@ -21,6 +21,12 @@ import bengaluru from "../assets/Bengaluru.png";
 
 export const ContactUs = () => {
 
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    return(()=>{
+      return null
+    });
+  },[])
 
     const offices = [{
         id : 1,

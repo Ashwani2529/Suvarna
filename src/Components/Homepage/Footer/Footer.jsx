@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../styles/footer.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 export const Footer = () => {
   let navigate = useNavigate();
   return (
@@ -14,11 +14,11 @@ export const Footer = () => {
       <div className="frame-51">
         <div className="text-wrapper-17">Useful Links</div>
         <div className="frame-52">
-          <div className="text-wrapper-19">Privacy policy</div>
-          <div className="text-wrapper-19">Terms of service</div>
+          <Link to="/privacypolicy" className="text-wrapper-19">Privacy policy</Link>
+          <Link to="/termsofuse" className="text-wrapper-19">Terms of service</Link>
           <div className="text-wrapper-19">Help</div>
-          <div className="text-wrapper-19">Careers</div>
-          <div className="text-wrapper-19">Contact Us</div>
+          <Link to="/carrers" className="text-wrapper-19">Careers</Link>
+          <Link to="/contactus" className="text-wrapper-19">Contact Us</Link>
         </div>
       </div>
       <div className="frame-53">

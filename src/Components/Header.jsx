@@ -20,7 +20,7 @@ const Header = () => {
       <header
         style={{
           width: "100vw",
-          height: "100px",
+          height: "80px",
           display: "flex",
           justifyContent: "between",
           alignItems: "center",

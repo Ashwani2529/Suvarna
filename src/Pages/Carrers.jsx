@@ -16,35 +16,16 @@ import location from "../assets/location-pin-svgrepo-com 1.png";
 import timer from "../assets/Group.png";
 
 export const Carrers = () => {
-  const scrollTo = (direction, amount, ref) => {
-    if (ref.current) {
-      const container = ref.current;
-      const currentScrollLeft = container.scrollLeft;
-      const targetScrollLeft =
-        direction === "left"
-          ? currentScrollLeft - amount
-          : currentScrollLeft + amount;
-      const duration = 500; // Animation duration in milliseconds, adjust as needed
-      const startTime = performance.now();
-
-      function scrollStep(timestamp) {
-        const progress = (timestamp - startTime) / duration;
-        if (progress < 1) {
-          container.scrollLeft =
-            currentScrollLeft +
-            (targetScrollLeft - currentScrollLeft) * progress;
-          requestAnimationFrame(scrollStep);
-        } else {
-          container.scrollLeft = targetScrollLeft;
-        }
-      }
-
-      requestAnimationFrame(scrollStep);
-    }
-  };
 
   const [isExpanded, setIsExpanded] = useState(false);
-  const [id, setId] = useState(false);
+  const [id, setId] = useState(0);
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    return(()=>{
+      return null
+    });
+  },[])
 
   return (
     <div className="Carrers flex flex-col justify-start items-center relative">

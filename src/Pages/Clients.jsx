@@ -195,28 +195,35 @@ export const Clients = () => {
     }
   };
 
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    return(()=>{
+      return null
+    });
+  },[])
+
   return (
     <div className="clients flex flex-col justify-start items-center relative">
       <div className="w-screen h-screen flex items-center justify-center relative">
         {/*  frame -6 */}
-        <div className="lg:w-10/12 md:w-11/12 w-full flex flex-col justify-start items-start relative z-10 ">
-          <div className="compliance-header lg:w-4/6 w-screen">
+        <div className="lg:w-10/12 md:w-11/12 w-full flex flex-col justify-start items-start relative z-10 md:p-0 p-2">
+          <div className="md:text-[48px] text-[40px] text-white font-bold lg:w-4/6 w-full">
             A legacy of collaboration, with 1000+ satisfied clients worldwide.
           </div>
-          <div className="frame-7">
-            <p className="compliance-header-2">
+          <div className="lg:w-1/2 md:w-2/3 w-11/12 flex flex-col justify-center items-start my-2">
+            <p className="md:text-[20px] text-[16px] text-white font-normal my-3">
               Our philosophy of attention to detail & quality has given us an
               opportunity to work with the best healthcare providers globally.
               Our clients implicitly trust us and consider us as their trusted
               partner in their digital transformation.
             </p>
-            <p className="compliance-header-2">
+            <p className="md:text-[20px] text-[16px] text-white font-normal my-3">
               In the 2 decades of our journey, we have worked with 1000+
               healthcare providers of all sizes. Today we are proud to say that
               we are here because of our clients and they are our brand
               ambassadors.
             </p>
-            <p className="compliance-header-2">
+            <p className="md:text-[20px] text-[16px] text-white font-normal my-3">
               Our clients include nursing homes, small hospitals, multi
               specialty hospitals, corporate hospital chains, medical colleges,
               standalone labs, multi-city diagnostic chains, pharmacy outlets
@@ -233,14 +240,14 @@ export const Clients = () => {
           <img
             src="../../assets/Ellipse 301.png"
             alt="polygon"
-            className="w-screen lg:h-auto md:min-h-screen min-h-screen flex justify-center items-center"
+            className="lg:w-screen md:w-screen lg:h-auto md:min-h-screen min-h-screen w-[150%] flex justify-center items-center"
           />
         </div>
       </div>
 
       {/*  clients  */}
-      <div className="w-screen h-screen flex flex-col justify-start items-center relative mt-64">
-        <div className="w-10/12 compliance-header text-black flex justify-start items-center">
+      <div className="w-screen h-screen flex flex-col justify-start items-center relative mt-[120px] mb-[60px]">
+        <div className="w-10/12 md:text-[48px] text-[40px] font-bold text-black flex justify-start items-center">
           Our Clientele
         </div>
 
@@ -250,7 +257,7 @@ export const Clients = () => {
             onClick={() => {
               setFilter("all");
             }}
-            className={`sub-header-2 mx-2 ${
+            className={`font-medium text-[20px] mx-2 ${
               filter === "all" ? "border-b-4 border-blue-500" : "border-0"
             }`}
           >
@@ -275,7 +282,7 @@ export const Clients = () => {
         </div>
 
         <div
-          className="lg:w-10/12 md:w-11/12 w-full h-[850px] flex flex-wrap justify-start items-start overflow-x-scroll removeScrollDefaultStyling"
+          className="lg:w-10/12 md:w-11/12 w-full h-[1080px] flex flex-wrap justify-start items-start overflow-x-scroll removeScrollDefaultStyling"
           ref={scrollableClientRef}
         >
           <div className="min-w-[4000px] h-full overflow-x-hidden overflow-y-hidden flex flex-wrap ">
@@ -289,7 +296,7 @@ export const Clients = () => {
           </div>
         </div>
 
-        <div className="w-[324px] flex justify-between items-center">
+        <div className="w-[324px] flex justify-between items-center lg:py-4 md:py-8 py-[60px]">
           <button
             type="button"
             className={`h-12 w-12 ${
@@ -310,7 +317,7 @@ export const Clients = () => {
           >
             <FaArrowLeft />
           </button>
-          <div className="text-[#6D747A] font-medium sub-header-4">
+          <div className="text-[#6D747A] font-medium sub-header-4 md:block hidden">
             {index}/4
           </div>
 
@@ -337,7 +344,7 @@ export const Clients = () => {
 
       {/*  reviews */}
 
-      <div className="w-screen h-screen flex justify-center items-center bg-white mt-64">
+      <div className="w-screen h-screen flex justify-center items-center bg-white my-[60px]">
         <div className="w-10/12 h-full flex flex-row justify-start items-center relative bg-white">
           <div className="w-1/3 h-5/6 compliance-header text-black flex justify-start items-start ">
             <div className="w-3/4">Here’s what clients have to say</div>
@@ -440,9 +447,9 @@ export const Clients = () => {
         </div>
       </div>
 
-      <div className="absolute w-screen bottom-0">
+      
         <Footer />
-      </div>
+      
     </div>
   );
 };

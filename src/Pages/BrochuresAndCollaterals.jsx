@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/BrochuresAndCollateral.css";
 import SmallGreenWave from "../Components/SmallGreenWave";
 import { Footer } from "../Components/Homepage/Footer/Footer";
@@ -60,6 +60,13 @@ export const BrochuresAndCollateral = () => {
 
   const [isMouseOver, setIsMouseOver] = useState(false);
   const [cardId, setCardId] = useState(0);
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    return(()=>{
+      return null
+    });
+  },[])
 
   return (
     <div className="BrochuresAndCollateral h-auto flex-col justify-start items-center ">

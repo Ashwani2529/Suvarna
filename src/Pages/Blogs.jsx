@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef , useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { Property1LeftDisabled } from "../Components/Homepage/icons/Property1LeftDisabled/Property1LeftDisabled";
@@ -131,6 +131,13 @@ const Blogs = () => {
       type: "Legal & Regulatory",
     },
   ];
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    return(()=>{
+      return null
+    });
+  },[])
 
   return (
     <div className="w-srceen h-[2493px] flex flex-col justify-start items-start">

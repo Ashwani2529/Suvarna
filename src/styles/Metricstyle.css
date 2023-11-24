@@ -4,9 +4,9 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 36px;
   height: 276px;
   justify-content: center;
+  align-items: center;
   padding: 24px;
   position: relative;
   cursor: pointer;
@@ -56,7 +56,7 @@
   width: 100%;
 }
 
-.metric:hover {
+.logistic_card_hover:hover {
   background: linear-gradient(180deg, rgba(52.68, 148.75, 76.17, 0.1) 16.15%, rgba(82.45, 111.36, 132.81, 0.1) 100%);
 }
 

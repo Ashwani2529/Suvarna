@@ -130,12 +130,16 @@ export const SliderV = ({
               vectorPropertyDefaultClassName={sliderNewVectorPropertyDefaultClassNameOverride}
               vectorPropertyDefaultClassNameOverride={sliderNewVectorPropertyDefaultClassName}
             />
-            <LargeButton
+            
+             <div className="bg-red-900 w-full justify-center items-center">
+             <LargeButton
               className={largeButtonPropertyOutlineClassName}
               divClassName={largeButtonDivClassName}
               property1="solid-white"
               text="EXPLORE PRODUCTS"
             />
+             </div>
+
             <div className="metrics-left">
               <Frame
                 className="frame-482671"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import { Button } from "../Components/AboutUs/Button/Button";
 import { Founder } from "../Components/AboutUs/Founder/Founder";
 import "../styles/About.css";
@@ -44,6 +44,13 @@ export const AboutUs = () => {
       image: SPRADollar,
     },
   ];
+  
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    return(()=>{
+      return null
+    });
+  },[])
 
   return (
     <div className="about">
@@ -53,8 +60,7 @@ export const AboutUs = () => {
           <div className="frame-7">
             <p className="p">
               <span className="span">We help healthcare businesses </span>
-              <span className="text-wrapper-2">succeed</span>
-              <span className="text-wrapper-3"> </span>
+              <span className="text-wrapper-2"> {" "} succeed { " " }</span>
               <span className="span">
                 in their digital transformation journey
               </span>
@@ -264,13 +270,13 @@ export const AboutUs = () => {
               <div className="frame-17">
                 <div className="text-wrapper-7">Meet our Leadership Team</div>
               </div>
-              <p className="compliance-header-11">
+              <p className="text-[20px] text-[#6D747A] font-normal md:px-0 px-2">
                 Our founding team combines seasoned professionals and tech
                 visionaries with decades of experience, uniting their expertise
                 to drive innovation in the industry.
               </p>
             </div>
-            <div className="frame-18">
+            <div className="lg:w-10/12 md:w-11/12 w-full flex md:flex-row flex-col justify-evenly items-center">
               <Founder />
               <Founder
                 maskGroup="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/652628729ce07dec6d44e4db/img/mask-group-2@2x.png"

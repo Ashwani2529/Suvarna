@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.index::-webkit-scrollbar{
+  display: none;
+}
+
 .index .slider-v2 {
   background-image: url(https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/6525973795dd5c4c0357416c/img/vector-5-3.svg) !important;
   left: 0 !important;

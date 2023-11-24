@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import SmallGreenWave from "../Components/SmallGreenWave";
 
 const Gallery = () => {
   const [type, setType] = useState("videos");
   const [id, setId] = useState(0);
   const [isModalDisplayed, setIsModalDisplayed] = useState(false);
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    return(()=>{
+      return null
+    });
+  },[])
 
   return (
     <>
