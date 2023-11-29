@@ -1,15 +1,17 @@
-import React, { useState, useRef } from "react";
-import {Link} from "react-router-dom";
+import React, { useState, useRef, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { FaAlignCenter, FaChevronDown } from "react-icons/fa";
 
 //  import styles
 import "../styles/Navbarstyle.css";
-import "../styles/SupportModalStyle.css"
+import "../styles/SupportModalStyle.css";
 
 //  importing logo
 import logo_header from "../assets/logo_header.png";
 
 const Header = () => {
+  const location = useLocation();
+
   const [isSupportVisible, setIsSupportVisible] = useState(false);
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [isDropdownVisibleClients, setDropdownVisibleClients] = useState(false);
@@ -30,12 +32,15 @@ const Header = () => {
           backgroundColor: "white",
         }}
       >
-        <div style={{ display: "flex", justifyContent: "center" , paddingLeft : "40px" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            paddingLeft: "40px",
+          }}
+        >
           <Link to="/">
-          <img
-            src={logo_header}
-            alt="logo_header"
-          />
+            <img src={logo_header} alt="logo_header" />
           </Link>
         </div>
 
@@ -47,9 +52,8 @@ const Header = () => {
             justifyContent: "center",
             alignItems: "center",
             // backgroundColor: "yellow",
-            paddingRight : "40px",
-            paddingLeft : "40px"
-
+            paddingRight: "40px",
+            paddingLeft: "40px",
           }}
         >
           <ul
@@ -66,7 +70,7 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight : "20px",
+                marginRight: "20px",
               }}
               className="nav-link-no-dropdown"
             >
@@ -88,7 +92,7 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight : "20px",
+                marginRight: "20px",
               }}
               className="nav-item dropdown"
             >
@@ -106,12 +110,9 @@ const Header = () => {
                 aria-expanded="false"
                 onMouseOver={(e) => {
                   setDropdownVisible(true);
-                  
                 }}
                 onMouseLeave={(e) => {
                   setDropdownVisible(false);
-                  
-
                 }}
               >
                 Products
@@ -122,7 +123,7 @@ const Header = () => {
                   borderRadius: "0px",
                   borderTop: "2px solid #4d7eed",
                   minWidth: "max-content",
-                  marginTop : "575px"
+                  marginTop: "575px",
                 }}
                 className={`dropdown-menu ${isDropdownVisible ? "show" : ""}`}
                 onMouseOver={() => {
@@ -256,7 +257,7 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight : "20px",
+                marginRight: "20px",
               }}
               className="nav-item dropdown"
             >
@@ -273,24 +274,19 @@ const Header = () => {
                 aria-expanded="false"
                 onMouseOver={(e) => {
                   setDropdownVisibleClients(true);
-                  
                 }}
                 onMouseLeave={(e) => {
                   setDropdownVisibleClients(false);
-                  
                 }}
               >
                 Clients
-                <FaChevronDown
-                  className={`mx-1 text-[12px]`}
-                />
+                <FaChevronDown className={`mx-1 text-[12px]`} />
               </a>
               <ul
                 style={{
                   borderRadius: "0px",
                   borderTop: "2px solid #4d7eed",
-                  marginTop : "160px"
-
+                  marginTop: "160px",
                 }}
                 className={`dropdown-menu ${
                   isDropdownVisibleClients ? "show" : ""
@@ -316,17 +312,31 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    style={{
-                      display: "flex",
-                      justifyContent: "between",
-                      alignItems: "center",
-                    }}
-                    className="dropdown-item my-1"
-                    href="/#testimonial"
-                  >
-                    Testimonials
-                  </a>
+                  {location.pathname === "/clients" ? (
+                    <a
+                      href="#testimonials"
+                      style={{
+                        display: "flex",
+                        justifyContent: "between",
+                        alignItems: "center",
+                      }}
+                      className="dropdown-item my-1"
+                    >
+                      Testimonials
+                    </a>
+                  ) : (
+                    <Link
+                      to={"/clients"}
+                      style={{
+                        display: "flex",
+                        justifyContent: "between",
+                        alignItems: "center",
+                      }}
+                      className="dropdown-item my-1"
+                    >
+                      Testimonials
+                    </Link>
+                  )}
                 </li>
                 <li>
                   <a
@@ -348,7 +358,7 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight : "20px",
+                marginRight: "20px",
               }}
               className="nav-item dropdown"
             >
@@ -365,11 +375,9 @@ const Header = () => {
                 aria-expanded="false"
                 onMouseOver={(e) => {
                   setDropdownVisibleCompany(true);
-                  
                 }}
                 onMouseLeave={(e) => {
                   setDropdownVisibleCompany(false);
-                  
                 }}
               >
                 Company
@@ -379,8 +387,7 @@ const Header = () => {
                 style={{
                   borderRadius: "0px",
                   borderTop: "2px solid #4d7eed",
-                  marginTop : "240px"
-
+                  marginTop: "240px",
                 }}
                 className={`dropdown-menu ${
                   isDropdownVisibleCompany ? "show" : ""
@@ -464,7 +471,7 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight : "20px",
+                marginRight: "20px",
               }}
               className="nav-link-no-dropdown"
             >
@@ -485,7 +492,7 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight : "20px",
+                marginRight: "20px",
               }}
               className="nav-link-no-dropdown"
             >
@@ -506,7 +513,7 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight : "20px",
+                marginRight: "20px",
               }}
               className="nav-item"
             >
@@ -530,7 +537,10 @@ const Header = () => {
       </header>
 
       {isSupportVisible ? (
-        <div className="w-screen h-screen fixed top-0 left-0 flex justify-center items-center support support-backdrop" style={{zIndex : 999999}}>
+        <div
+          className="w-screen h-screen fixed top-0 left-0 flex justify-center items-center support support-backdrop"
+          style={{ zIndex: 999999 }}
+        >
           <div className="w-[376px] h-[388px] flex flex-col justify-start items-center bg-white p-4 support-card">
             <div className="p-2 w-full flex justify-center items-center relative">
               <span className="support-header font-medium">

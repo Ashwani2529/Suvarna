@@ -100,16 +100,11 @@
 
 .about .frame-wrapper {
   background: linear-gradient(
-    180deg,
+    135deg,
     rgb(52.68, 148.75, 76.17) 16.15%,
-    rgb(82.45, 111.36, 132.81) 100%
+    #4690C7 63.5%
   );
   border-radius: 16px;
-  height: 860px;
-  left: 2%;
-  position: absolute;
-  top: 0;
-  width: 50%;
 }
 
 .about .frame-8 {
@@ -199,12 +194,9 @@
   background-color: #d5dde6;
   border-radius: 16px;
   box-shadow: 0px 4px 24px 4px rgba(0, 0, 0, 0.15);
-  height: 680px;
-  left: 44%;
   overflow: hidden;
   position: absolute;
-  top: 90px;
-  width: 50%;
+
 }
 
 .about .overlap-group {
@@ -313,7 +305,7 @@
 .about .div-wrapper {
   background: linear-gradient(
     180deg,
-    rgba(155.05, 211.44, 168.56, 0.56) 30.73%,
+    #35C057 8.97%,
     rgba(186.47, 211.43, 229.5, 0.51) 100%
   );
   border-radius: 16px 16px 16px 16px;
@@ -614,8 +606,6 @@
 
 .about .choose_card {
   display: flex;
-  width: 312px;
-  height: 360px;
   padding: 36px 24px;
   flex-direction: column;
   align-items: center;
@@ -644,4 +634,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+
+.about .onMission{
+  background: linear-gradient(145deg, rgba(57, 208, 94, 0.30) 8.97%, rgba(70, 144, 199, 0.30) 63.5%);
 }

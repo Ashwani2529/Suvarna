@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/BrochuresAndCollateral.css";
 import SmallGreenWave from "../Components/SmallGreenWave";
-import { Footer } from "../Components/Homepage/Footer/Footer";
+import { Footer } from "../Components/Footer";
 
 import BrochuresAndCollateralVector from "../assets/ContactUs_Vector.png";
 import PDF_icon from "../assets/pdf_icon.png";
@@ -75,8 +75,8 @@ export const BrochuresAndCollateral = () => {
       <SmallGreenWave heading="Brochures & Collaterals" subheading="Find up-to-date information on our whole suite of products &
             services" />
 
-      <div className="h-[700px] w-screen flex flex-col justify-start items-center my-64">
-        <div className="lg:w-10/12 md:w-11/12 w-full flex flex-wrap justify-center items-center">
+      <div className="h-[700px] w-screen flex flex-col justify-start items-center md:my-32 my-[60px]">
+        <div className="lg:w-10/12 md:w-11/12 w-full flex flex-wrap justify-center items-center py-[60px]">
           {files.map((d, index) => {
             return (
               <div
@@ -184,10 +184,11 @@ export const BrochuresAndCollateral = () => {
             );
           })}
         </div>
+        <Footer className="mt-[32px]" />
       </div>
 
       {/*  same for every page  */}
-      <Footer className="" />
+      
     </div>
   );
 };

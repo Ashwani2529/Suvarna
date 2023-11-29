@@ -46,31 +46,31 @@ export const IntegrationAppcard = ({
         </div>
         <div className="manage-your-payments">
           {property1 === "payments" && (
-            <p className="text-wrapper-16">Manage your payments at ease with quick integration.</p>
+            <p className="md:text-[16px] text-[14px] text-[#6D747A]">Manage your payments at ease with quick integration.</p>
           )}
 
           {property1 === "accounting" && (
-            <p className="text-wrapper-16">Integrate easily with Accounting, ERP &amp; CRM tools.</p>
+            <p className="md:text-[16px] text-[14px] text-[#6D747A]">Integrate easily with Accounting, ERP &amp; CRM tools.</p>
           )}
 
           {property1 === "PACS" && (
-            <p className="text-wrapper-16">Integrated Picture Archiving and Communications System (PACS).</p>
+            <p className="md:text-[16px] text-[14px] text-[#6D747A]">Integrated Picture Archiving and Communications System (PACS).</p>
           )}
 
           {property1 === "lab-analyzer" && (
-            <p className="text-wrapper-16">Seamlessly connect with your favourite lab analyser tools.</p>
+            <p className="md:text-[16px] text-[14px] text-[#6D747A]">Seamlessly connect with your favourite lab analyser tools.</p>
           )}
 
           {property1 === "POS" && (
-            <p className="text-wrapper-16">Streamline payments with the best EDC and POS systems.</p>
+            <p className="md:text-[16px] text-[14px] text-[#6D747A]">Streamline payments with the best EDC and POS systems.</p>
           )}
 
           {property1 === "modalities" && (
-            <p className="text-wrapper-16">Integrated diagnostics with best-in-class modalities systems.</p>
+            <p className="md:text-[16px] text-[14px] text-[#6D747A]">Integrated diagnostics with best-in-class modalities systems.</p>
           )}
 
           {property1 === "comm" && (
-            <p className="text-wrapper-16">Integrate with the best-in-class email and communication apps.</p>
+            <p className="md:text-[16px] text-[14px] text-[#6D747A]">Integrate with the best-in-class email and communication apps.</p>
           )}
         </div>
       </div>

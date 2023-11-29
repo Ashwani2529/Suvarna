@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo, useRef } from "react";
 import { Link } from "react-router-dom";
-import { Footer } from "../Components/Homepage/Footer/Footer";
+import { Footer } from "../Components/Footer";
 import "../styles/Carrers.css";
 
 //  imported icons

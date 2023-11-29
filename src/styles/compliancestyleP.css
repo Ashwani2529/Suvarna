@@ -41,7 +41,7 @@
   width: 144px;
 }
 
-.compliance-logosP .image-wrapper {
+/* .compliance-logosP .image-wrapper {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -53,11 +53,11 @@
 
 .compliance-logosP .image {
   /* background-image: url(../../public/assets/image1.png); */
-  height: 42px;
+  /* height: 42px;
   object-fit: cover;
   position: relative;
   width: 142.99px;
-}
+}  */
 
 .compliance-logosP .img {
   /* background-image: url(../../public/assets/image2.jpg); */

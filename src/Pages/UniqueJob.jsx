@@ -1,10 +1,7 @@
 import React from "react";
-
-import { LogoHeader } from "../Components/AboutUs/LogoHeader/LogoHeader";
 // import "./style.css";
 import "../styles/UniqueJob.css";
-import Navbar from "../Components/Homepage/Navbar/Navbar";
-import { Footer } from "../Components/Homepage/Footer/Footer";
+import { Footer } from "../Components/Footer";
 
 import vector1 from "../assets/Vector 1.png";
 import vector2 from "../assets/Vector 2.png";

@@ -5,16 +5,12 @@ import { Link } from "react-router-dom";
 import { ClientLogos } from "../Components/Homepage/ClientLogos/ClientLogos";
 import { ClientLogos1 } from "../Components/Homepage/ClientLogos/ClientLogos1";
 import { ContactUsSection } from "../Components/ContactUsSection";
-import { Metric } from "../Components/Homepage/Metric/Metric";
 import { Partners } from "../Components/Homepage/Partners/Partners";
 import { SliderV } from "../Components/Homepage/SliderV/SliderV";
-import { TestimonialSingle } from "../Components/Homepage/TestimonialSingle/TestimonialSingle";
 import { Component215 } from "../Components/Homepage/icons/Component215/Component215";
 import { Component217 } from "../Components/Homepage/icons/Component217/Component217";
 import { Component25 } from "../Components/Homepage/icons/Component25/Component25";
 import { Component27 } from "../Components/Homepage/icons/Component27/Component27";
-import { Line51 } from "../Components/Homepage/icons/Line51/Line51";
-import { Line52 } from "../Components/Homepage/icons/Line52/Line52";
 
 // icons
 import { Property1LeftDisabled } from "../Components/Homepage/icons/Property1LeftDisabled/Property1LeftDisabled";
@@ -24,8 +20,10 @@ import { Property1Right } from "../Components/Homepage/icons/Property1Right/Prop
 import "../styles/homestyle.css";
 
 //  import compoenets
-import { Footer } from "../Components/Homepage/Footer/Footer";
+import { Footer } from "../Components/Footer";
+import Logistic from "../Components/Logistic";
 import SmallBlueWave from "../Components/SmallBlueWave";
+import ClientReview from "../Components/ClientReview";
 
 // /  import images
 import product1 from "../assets/product1.png";
@@ -45,7 +43,7 @@ import BIMS from "../assets/Product Card Logos.png";
 import SLIMS from "../assets/Product Card Logos (4).png";
 import HIMS from "../assets/HIMS.png";
 import RIS from "../assets/RIS.png";
-import EMR from "../assets/EMR.png"
+import EMR from "../assets/EMR.png";
 
 export const Homepage = () => {
   const scrollableProducts = useRef(null);
@@ -55,8 +53,7 @@ export const Homepage = () => {
   const [white, setWhite] = useState("#EBEDF0");
   const [black, setBlack] = useState("#001E41");
   const [left, setLeft] = useState(0);
-  const [isMouseOverLogistic, setIsMouseOverLogistic] = useState(false);
-  const [id, setId] = useState(0);
+
   //  onclick functions
   const handleRight = () => {
     setLeft(1);
@@ -76,7 +73,7 @@ export const Homepage = () => {
       description: "Document Management System",
       image: product1,
       icon: DMS,
-      route : "/dms"
+      route: "/dms",
     },
     {
       id: 2,
@@ -84,7 +81,7 @@ export const Homepage = () => {
       description: "Digital Campus Management System",
       image: product2,
       icon: Edukares,
-      route : "/edukares"
+      route: "/edukares",
     },
     {
       id: 3,
@@ -92,7 +89,7 @@ export const Homepage = () => {
       description: "Business Intelligence & MIS",
       image: product3,
       icon: BIMS,
-      route : "/bimis"
+      route: "/bimis",
     },
     {
       id: 4,
@@ -100,7 +97,7 @@ export const Homepage = () => {
       description: "Suvarna Laboratory Information Management System",
       image: product4,
       icon: SLIMS,
-      route : "/slims"
+      route: "/slims",
     },
     {
       id: 5,
@@ -108,7 +105,7 @@ export const Homepage = () => {
       description: "Hospital Information Management System",
       image: product3,
       icon: HIMS,
-      route : "/hims"
+      route: "/hims",
     },
     {
       id: 6,
@@ -116,7 +113,7 @@ export const Homepage = () => {
       description: "Radio Inoformation System",
       image: product2,
       icon: RIS,
-      route : "/ris"
+      route: "/products/rispacs",
     },
     {
       id: 7,
@@ -124,7 +121,7 @@ export const Homepage = () => {
       description: "Electronic Management Record",
       image: product4,
       icon: EMR,
-      route : "/emr"
+      route: "/emr",
     },
   ];
 
@@ -313,7 +310,7 @@ export const Homepage = () => {
                       </div>
 
                       <Link
-                        to={"/products" + d.route }
+                        to={"/products" + d.route}
                         className="product-card-button flex items-center justify-center px-2"
                       >
                         <div className="flex">know more</div>
@@ -351,169 +348,7 @@ export const Homepage = () => {
       </div>
 
       {/*  logistic cards */}
-      <div className="w-screen h-screen relative flex flex-col justify-evenly items-center my-[60px]">
-        <div className="frame-37 md:p-0 p-2">
-          <div className="md:text-[36px] text-[30px] text-[#08090A] font-bold">
-            23+ years of excellence
-          </div>
-          <p className="w-screen text-center md:text-[24px] text-[20px] font-normal text-[#6D747A]">
-            in delivering innovative solutions to 1000+ healthcare providers
-          </p>
-        </div>
-        <div className="lg:w-10/12 md:w-11/12 w-full flex items-center justify-center select-none">
-          <div className="w-[968px] md:h-[576px] flex md:flex-row flex-col md:flex-wrap justify-evenly items-center">
-            {/*  1st card */}
-            <div
-              className="w-[352px] h-[228px] flex flex-col justify-center items-start p-[24px] bg-white logistic_card_hover md:mt-0 mt-2"
-              onMouseOver={() => {
-                setIsMouseOverLogistic(true);
-                setId(1);
-              }}
-              onMouseLeave={() => {
-                setIsMouseOverLogistic(false);
-                setId(0);
-              }}
-            >
-              <div className="w-full flex flex-col justify-center items-start mb-[36px]">
-                <div
-                  className={`font-medium text-[64px] ${
-                    id === 1 && isMouseOverLogistic === true
-                      ? "text-[#146DFA]"
-                      : "text-[#001E41]"
-                  }  `}
-                >
-                  15000+
-                </div>
-                <div className="text-[20px] font-normal text-[#6D747A]">
-                  Physicians
-                </div>
-              </div>
-              <svg
-                width="352"
-                height="6"
-                viewBox="0 0 352 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect y="0.5" width="352" height="5" fill="#67C380" />
-              </svg>
-            </div>
-
-            {/*  2nd card */}
-            <div
-              className="w-[352px] h-[228px] flex flex-col justify-center items-start p-[24px] bg-white logistic_card_hover md:mt-0 mt-2"
-              onMouseOver={() => {
-                setIsMouseOverLogistic(true);
-                setId(2);
-              }}
-              onMouseLeave={() => {
-                setIsMouseOverLogistic(false);
-                setId(0);
-              }}
-            >
-              <div className="w-full flex flex-col justify-center items-start mb-[36px]">
-                <div
-                  className={`font-medium text-[64px] ${
-                    id === 2 && isMouseOverLogistic === true
-                      ? "text-[#146DFA]"
-                      : "text-[#001E41]"
-                  }  `}
-                >
-                  36000+
-                </div>
-                <div className="text-[20px] font-normal text-[#6D747A]">
-                  Healthcare Professionals
-                </div>
-              </div>
-
-              <svg
-                width="352"
-                height="6"
-                viewBox="0 0 352 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect y="0.5" width="352" height="5" fill="#FF7878" />
-              </svg>
-            </div>
-
-            {/*  3rd card */}
-
-            <div
-              className="w-[352px] h-[228px] flex flex-col justify-center items-start p-[24px] bg-white logistic_card_hover md:mt-0 mt-2 "
-              onMouseOver={() => {
-                setIsMouseOverLogistic(true);
-                setId(3);
-              }}
-              onMouseLeave={() => {
-                setIsMouseOverLogistic(false);
-                setId(0);
-              }}
-            >
-              <div className="w-full flex flex-col justify-center items-start mb-[36px]">
-                <div
-                  className={`font-medium text-[64px] ${
-                    id === 3 && isMouseOverLogistic === true
-                      ? "text-[#146DFA]"
-                      : "text-[#001E41]"
-                  }  `}
-                >
-                  4000+
-                </div>
-                <div className="text-[20px] font-normal text-[#6D747A]">
-                  Organisations
-                </div>
-              </div>
-              <svg
-                width="352"
-                height="6"
-                viewBox="0 0 352 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect y="0.5" width="352" height="5" fill="#391E66" />
-              </svg>
-            </div>
-
-            {/*  4th card */}
-            <div
-              className="w-[352px] h-[228px] flex flex-col justify-center items-start p-[24px] bg-white logistic_card_hover md:mt-0 mt-2 "
-              onMouseOver={() => {
-                setIsMouseOverLogistic(true);
-                setId(4);
-              }}
-              onMouseLeave={() => {
-                setIsMouseOverLogistic(false);
-                setId(0);
-              }}
-            >
-              <div className="w-full flex flex-col justify-center items-start mb-[36px]">
-                <div
-                  className={`font-medium text-[64px] ${
-                    id === 4 && isMouseOverLogistic === true
-                      ? "text-[#146DFA]"
-                      : "text-[#001E41]"
-                  }  `}
-                >
-                  60M+
-                </div>
-                <div className="text-[20px] font-normal text-[#6D747A]">
-                  Patient Records
-                </div>
-              </div>
-              <svg
-                width="352"
-                height="6"
-                viewBox="0 0 352 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect y="0.5" width="352" height="5" fill="#2CA49C" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Logistic />
 
       {/*  blue small wave */}
 
@@ -522,8 +357,8 @@ export const Homepage = () => {
         subheading="We have a legacy of successful collaboration with healthcare providers in their digital transformation journey"
       />
 
-      <div className="w-screen h-[300px] flex justify-center items-center my-[60px]">
-        <div className="lg:w-10/12 md:w-11/12 w-full h-full flex flex-col justify-evenly items-center">
+      <div className="w-screen h-[300px] flex justify-center items-center my-[60px] relative">
+        <div className="lg:w-10/12 md:w-11/12 w-full h-full md:px-0 px-2 flex flex-col justify-evenly items-center relative bg-white">
           <ClientLogos
             className="design-component-instance-node-2"
             property1="variant-2"
@@ -535,61 +370,7 @@ export const Homepage = () => {
         </div>
       </div>
 
-      <div
-        className="w-screen h-screen flex flex-col justify-center items-center my-[60px]"
-        id="testimonial"
-      >
-        <p className="md:text-[36px] text-[30px] text-[#08090A] font-bold mb-[64px]">
-          What our customers have to say
-        </p>
-        <div className="frame-44">
-          <div className="frame-45">
-            <TestimonialSingle
-              className="testimonial-single-instance"
-              frame="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/6525973795dd5c4c0357416c/img/frame-482390.svg"
-            />
-            <Line52
-              className="line-5-2"
-              color="url(#paint0_linear_1971_10008)"
-            />
-            <TestimonialSingle
-              className="testimonial-single-instance"
-              frame="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/6525973795dd5c4c0357416c/img/frame-482390-1.svg"
-              maskGroup="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/mask-group@2x.png"
-              text="Dr. Sumit Wankhade"
-              text1="Mumbai, IN"
-            />
-          </div>
-          <div className="frame-46">
-            <Line51 className="line-6" color="url(#paint0_linear_1971_10012)" />
-            <Line51 className="line-6" color="url(#paint0_linear_1971_10012)" />
-          </div>
-          <div className="frame-45">
-            <TestimonialSingle
-              className="testimonial-single-instance"
-              frame="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/6525973795dd5c4c0357416c/img/frame-482390-2.svg"
-              line="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/line-3-3.svg"
-              maskGroup="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/mask-group-1@2x.png"
-              text="Dr. Ravi G. Kumar"
-              text1="Hyderabad, IN"
-              text2="We were confident that all our expectations would be met and Suvarna has exceeded them in every aspect to our complete satisfaction."
-            />
-            <Line52
-              className="line-5-2"
-              color="url(#paint0_linear_1971_10008)"
-            />
-            <TestimonialSingle
-              className="testimonial-single-instance"
-              frame="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/6525973795dd5c4c0357416c/img/frame-482390-3.svg"
-              line="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/line-3.svg"
-              maskGroup="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/mask-group-2@2x.png"
-              text="Dr. B Sarita Rao"
-              text1="Bengaluru, IN"
-              text2="We were confident that all our expectations would be met and Suvarna has exceeded them in every aspect to our complete satisfaction. We are happy to have a partner like Suvarna Technosoft for our healthcare software requirements."
-            />
-          </div>
-        </div>
-      </div>
+      <ClientReview />
 
       <Partners id="partners" text="Global strategic partners" />
 

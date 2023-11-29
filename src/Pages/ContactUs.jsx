@@ -1,10 +1,8 @@
 import React,{useEffect} from "react";
 
-import { LogoHeader } from "../Components/AboutUs/LogoHeader/LogoHeader";
 // import "./style.css";
 import "../styles/ContactUs.css";
-import Navbar from "../Components/Homepage/Navbar/Navbar";
-import { Footer } from "../Components/Homepage/Footer/Footer";
+import { Footer } from "../Components/Footer";
 
 //  importing components 
 import { ContactUsSection } from "../Components/ContactUsSection";
@@ -52,32 +50,32 @@ export const ContactUs = () => {
 ]
 
   return (
-    <div className="ContactUs h-auto flex-col justify-start items-center ">
+    <div className="h-auto flex-col justify-start items-center ">
       {/*  vectors + heading */}
 
       <div className="w-screen min-h-[274px] flex justify-center items-center relative mt-[100px]">
         <img
           src={ContactUsVector}
-          className="w-screen z-10 absolute top-0 left-0"
+          className="lg:w-screen md:w-full md:h-full h-[100%] min-w-[120%] z-10 absolute top-0 left-0"
           alt="contact-us-vector"
         />
 
-        <div className="lg:w-10/12 md:w-11/12 z-20 relative w-screen h-full flex flex-col justify-center items-start bg-transparent">
-          <div className="heading">Contact us</div>
-          <div className="sub-heading">
+        <div className="lg:w-10/12 md:w-11/12 z-20 relative w-screen h-full flex flex-col justify-center items-start bg-transparent lg:px-0 md:px-0 px-2">
+          <div className="text-white lg:text-[48px] md:text-[40px] text-[32px]">Contact us</div>
+          <div className="text-white lg:text-[32px] md:text-[28px] text-[24px]">
             Get in touch, we’re here to help you.
           </div>
         </div>
       </div>
 
-      <div className="h-[2050px] w-screen flex flex-col justify-start items-center  mt-40">
+      <div className="h-[1750px] w-screen flex flex-col justify-start items-center mt-[20px]">
         <div className="lg:w-10/12 md:w-11/12 w-full flex flex-col justify-center items-center">
           {/*  details */}
-          <div className="w-full h-[500px] flex items-center justify-center ">
-            <div className="w-1/2 h-4/5 flex flex-col justify-start items-start">
-              <div className="sub-header">Contact Details</div>
+          <div className="w-full md:h-[500px] flex md:flex-row flex-col items-center justify-center ">
+            <div className="md:w-1/2 w-full h-4/5 md:px-0 px-4 flex flex-col justify-start items-start">
+              <div className="text-[24px] font-medium text-[#3C4043]">Contact Details</div>
               {/*  first row */}
-              <div className=" flex my-2.5">
+              <div className="w-3/4 flex my-2.5 lg:text-[20px] md:text-[20px] text-[16px] ">
                 {/*  location icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +96,7 @@ export const ContactUs = () => {
                 </div>
               </div>
               {/*  second row */}
-              <div className=" flex my-2.5">
+              <div className=" flex my-2.5 lg:text-[20px] md:text-[20px] text-[16px] ">
                 <svg
                   width="24"
                   height="24"
@@ -121,7 +119,7 @@ export const ContactUs = () => {
                 <div className="ms-2 regular-text">8125772299</div>
               </div>
               {/*  third Row */}
-              <div className=" flex my-2.5">
+              <div className=" flex my-2.5 lg:text-[20px] md:text-[20px] text-[16px] ">
                 <svg
                   width="24"
                   height="24"
@@ -148,27 +146,27 @@ export const ContactUs = () => {
               </div>
             </div>
 
-            <div className="w-1/2 bg-gray-200 flex justify-center items-center rounded-[4px] overflow-hidden ">
+            <div className="md:w-1/2 w-11/12 bg-gray-200 flex justify-center items-center rounded-[4px] overflow-hidden ">
               <img src={map} alt="location-map" className="location-map" />
             </div>
           </div>
 
           {/*  offices */}
-          <div className="w-full h-[336px] flex flex-col justify-center items-start my-16">
-            <div className="sub-header">
+          <div className="w-full lg:h-[336px] md:h-auto h-auto flex flex-col justify-center items-start my-[60px]">
+            <div className="font-bold lg:text-[36px] md:text-[32px] text-[28px] py-8 md:px-0 px-4">
                Our Offices
             </div>
 
-            <div className="w-full flex flex-grow-1 justify-evenly items-center ">
+            <div className="w-full flex flex-grow-1 flex-wrap justify-evenly items-center ">
                 {offices?.map((d, index)=>{
-                    return <div key={index} className="office-card" > 
+                    return <div key={index} className="md:w-[312px] w-[43%] h-[198px] px-[24px] py-[16px] flex flex-col justify-evenly items-start rounded-[12px] border md:m-0 m-2" > 
                       <div>
                         <img src={d.icon} alt={d.place} />
                       </div>
-                      <div className="office-card-header">
+                      <div className="text-[20px] font-medium">
                         {d.place}
                       </div>
-                      <div className="office-card-regular-text">
+                      <div className="text-[#3C4043] text-[16px] font-normal">
                         {d.address}
                       </div>
                     </div>
@@ -177,12 +175,15 @@ export const ContactUs = () => {
           </div>
 
            {/*  contact us form */}
-           <ContactUsSection className="" checkSquareSvgrepo="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/check-square-svgrepo-com-1-1.svg" />
-        </div>
+           <ContactUsSection checkSquareSvgrepo="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/check-square-svgrepo-com-1-1.svg" />
+        </div>  
+        
+        
+        <Footer className="mt-[60px]" />
       </div>
 
       {/*  same for every page  */}
-      <Footer className="" />
+    
      
     </div>
   );

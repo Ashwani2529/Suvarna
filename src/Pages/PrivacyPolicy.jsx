@@ -1,65 +1,49 @@
-import React , {useEffect} from "react";
+import React, { useEffect } from "react";
 
 import { LogoHeader } from "../Components/AboutUs/LogoHeader/LogoHeader";
 // import "./style.css";
 import "../styles/PrivacyPolicy.css";
 import Navbar from "../Components/Homepage/Navbar/Navbar";
-import { Footer } from "../Components/Homepage/Footer/Footer";
-
-import vector1 from "../assets/Vector 1.png";
-import vector2 from "../assets/Vector 2.png";
-import vector3 from "../assets/Vector 3.png";
+import { Footer } from "../Components/Footer";
+import SmallBlueWave from "../Components/SmallBlueWave";
 
 export const PrivacyPolicy = () => {
-
-  useEffect(()=>{
-    window.scrollTo(0,0);
-    return(()=>{
-      return null
-    });
-  },[])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    return () => {
+      return null;
+    };
+  }, []);
 
   return (
     <div className="PrivacyPolicy h-auto flex-col justify-start items-center">
       {/*  vectors + heading */}
 
-      <div className="w-screen min-h-[274px] flex justify-center items-center reltive mt-[100px]">
-        <img
-          src={vector1}
-          className="w-screen z-30 absolute top-0 left-0"
-          alt="vector1"
-        />
-        <img
-          src={vector2}
-          alt="vector2"
-          className="w-screen z-20 absolute top-12 left-0"
-        />
-        <img
-          src={vector3}
-          alt="vector3"
-          className="w-screen z-10 absolute top-16 left-0"
-        />
+      <SmallBlueWave heading="Privacy Policy" subheading="" />
 
-        <div className="heading z-40 absolute  bg-transparent w-screen h-full flex justify-center items-center">
-          Privacy Policy
-        </div>
-      </div>
-
-      <div className="h-[2950px] w-screen flex flex-col justify-center items-center">
-        <div className="lg:w-10/12 md:w-11/12 w-full">
-          <div className="sub-header">
-            PrivacyPolicy
-          </div>
+      <div className="md:h-[2950px] h-auto w-screen flex flex-col justify-center items-center lg:mt-0 mt-[32px]">
+        <div className="lg:w-10/12 md:w-11/12 w-full md:px-0 px-2">
+          <div className="sub-header">PrivacyPolicy</div>
           <div className="last-updated-text my-2">
             Last updated: 12 October, 2023
           </div>
           <div className="regular-text my-3">
             <div>
-            Welcome to Suvarna Technosoft Pvt. Ltd. ("the Website"). By accessing and using this Website, you agree to comply with and be bound by the following terms and conditions. Please read these terms carefully before using the Website. This Privacy Policy (the “Privacy Policy”) is intended to inform you about our practices regarding the collection and use of your data that you may submit to us through our Services. This Privacy Policy should be read alongside, and in addition to the Terms of Use.
-
+              Welcome to Suvarna Technosoft Pvt. Ltd. ("the Website"). By
+              accessing and using this Website, you agree to comply with and be
+              bound by the following terms and conditions. Please read these
+              terms carefully before using the Website. This Privacy Policy (the
+              “Privacy Policy”) is intended to inform you about our practices
+              regarding the collection and use of your data that you may submit
+              to us through our Services. This Privacy Policy should be read
+              alongside, and in addition to the Terms of Use.
             </div>
             <div className="mt-16">
-            Unless otherwise defined in this Privacy Policy, terms used have the same meaning as in the Terms of Use. This Privacy Policy may be updated to reflect changes in legislation, so please review it now and then. You can always find the most recent version on our Site.
+              Unless otherwise defined in this Privacy Policy, terms used have
+              the same meaning as in the Terms of Use. This Privacy Policy may
+              be updated to reflect changes in legislation, so please review it
+              now and then. You can always find the most recent version on our
+              Site.
             </div>
           </div>
 
@@ -70,23 +54,34 @@ export const PrivacyPolicy = () => {
             <ul className="my-4">
               <li className="my-4 table-of-content-text">
                 {" "}
-                Acceptance of Terms
-              </li>
-              <li className="my-4 table-of-content-text">Use of Content</li>
-              <li className="my-4 table-of-content-text">User Contributions</li>
-              <li className="my-4 table-of-content-text">Third-party Links</li>
-              <li className="my-4 table-of-content-text">
-                Disclaimer of warranties
+                <a href="#acceptanceofterms">Acceptance of Terms</a>
               </li>
               <li className="my-4 table-of-content-text">
-                Limitation of liability
+                <a href="#useofcontent">Use of Content</a>
               </li>
-              <li className="my-4 table-of-content-text"> Changes to Terms</li>
-              <li className="my-4 table-of-content-text">Governing Law</li>
+              <li className="my-4 table-of-content-text">
+                <a href="#usercontribution">User Contributions</a>
+              </li>
+              <li className="my-4 table-of-content-text">
+                <a href="#thirdpartylinks">Third-party Links</a>
+              </li>
+              <li className="my-4 table-of-content-text">
+                <a href="#disclaimerofwarranties">Disclaimer of warranties</a>
+              </li>
+              <li className="my-4 table-of-content-text">
+                <a href="#limitationofliability">Limitation of liability</a>
+              </li>
+              <li className="my-4 table-of-content-text">
+                {" "}
+                <a href="#changetoterms">Changes to Terms</a>
+              </li>
+              <li className="my-4 table-of-content-text">
+                <a href="#governinglaw">Governing Law</a>
+              </li>
             </ul>
           </div>
           {/*  point -1 */}
-          <div className="my-16">
+          <div className="my-16" id="acceptanceofterms">
             <div className="sub-header">1. Acceptance of Terms</div>
             <div className="regular-text my-3">
               By accessing or using ESGBites, you acknowledge that you have
@@ -97,7 +92,7 @@ export const PrivacyPolicy = () => {
             </div>
           </div>
           {/* 2 point  */}
-          <div className="my-16">
+          <div className="my-16" id="useofcontent">
             <div className="sub-header">2. Use of Content</div>
             <div className="regular-text my-3">
               <div className="my-4">
@@ -125,7 +120,7 @@ export const PrivacyPolicy = () => {
             </div>
           </div>
           {/*  3rd point */}
-          <div className="my-16">
+          <div className="my-16" is="usercontribution">
             <div className="sub-header">3. User Contributions</div>
             <div className="regular-text my-3">
               <div className="my-4">
@@ -155,7 +150,7 @@ export const PrivacyPolicy = () => {
             </div>
           </div>
           {/*  4th point */}
-          <div className="my-16">
+          <div className="my-16" id="#useofcontent">
             <div className="sub-header">4. Third-party Links</div>
             <div className="regular-text my-3">
               ESGBites may include links to third-party websites, events, or
@@ -168,7 +163,7 @@ export const PrivacyPolicy = () => {
             </div>
           </div>
           {/*  5th point */}
-          <div className="my-16">
+          <div className="my-16" id="disclaimerofwarranties">
             <div className="sub-header">5. Disclaimer of Warranties</div>
             <div className="regular-text my-3">
               ESGBites provides the Website on an "as is" and "as available"
@@ -183,7 +178,7 @@ export const PrivacyPolicy = () => {
             </div>
           </div>
           {/*  6th point */}
-          <div className="my-16">
+          <div className="my-16" id="limitationofliability">
             <div className="sub-header">6. Limitation of Liability</div>
             <div className="regular-text my-3">
               To the fullest extent permitted by applicable law, ESGBites and
@@ -197,7 +192,7 @@ export const PrivacyPolicy = () => {
             </div>
           </div>
           {/*  7th point */}
-          <div className="my-16">
+          <div className="my-16" id="changetoterms">
             <div className="sub-header">7. Changes to Terms</div>
             <div className="regular-text my-3">
               ESGBites reserves the right to modify these terms and conditions
@@ -209,7 +204,7 @@ export const PrivacyPolicy = () => {
             </div>
           </div>
           {/*  8th point */}
-          <div className="my-16">
+          <div className="my-16" id="governinglaw">
             <div className="sub-header">8. Governing Law</div>
             <div className="regular-text my-3">
               These terms and conditions are governed by and construed in

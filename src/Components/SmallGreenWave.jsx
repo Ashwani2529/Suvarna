@@ -11,15 +11,15 @@ const SmallGreenWave = (props) => {
     <div className="w-screen min-h-[274px] flex justify-center items-center relative mt-[100px] BrochuresAndCollateral">
       <img
         src={BrochuresAndCollateralVector}
-        className="w-screen z-10 absolute top-0 left-0"
+        className="w-screen h-[120%] z-10 absolute top-0 left-0"
         alt="contact-us-vector"
       />
 
-      <div className="lg:w-10/12 md:w-11/12 z-20 relative w-screen h-full flex flex-col justify-center items-start bg-transparent">
-        <div className="heading">
+      <div className="lg:w-10/12 md:w-11/12 z-20 relative w-screen h-full flex flex-col justify-center items-start bg-transparent text-white md:px-0 px-4">
+        <div className="lg:text-[48px] md:text-[36px] text-[32px] font-bold">
             {props.heading}
         </div>
-        <div className="sub-heading w-3/4">
+        <div className="lg:text-[32px] md:text-[24px] text-[20px] font-normal w-3/4">
             {props.subheading}
         </div>
       </div>

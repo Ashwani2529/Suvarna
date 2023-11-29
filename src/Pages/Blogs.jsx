@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Property1LeftDisabled } from "../Components/Homepage/icons/Property1LeftDisabled/Property1LeftDisabled";
 import { Property1Right } from "../Components/Homepage/icons/Property1Right/Property1Right";
 import SmallGreenWave from "../Components/SmallGreenWave";
-import { Footer } from "../Components/Homepage/Footer/Footer";
+import { Footer } from "../Components/Footer";
 
 import "../styles/Blogs.css";
 
@@ -146,13 +146,13 @@ const Blogs = () => {
         subheading="Explore curated content and practical tips from experts on growing your healthcare business, and more..."
       />
 
-      <div className="w-screen h-[100vh] flex justify-center items-center mt-64 mb-64 blogs">
-        <div className="lg:w-10/12 md:w-11/12 w-full h-full flex justify-evenly items-center   ">
-          <div className="w-[65%] h-full flex flex-col justify-center items-center">
+      <div className="w-screen md:h-[100vh] h-[150vh] flex justify-center items-center mt-64 mb-64 blogs">
+        <div className="lg:w-10/12 md:w-11/12 w-full h-full flex md:flex-row flex-col justify-evenly items-center   ">
+          <div className="md:w-[65%] w-full flex flex-col justify-center items-center ">
             <div className="w-full h-3/4 flex flex-col justify-center items-center overflow-hidden">
               <img src={blog2} alt="blog_image" className="h-full min-w-full" />
             </div>
-            <div className="h-1/4 flex flex-col justify-center items-center">
+            <div className="md:h-1/4 h-[50vh] flex flex-col justify-center items-center md:px-0 px-2">
               <div className="blogs_header">
                 How to draw the technology roadmap for a hospital: A
                 step-by-step guide
@@ -166,7 +166,7 @@ const Blogs = () => {
             </div>
           </div>
           <div className="h-full px-1 border-start border-[#EBEDF0]"></div>
-          <div className="w-[30%] h-full flex flex-col justify-center items-center">
+          <div className="md:w-[30%] w-full md:h-full h-auto flex flex-col justify-center items-center md:p-0 p-2">
             <div className="w-full flex-grow-1 flex flex-col justify-evenly items-start">
               {blogs.slice(0,4).map((d, index) => {
                 return (
@@ -222,11 +222,11 @@ const Blogs = () => {
       <div className="w-screen h-screen flex flex-col justify-center items-center index">
         {/*  blog section header  */}
         <div className="w-screen flex items-center justify-center">
-          <div className="lg:w-10/12 md:w-11/12 w-full flex justify-between items-center ">
-            <div className="frame-35">
+          <div className="lg:w-10/12 md:w-11/12 w-full flex md:flex-row flex-col justify-between items-center ">
+            <div className="frame-35 ">
               <p className="text-wrapper-16">Check out our latest insights</p>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="md:w-40 w-full flex md:justify-center justify-start items-center">
               <div
                 className="mx-2"
                 onClick={() => {

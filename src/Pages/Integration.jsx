@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState, useMemo } from "react";
-import { Button } from "../Components/Integrations/Button/Button";
-import { Category } from "../Components/Integrations/Category/Category";
 import { IntegrationAppcard } from "../Components/Integrations/IntegrationAppcard/IntegrationAppcard";
-import { Footer } from "../Components/Homepage/Footer/Footer";
+import { Footer } from "../Components/Footer";
 import "../styles/integration.css";
 import { useNavigate } from "react-router-dom";
 import SmallGreenWave from "../Components/SmallGreenWave";
@@ -13,31 +11,36 @@ export const Integration = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [category, setCategory] = useState("All");
 
-  const data = [{
-    id : 1,
-    name : "Accounting/ERP/CRM",
-  } , {
-    id : 2,
-    name : "Picture Archiving and Communications System (PACS)",
-  },
-  {
-    id : 3,
-    name : "Lab Analyzers",
-  },{
-    id : 4,
-    name : "EDC & POS Machines",
-  } , {
-    id : 5,
-    name : "Modalities",
-  },
-  {
-    id : 6,
-    name : "Payments",
-  },{
-    id : 7,
-    name : "Communication",
-  }]
-  
+  const data = [
+    {
+      id: 1,
+      name: "Accounting/ERP/CRM",
+    },
+    {
+      id: 2,
+      name: "Picture Archiving and Communications System (PACS)",
+    },
+    {
+      id: 3,
+      name: "Lab Analyzers",
+    },
+    {
+      id: 4,
+      name: "EDC & POS Machines",
+    },
+    {
+      id: 5,
+      name: "Modalities",
+    },
+    {
+      id: 6,
+      name: "Payments",
+    },
+    {
+      id: 7,
+      name: "Communication",
+    },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,24 +66,23 @@ export const Integration = () => {
     <>
       <div className="w-screen flex flex-col justify-center items-start">
         <SmallGreenWave
-          className="mt-100px"
           heading="Supercharge your business with integrations."
           subheading="Integrate with your favourite third-party apps & medical devices for seamless operations & patient care."
         />
 
         <div
-          className={`w-screen flex flex-col justify-center items-center bg-[] py-16 ${
+          className={`w-screen flex flex-col justify-center items-center mt-[48px] ${
             isSticky ? "sticky top-0" : ""
           }`}
         >
           <div
-            className={`lg:w-10/12 md:w-11/12 w-full h-[80vh] mt-64  relative flex justify-evenly items-start p-4 `}
+            className={`lg:w-10/12 md:w-11/12 w-full md:h-[80vh]  relative flex justify-evenly items-start p-4 `}
             id="stickToTopRef"
           >
-            <div className="w-full h-full flex justify-evenly items-start relative overflow-y-scroll overflow-x-hidden removeDefaultScrollStyle">
+            <div className="w-full h-full flex md:flex-row flex-col md:justify-evenly justify-center items-start relative overflow-y-scroll overflow-x-hidden removeDefaultScrollStyle">
               {/*  filter by category */}
               <div
-                className={` w-[312px] h-[483px] flex flex-col justify-center items-center sticky top-0`}
+                className={`min-w-[312px] h-[483px] flex flex-col justify-center items-center md:sticky top-0`}
               >
                 <div className="text-[18px] text-[#6D747A] font-medium text-left w-full justify-start items-center mb-[16px] p-2">
                   FILTER BY CATEGORY
@@ -88,16 +90,40 @@ export const Integration = () => {
 
                 <div className="w-full h-full flex flex-col justify-center items-start list-unstyled">
 
-                  {data.map((d,index)=>{
-                     return <li key={index} className={`w-full  list-style-none`}>
-                        <a href={`#` + d.name}  className={`text-decoration-none w-full h-full flex justify-start items-center p-2   text-[16px] mb-[10px] ${category === d.name ? "bg-[#EBEDF0] rounded-[5px] font-medium text-black" : "font-normal text-[#3C4043]" }`}
-                          onClick={()=>{
+                <li  className={`w-full  list-style-none`}>
+                        <a
+                          href={`#` + "Accounting/ERP/CRM"}
+                          className={`text-decoration-none w-full h-full flex justify-start items-center p-2   text-[16px] mb-[10px] ${
+                            category === "All"
+                              ? "bg-[#EBEDF0] rounded-[5px] font-medium text-black"
+                              : "font-normal text-[#3C4043]"
+                          }`}
+                          onClick={() => {
+                            setCategory("All");
+                          }}
+                        >
+                          All
+                        </a>
+                      </li>
+
+                  {data.map((d, index) => {
+                    return (
+                      <li key={index} className={`w-full  list-style-none`}>
+                        <a
+                          href={`#` + d.name}
+                          className={`text-decoration-none w-full h-full flex justify-start items-center p-2   text-[16px] mb-[10px] ${
+                            category === d.name
+                              ? "bg-[#EBEDF0] rounded-[5px] font-medium text-black"
+                              : "font-normal text-[#3C4043]"
+                          }`}
+                          onClick={() => {
                             setCategory(d.name);
                           }}
                         >
-                           {d.name}
+                          {d.name}
                         </a>
-                     </li>
+                      </li>
+                    );
                   })}
                 </div>
               </div>
@@ -105,10 +131,10 @@ export const Integration = () => {
               {/* cards  */}
               <div className="h-[4400px] flex flex-grow-1 flex-col justify-start items-center py-4">
                 <div
-                  className="w-[1000px] flex flex-col justify-center items-start"
+                  className="w-11/12 flex flex-col justify-center items-start"
                   id="Accounting/ERP/CRM"
                 >
-                  <div className="text-[28px] text-[#2B6997] font-medium">
+                  <div className="text-[28px] text-[#2B6997] font-medium  ps-16">
                     Accounting/ ERP/ CRM
                   </div>
                   <div className="w-full flex flex-grow flex-wrap justify-center items-start ">
@@ -147,10 +173,10 @@ export const Integration = () => {
                 </div>
 
                 <div
-                  className="w-[1000px] flex flex-col justify-center items-start"
+                  className="w-11/12 flex flex-col justify-center items-start"
                   id="Lab Analyzers"
                 >
-                  <div className="text-[28px] text-[#2B6997] font-medium">
+                  <div className="text-[28px] text-[#2B6997] font-medium  ps-16">
                     Lab Analyzers
                   </div>
                   <div className="w-full flex flex-grow flex-wrap justify-center items-start">
@@ -242,10 +268,10 @@ export const Integration = () => {
                 </div>
 
                 <div
-                  className="w-[1000px] flex flex-col justify-center items-start"
+                  className="w-11/12 flex flex-col justify-center items-start"
                   id="Picture Archiving and Communications System (PACS)"
                 >
-                  <div className="text-[28px] text-[#2B6997] font-medium">
+                  <div className="text-[28px] text-[#2B6997] font-medium  ps-16">
                     Picture Archiving and Communications System (PACS)
                   </div>
                   <div className="w-full flex flex-grow flex-wrap justify-center items-start">
@@ -282,10 +308,10 @@ export const Integration = () => {
                 </div>
 
                 <div
-                  className="w-[1000px] h-[639px] flex flex-col justify-center items-start"
+                  className="w-11/12 h-[639px] flex flex-col justify-center items-start"
                   id="EDC & POS Machines"
                 >
-                  <div className="text-[28px] text-[#2B6997] font-medium">
+                  <div className="text-[28px] text-[#2B6997] font-medium  ps-16">
                     EDC and POS Machines
                   </div>
                   <div className="w-full flex flex-grow flex-wrap justify-center items-start">
@@ -307,10 +333,10 @@ export const Integration = () => {
                 </div>
 
                 <div
-                  className="w-[1000px] h-[639px] flex flex-col justify-center items-start"
+                  className="w-11/12 h-[639px] flex flex-col justify-center items-start"
                   id="Communication"
                 >
-                  <div className="text-[28px] text-[#2B6997] font-medium">
+                  <div className="text-[28px] text-[#2B6997] font-medium  ps-16">
                     Communication
                   </div>
                   <div className="w-full flex flex-grow flex-wrap justify-center items-start">
@@ -332,10 +358,10 @@ export const Integration = () => {
                 </div>
 
                 <div
-                  className="w-[1000px] h-[639px] flex flex-col justify-center items-start"
+                  className="w-11/12 h-[639px] flex flex-col justify-center items-start"
                   id="Payments"
                 >
-                  <div className="text-[28px] text-[#2B6997] font-medium">
+                  <div className="text-[28px] text-[#2B6997] font-medium  ps-16">
                     Payments
                   </div>
                   <div className="w-full flex flex-grow flex-wrap justify-center items-start">
@@ -363,10 +389,10 @@ export const Integration = () => {
                 </div>
 
                 <div
-                  className="w-[1000px] h-[639px] flex flex-col justify-center items-start"
+                  className="w-11/12 h-[639px] flex flex-col justify-center items-start"
                   id="Modalities"
                 >
-                  <div className="text-[28px] text-[#2B6997] font-medium">
+                  <div className="text-[28px] text-[#2B6997] font-medium  ps-16">
                     Modalities
                   </div>
                   <div className="w-full flex flex-grow flex-wrap justify-center items-start">
@@ -406,8 +432,8 @@ export const Integration = () => {
           </div>
         </div>
       </div>
+      <Footer />
 
-      {/* <Footer /> */}
     </>
   );
 };

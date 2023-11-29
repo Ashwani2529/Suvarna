@@ -11,32 +11,32 @@ export const Partners = ({ text = "Trusted by partners across the globe" }) => {
         </div>
         <div className="w-full flex justify-evenly items-center">
           <img
-            className="w-[81.809px] h-[56px]"
+            className="md:w-[81.809px] w-[60px] md:h-[56px]"
             alt="partners_logo"
             src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-7@2x.png"
           />
           <img
-            className="w-[81.809px] h-[56px]"
+            className="md:w-[81.809px] w-[60px] md:h-[56px]"
             alt="partners_logo"
             src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-8.png"
           />
           <img
-            className="w-[81.809px] h-[56px]"
+            className="md:w-[81.809px] w-[60px] md:h-[56px]"
             alt="partners_logo"
             src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-12.png"
           />
           <img
-            className="w-[81.809px] h-[56px]"
+            className="md:w-[81.809px] w-[60px] md:h-[56px]"
             alt="partners_logo"
             src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-11.png"
           />
           <img
-            className="w-[81.809px] h-[56px]"
+            className="md:w-[81.809px] w-[60px] md:h-[56px]"
             alt="partners_logo"
             src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-9.png"
           />
           <img
-            className="w-[81.809px] h-[56px]"
+            className="md:w-[81.809px] w-[60px] md:h-[56px]"
             alt="partners_logo"
             src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-10.png"
           />

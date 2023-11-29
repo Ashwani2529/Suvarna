@@ -1,6 +1,5 @@
 import React from "react";
-import { Footer } from "../Components/Homepage/Footer/Footer";
-
+import { Footer } from "../Components/Footer";
 import ReCaptchaV2 from "react-google-recaptcha";
 
 
@@ -13,16 +12,16 @@ import SmallBlueWave from "../Components/SmallBlueWave";
 
 const Partners = () => {
   return (
-    <div className="w-screen h-[3800px] flex flex-col justify-start items-start">
+    <div className="w-screen h-[3700px] flex flex-col justify-start items-start">
       {/*  hero section */}
       <div className="h-screen w-screen flex justify-center items-center relative">
         <div className="lg:w-10/12 md:w-11/12 w-11/12 relative flex justify-center items-center z-20">
-          <div className="w-1/2 flex flex-col justify-center items-start">
-            <div className="text-[48px] text-white font-bold my-[8px]">
+          <div className="w-1/2 flex flex-col justify-center items-start md:mb-[100px]">
+            <div className="lg:text-[48px] md:text-[40px] text-[32px] text-white font-bold my-[8px]">
               Partner with us
             </div>
 
-            <div className="text-white text-[24px] font-normal my-[8px]">
+            <div className="text-white lg:text-[24px] md:text-[16px] text-[16px] font-normal my-[8px]">
               Join us to be a part of healthcare digital transformation and grow
               your business with us.
             </div>
@@ -34,7 +33,7 @@ const Partners = () => {
                   alt="tick_icon"
                   className="me-2 w-[20px] h-[20px] "
                 />
-                <span className="text-[20px] font-normal text-white">
+                <span className="lg:text-[20px] md:text-[16px] text-[12px] font-normal text-white">
                   Best in class products and solutions
                 </span>
               </li>
@@ -44,7 +43,7 @@ const Partners = () => {
                   alt="tick_icon"
                   className="me-2 w-[20px] h-[20px] "
                 />
-                <span className="text-[20px] font-normal text-white">
+                <span className="lg:text-[20px] md:text-[16px] text-[12px] font-normal text-white">
                   Structured training programs
                 </span>
               </li>
@@ -54,7 +53,7 @@ const Partners = () => {
                   alt="tick_icon"
                   className="me-2 w-[20px] h-[20px] "
                 />
-                <span className="text-[20px] font-normal text-white">
+                <span className="lg:text-[20px] md:text-[16px] text-[12px] font-normal text-white">
                   Pre-sales and sales support
                 </span>
               </li>
@@ -64,7 +63,7 @@ const Partners = () => {
                   alt="tick_icon"
                   className="me-2 w-[20px] h-[20px] "
                 />
-                <span className="text-[20px] font-normal text-white">
+                <span className="lg:text-[20px] md:text-[16px] text-[12px] font-normal text-white">
                   High financial rewards
                 </span>
               </li>
@@ -78,36 +77,36 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="w-full h-full absolute flex justify-center items-center top-0 left-0">
+        <div className="w-full h-full absolute flex justify-center items-center top-0 left-0 ">
           <img
             src={partner_vector}
             alt="header_vector"
-            className="min-w-full mb-[350px] "
+            className="lg:min-w-full lg:h-auto md:min-h-[80%] md-min-w-[90%] lg:mb-[350px] min-h-[90%] min-w-[200%] relative"
           />
         </div>
       </div>
 
       <div className="h-[600px] w-screen flex flex-col justify-center items-center mb-[50px]">
-        <div className="w-full h-1/2 flex flex-col justify-center items-center">
-          <div className="w-full text-center text-[36px] text-[#3c4043] font-bold">
+        <div className="w-full h-1/2 flex flex-col justify-center items-center px-[20px]">
+          <div className="w-full text-center lg:text-[36px] md:text-[28px] text-[20px] text-[#3c4043] font-bold">
             Join our <span className="text-[#146DFA]">2,500+</span> strong
             Partner Program
           </div>
 
-          <div className="my-4 text-center w-full">
+          <div className="lg:my-4 my-2 text-center lg:w-full md:w-10/12 lg:text-[20px] md:text-[16px] text-[12px]">
             In the 2 decades of our journey, we have enabled 1000+ healthcare
             service providers in their digital transformation. However our goal
             is to double this number in the next few years.
           </div>
 
-          <div className="my-4 text-center w-full">
+          <div className="lg:my-4 my-2 text-center  lg:w-full md:w-10/12 lg:text-[20px] md:text-[16px] text-[12px]">
             We know we alone can't reach to all our potential customers, hence
             we have designed very attractive partner program and we believe
             together we can do a lot of good to address our customer need.
           </div>
         </div>
 
-        <div className="w-full h-1/2 flex justify-evenly items-center">
+        <div className="w-full h-1/2 flex justify-evenly items-center md:px-0 px-2">
           {/*  card 1 */}
           <div className=" w-[264px] h-[221px] flex flex-col justify-center items-start">
             <div className="h-1/4">
@@ -115,6 +114,7 @@ const Partners = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="56"
                 height="56"
+                className="lg:w-[56px] lg:h-[56px] w-[40px] "
                 viewBox="0 0 56 56"
                 fill="none"
               >
@@ -129,10 +129,10 @@ const Partners = () => {
               </svg>
             </div>
             <div className="w-full h-3/4 flex flex-col justify-start items-center">
-              <div className="text-[24px] font-medium my-2 text-left w-full flex justify-start items-center">
+              <div className="lg:text-[24px] md:text-[20px] text-[16px] font-medium my-2 text-left w-full flex justify-start items-center">
                 Proven solutions
               </div>
-              <div className="text-[16px] font-normal text-[#6D747A] text-left">
+              <div className="lg:text-[16px] md:text-[12px] text-[12px] font-normal text-[#6D747A] text-left">
                 With our suite of proven, best-in-class products and solutions,
                 we ensure that you’re in safe hands.
               </div>
@@ -146,6 +146,7 @@ const Partners = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="56"
                 height="56"
+                className="lg:w-[56px] lg:h-[56px] w-[40px] "
                 viewBox="0 0 56 56"
                 fill="none"
               >
@@ -160,10 +161,10 @@ const Partners = () => {
               </svg>
             </div>
             <div className="w-full h-3/4 flex flex-col justify-start items-center">
-              <div className="text-[24px] font-medium my-2 text-left w-full flex justify-start items-center">
+              <div className="lg:text-[24px] md:text-[20px] text-[16px] font-medium my-2 text-left w-full flex justify-start items-center">
                 Structured Training
               </div>
-              <div className="text-[16px] font-normal text-[#6D747A] text-left">
+              <div className="lg:text-[16px] md:text-[12px] text-[12px] font-normal text-[#6D747A] text-left">
                 We set you up for success through our well-researched,
                 comprehensive and structured training programs.
               </div>
@@ -177,6 +178,7 @@ const Partners = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="47"
                 height="48"
+                className="lg:w-[47px] lg:h-[48px] w-[36px]"
                 viewBox="0 0 47 48"
                 fill="none"
               >
@@ -189,10 +191,10 @@ const Partners = () => {
               </svg>
             </div>
             <div className="w-full h-3/4 flex flex-col justify-start items-center">
-              <div className="text-[24px] font-medium my-2 text-left w-full flex justify-start items-center">
+              <div className="lg:text-[24px] md:text-[20px] text-[16px] font-medium my-2 text-left w-full flex justify-start items-center">
                 Support Services
               </div>
-              <div className="text-[16px] font-normal text-[#6D747A] text-left">
+              <div className="lg:text-[16px] md:text-[12px] text-[12px] font-normal text-[#6D747A] text-left">
                 We’re here to help you in your journey, hand-holding wherever
                 needed and supporting in your pre-sales and sales process.
               </div>
@@ -204,6 +206,7 @@ const Partners = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="56"
                 height="56"
+                className="lg:w-[56px] lg:h-[56px] w-[40px] "
                 viewBox="0 0 56 56"
                 fill="none"
               >
@@ -228,10 +231,10 @@ const Partners = () => {
               </svg>
             </div>
             <div className="w-full h-3/4 flex flex-col justify-start items-center">
-              <div className="text-[24px] font-medium my-2 text-left w-full flex justify-start items-center">
+              <div className="lg:text-[24px] md:text-[20px] text-[16px] font-medium my-2 text-left w-full flex justify-start items-center">
                 Financial Rewards
               </div>
-              <div className="text-[16px] font-normal text-[#6D747A] text-left">
+              <div className="lg:text-[16px] md:text-[12px] text-[12px] font-normal text-[#6D747A] text-left">
                 We assure you the best bang for your buck and significant
                 financial rewards with the Partner Program.
               </div>
@@ -246,7 +249,7 @@ const Partners = () => {
  +91 8125772299 or jagdeesh@suvarna.co.in"
       />
 
-<div className="w-screen flex flex-grow-1 justify-center items-center mt-64" >
+<div className="w-screen flex flex-grow-1 justify-center items-center mt-[32px]  " >
       <div className="lg:w-10/12 md:w-11/12 w-full h-full flex justify-center items-center ">
       <div className="w-1/2 h-full md:flex hidden justify-start items-center">
         <img
@@ -254,7 +257,7 @@ const Partners = () => {
           alt="business_deal_image"
         />
       </div>
-      <form className="md:w-1/2 w-11/12 h-full flex flex-col justify-center items-center px-16">
+      <form className="md:w-1/2 w-11/12 h-full   flex flex-col justify-center items-center md:px-16 px-0">
         <div className="w-full h-full flex flex-col justify-between items-start">
           <div className="w-full h-24 flex flex-col justify-start items-start ">
             <p className="text-[28px] font-medium">Connect with us to know more.</p>
@@ -262,9 +265,9 @@ const Partners = () => {
             Share your details and we’ll get in touch within 24 hours
             </p>
           </div>
-          <div className="w-full flex flex-grow-1 flex-col justify-start items-center ">
-            <div className="w-full flex md:flex-row flex-col justify-start items-center">
-              <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:me-2">
+          <div className="w-[100%] flex flex-grow-1 flex-col justify-start items-center">
+            <div className="w-full flex flex-row md:justify-start justify-evenly items-center">
+              <div className="w-[45%]  flex flex-col justify-start items-start md:me-2">
                 <label htmlFor="name" className="py-2 font-medium text-[16px]">Name</label>
                 <input
                   type="text"
@@ -273,7 +276,7 @@ const Partners = () => {
                   name="full_name"
                 />
               </div>
-              <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:ms-2">
+              <div className="w-[45%] flex flex-col justify-start items-start md:ms-2">
                 <label htmlFor="name" className="py-2 font-medium text-[16px]">Organization Name</label>
                 <input
                   type="text"
@@ -283,8 +286,9 @@ const Partners = () => {
                 />
               </div>
             </div>
-            <div className="w-full flex md:flex-row flex-col justify-start items-center">
-            <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:me-2">
+
+            <div className="w-full flex flex-row  md:justify-start justify-evenly items-center">
+            <div className="w-[45%] flex flex-col justify-start items-start md:me-2">
                 <label htmlFor="name" className="py-2 font-medium text-[16px]">Email</label>
                 <input
                   type="text"
@@ -293,7 +297,7 @@ const Partners = () => {
                   name="email"
                 />
               </div>
-              <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:ms-2">
+              <div className="w-[45%] flex flex-col justify-start items-start md:ms-2">
                 <label htmlFor="name" className="py-2 font-medium text-[16px]">Phone</label>
                 <input
                   type="text"
@@ -304,7 +308,7 @@ const Partners = () => {
               </div>
             </div>
 
-            <div className="w-full flex md:flex-row flex-col justify-start items-center">
+            <div className="md:w-full w-[93%] flex flex-row md:justify-start justify-evenly items-center">
             
               <div className="md:w-[45%] w-full flex flex-col justify-start items-start">
                 <label htmlFor="name" className="py-2 font-medium text-[16px]">Alternate Phone</label>
@@ -318,8 +322,8 @@ const Partners = () => {
             </div>
 
 
-            <div className="w-full flex md:flex-row flex-col justify-start items-center">
-            <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:me-2">
+            <div className="w-full flex flex-row md:justify-start justify-evenly items-center">
+            <div className="w-[45%] flex flex-col justify-start items-start md:me-2">
                 <label htmlFor="name" className="py-2 font-medium text-[16px]">City</label>
                 <input
                   type="text"
@@ -328,7 +332,7 @@ const Partners = () => {
                   name="city"
                 />
               </div>
-              <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:ms-2">
+              <div className="w-[45%] flex flex-col justify-start items-start md:ms-2">
                 <label htmlFor="name" className="py-2 font-medium text-[16px]">State</label>
                 <input
                   type="text"
@@ -341,7 +345,7 @@ const Partners = () => {
 
             
 
-            <div className="w-full flex md:flex-row flex-col justify-start items-center">
+            <div className="md:w-full w-[90%] flex md:flex-row flex-col  md:justify-start justify-evenly items-center">
             <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:me-2">
                 <label htmlFor="name" className="py-2 font-medium text-[16px]">Country</label>
                 <input
@@ -363,7 +367,7 @@ const Partners = () => {
             </div>
 
 
-            <div className="w-full flex justify-start items-start">
+            <div className="md:w-full w-[90%] flex justify-start items-start">
             <div className="w-[90%] flex flex-col justify-start items-start">
                 <label htmlFor="name" className="py-2 font-medium text-[16px]">Message</label>
                 <textarea
@@ -373,7 +377,7 @@ const Partners = () => {
                 />
               </div>
             </div>
-            <div className="w-full flex flex-col justify-center items-start my-2">
+            <div className="md:w-full w-[90%] flex flex-col justify-center items-start my-2">
               <ReCaptchaV2 sitekey="6Lc5m6MoAAAAAI6JEC1uBof42fSeF_2iTWIFAz5F" />
               <div className="frame-30 my-2 flex ">
                 <input
@@ -389,7 +393,7 @@ const Partners = () => {
                 </p>
               </div>
             </div>
-           <div className="w-full flex justify-start items-center my-2">
+           <div className="md:w-full w-[90%] flex justify-start items-center my-2">
            <button
               className="btn btn-primary"
               property1="default-small"

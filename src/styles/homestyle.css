@@ -1,6 +1,5 @@
 .index {
   background-color: #ffffff;
-  height: 6664px;
   position: relative;
   width: 100%;
 }
@@ -452,7 +451,6 @@
   display: inline-flex;
   flex: 0 0 auto;
   flex-direction: column;
-  gap: 36px;
   position: relative;
 }
 
@@ -474,7 +472,6 @@
   display: inline-flex;
   flex: 0 0 auto;
   flex-direction: column;
-  gap: 85px;
   position: relative;
 }
 

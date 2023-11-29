@@ -8,7 +8,7 @@ import contact_us_vector from "../assets/pexels-gustavo-fring-4173250 1.png";
 export const ContactUsSection = () => {
   return (
     <div
-      className="w-screen md:h-10/12 mt-[60px] mb-[60px] flex justify-center items-center relative"
+      className="w-screen md:h-10/12 my-[60px] flex justify-center items-center relative"
     >
       <div className="lg:w-10/12 md:w-11/12 w-full h-full flex justify-end items-center">
         <div className="min-w-[696px] h-full flex justify-start items-start overflow-hidden absolute left-0">

@@ -13,8 +13,8 @@ export const ClientLogos = ({ className }) => {
   return (
     <div className={`client-logos ${className}`}>
       <img
-        className={`image property-1-4-${property1}`}
-        alt="Image"
+        className={`md:w-[120px] w-[80px] `}
+        alt="logo"
         src={
           property1 === "variant-2"
             ? "https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-19@2x.png"
@@ -22,8 +22,8 @@ export const ClientLogos = ({ className }) => {
         }
       />
       <img
-        className={`image-2 property-1-5-${property1}`}
-        alt="Image"
+        className={`md:w-[120px] w-[80px] `}
+        alt="logo"
         src={
           property1 === "variant-2"
             ? "https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-20.png"
@@ -31,8 +31,8 @@ export const ClientLogos = ({ className }) => {
         }
       />
       <img
-        className="image-3"
-        alt="Image"
+        className={`${property1 === "variant-2" ? "h-[70px]" : "md:w-auto w-[80px] " }`}
+        alt="logo"
         src={
           property1 === "variant-2"
             ? "https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-21.png"
@@ -40,8 +40,8 @@ export const ClientLogos = ({ className }) => {
         }
       />
       <img
-        className={`image-4 property-1-6-${property1}`}
-        alt="Image"
+        className={`md:w-[120px] w-[80px]`}
+        alt="logo"
         src={
           property1 === "variant-2"
             ? "https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-22.png"
@@ -49,8 +49,8 @@ export const ClientLogos = ({ className }) => {
         }
       />
       <img
-        className={`image-5 property-1-7-${property1}`}
-        alt="Image"
+        className={`md:w-[120px] w-[80px] `}
+        alt="logo"
         src={
           property1 === "variant-2"
             ? "https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/image-23@2x.png"

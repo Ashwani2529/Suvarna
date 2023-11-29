@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Footer } from "../Components/Homepage/Footer/Footer";
+import { Footer } from "../Components/Footer";
 import { Link } from "react-router-dom";
 import "../styles/Blogs.css";
 import { FaArrowRight } from "react-icons/fa";
@@ -143,8 +143,8 @@ const UniqueBlog = () => {
       <div className="w-screen h-[4500px] flex flex-col justify-center items-center">
         <div className="w-screen flex-grow-1 flex flex-col justify-start items-start ">
           <div className="w-screen h-[100vh] flex justify-center items-center mt-32 blogs">
-            <div className="lg:w-10/12 md:w-11/12 w-full h-full flex justify-evenly items-center">
-              <div className="w-[65%] h-full flex flex-col justify-center items-center">
+            <div className="lg:w-10/12 md:w-11/12 w-full h-full flex md:flex-row flex-col justify-evenly items-center">
+              <div className="md:w-[65%] w-full md:h-full flex flex-col justify-center items-center">
                 <div className="w-full my-2 flex">
                   <div className="rounded-full bg-[#146DFA] bg-opacity-10 px-2 py-1">
                     News & Trends
@@ -628,27 +628,27 @@ const UniqueBlog = () => {
         </div>
 
         <div className="w-screen h-[500px] flex justify-center items-center gradient-div">
-          <div className="lg:w-10/12 md:w-11/12 w-full flex justify-center items-center ">
-            <div className="min-w-1/2 flex flex-col justify-center items-start text-left gradient-div-header  ">
-              <div className="w-2/3 flex flex-col justify-center items-center text-left">
-                <div className="gradient-div-header">
+          <div className="lg:w-10/12 md:w-11/12 w-full flex md:flex-row flex-col justify-center items-center ">
+            <div className="md:min-w-1/2 flex flex-col justify-center md:items-start items-center text-left gradient-div-header  md:py-0 py-4">
+              <div className="w-2/3 flex flex-col justify-center text-[36px] font-bold items-center text-left">
+                <div className=" text-[#08090A]">
                   Get our latest insights right in your inbox,
                 </div>
-                <div className="gradient-div-header-blue text-left w-full">
+                <div className=" text-left w-full text-[#146DFA]">
                   completely free!
                 </div>
               </div>
             </div>
 
-            <div className="min-w-1/2 flex flex-col px-2">
+            <div className="md:min-w-1/2 w-full flex flex-col justify-center items-center px-2">
               <form
                 action=""
-                className="w-full h-full flex flex-col justify-center items-start"
+                className="w-full h-full flex flex-col justify-center md:items-start items-center"
               >
                 <input
                   type="text"
                   placeholder="Your email address"
-                  className="w-2/3 py-2.5 px-2 rounded-sm my-[10px]"
+                  className="md:w-[360px] w-2/3 py-2.5 px-2 rounded-sm my-[10px]"
                 />
                 <div className="w-2/3 gradient-div-regular-text">
                   By submitting, you agree to our privacy policy. For more
@@ -657,7 +657,9 @@ const UniqueBlog = () => {
                     Privacy Policy
                   </div>
                 </div>
+                <div className="md:w-40 w-2/3 flex justify-start items-center">
                 <input type="submit" className="gradient-div-button text-white" />
+                </div>
               </form>
             </div>
           </div>
@@ -666,11 +668,11 @@ const UniqueBlog = () => {
         <div className="w-screen h-screen flex flex-col justify-center items-center index">
           {/*  blog section header  */}
           <div className="w-screen flex items-center justify-center">
-            <div className="lg:w-10/12 md:w-11/12 w-full flex justify-between items-center ">
+            <div className="lg:w-10/12 md:w-11/12 w-full flex md:flex-row flex-col justify-between items-center ">
               <div className="frame-35">
                 <p className="text-wrapper-16">Check out our latest insights</p>
               </div>
-              <div className="flex justify-center items-center">
+              <div className="md:w-40 w-full flex md:justify-center justify-start items-center">
                 <div
                   className="mx-2"
                   onClick={() => {
