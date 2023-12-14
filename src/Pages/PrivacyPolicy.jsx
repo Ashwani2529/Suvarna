@@ -1,7 +1,4 @@
 import React, { useEffect } from "react";
-
-import { LogoHeader } from "../Components/AboutUs/LogoHeader/LogoHeader";
-// import "./style.css";
 import "../styles/PrivacyPolicy.css";
 import Navbar from "../Components/Homepage/Navbar/Navbar";
 import { Footer } from "../Components/Footer";
@@ -217,17 +214,7 @@ export const PrivacyPolicy = () => {
           </div>
         </div>
       </div>
-
-      {/*  same for every page  */}
-      <Footer className="" />
-      <header className="header z-50">
-        <LogoHeader className="design-component-instance-node" />
-        <div className="frame-33">
-          <div className="menu-2">
-            <Navbar />
-          </div>
-        </div>
-      </header>
+      <Footer />
     </div>
   );
 };

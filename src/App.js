@@ -50,7 +50,7 @@ function App() {
             element={<BrochuresAndCollateral />}
           />
           <Route path="/carrers" element={<Carrers />} />
-          <Route path="/apply/:id" element={<UniqueJob />} />
+          <Route path="/carrers/:id" element={<UniqueJob />} />
           <Route path="/blogs" element={<Blogs />}></Route>
           <Route path="/blogs/:id" element={<UniqueBlog />}></Route>
           <Route path="/gallery" element={<Gallery />}></Route>

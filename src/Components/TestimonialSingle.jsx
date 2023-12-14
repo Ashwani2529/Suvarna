@@ -12,7 +12,7 @@ export const TestimonialSingle = ({
   text2 = "We were confident that all our expectations would be met and Suvarna has exceeded them in every aspect to our complete satisfaction. We are happy to have a partner like Suvarna Technosoft for our healthcare software requirements.",
 }) => {
   return (
-    <div className={`testimonial-single lg:scale-100 md:scale-75 scale-[60%] ${className}`}>
+    <div className={`testimonial-single lg:scale-100 scale-75 ${className}`}>
       <div className="overlap-2">
         <div className="overlap-group-3">
           <div className="div-wrapper">

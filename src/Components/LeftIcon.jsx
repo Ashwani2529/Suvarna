@@ -1,15 +1,9 @@
-/*
-We're constantly improving the code you see. 
-Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
-*/
+ import React from "react";
 
-import PropTypes from "prop-types";
-import React from "react";
-
-export const Property1Right = ({ color = "#001E41", stroke = "white", className }) => {
+const LeftIcon = ({ color = "#EBEDF0", stroke = "#001E41", className }) => {
   return (
     <svg
-      className={`property-1-right ${className}`}
+      className={`property-1-left-disabled ${className}`}
       fill="none"
       height="48"
       viewBox="0 0 48 48"
@@ -19,7 +13,7 @@ export const Property1Right = ({ color = "#001E41", stroke = "white", className 
       <circle className="circle" cx="24" cy="24" fill={color} r="24" />
       <path
         className="path"
-        d="M17 24H31"
+        d="M31 24H17"
         stroke={stroke}
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -27,7 +21,7 @@ export const Property1Right = ({ color = "#001E41", stroke = "white", className 
       />
       <path
         className="path"
-        d="M24 17L31 24L24 31"
+        d="M24 17L17 24L24 31"
         stroke={stroke}
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -37,7 +31,4 @@ export const Property1Right = ({ color = "#001E41", stroke = "white", className 
   );
 };
 
-Property1Right.propTypes = {
-  color: PropTypes.string,
-  stroke: PropTypes.string,
-};
+export default LeftIcon

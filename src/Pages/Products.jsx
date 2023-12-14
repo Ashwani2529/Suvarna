@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
-import { ProductsPre } from "../Components/Products/ProductsPre/ProductsPre";
+import { Link, useParams } from "react-router-dom";
+import { ProductsPre } from "../Components/ProductsPre";
 import { Footer } from "../Components/Footer";
 
 import vector_products from "../VectorDMS.png";
@@ -312,7 +312,7 @@ const Products = () => {
       />
 
       <div
-        className={`w-screen 
+        className={`w-full 
         ${type === "hims" ? "min-h-[4000px]" : ""} 
         ${type === "rispacs" ? "min-h-[1800px]" : ""} 
         ${type === "dms" ? "min-h-[1000px]" : ""} 
@@ -334,7 +334,7 @@ const Products = () => {
                 return (
                   <div
                     key={index}
-                    className={`min-w-[100%] flex items-center my-[32px] ${
+                    className={`w-[100%] flex items-center my-[32px] ${
                       d.id === 1 || d.id === 3 || d.id === 5 || d.id === 7
                         ? "justify-end"
                         : "justify-start"
@@ -347,7 +347,7 @@ const Products = () => {
                         "box-shadow": "0px 4px 24px 2px rgba(0, 0, 0, 0.15)",
                       }}
                     >
-                      <div className="w-1/2 flex flex-col justify-center items-center">
+                      <div className="md:w-1/2 flex flex-col justify-center items-center">
                         <div className="text-[#2B6997] font-bold lg:text-[36px] md:text-[28px] text-[22px] text-left w-11/12 mb-2">
                           {d.title}
                         </div>
@@ -357,7 +357,7 @@ const Products = () => {
                               key={indx}
                               className="w-11/12 flex justify-start items-start mb-1"
                             >
-                              <div className="mr-3">
+                              <div className="md:mr-3 mr-1 w-[20px]">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="20"
@@ -371,7 +371,7 @@ const Products = () => {
                                   />
                                 </svg>
                               </div>
-                              <div>{elem}</div>
+                              <div className="md:text-[16px] text-[14px]">{elem}</div>
                             </div>
                           );
                         })}
@@ -408,7 +408,7 @@ const Products = () => {
                 return (
                   <div
                     key={index}
-                    className={`min-w-[100%] flex items-center my-[32px] ${
+                    className={`w-[100%] flex items-center my-[32px] ${
                       d.id === 1 || d.id === 3 || d.id === 5 || d.id === 7
                         ? "justify-end"
                         : "justify-start"
@@ -445,7 +445,7 @@ const Products = () => {
                                   />
                                 </svg>
                               </div>
-                              <div>{elem}</div>
+                              <div className="md:text-[16px] text-[14px]">{elem}</div>
                             </div>
                           );
                         })}
@@ -482,7 +482,7 @@ const Products = () => {
                 return (
                   <div
                     key={index}
-                    className={`min-w-[100%] flex items-center my-[32px] ${
+                    className={`w-[100%] flex items-center my-[32px] ${
                       d.id === 1 || d.id === 3 || d.id === 5 || d.id === 7
                         ? "justify-end"
                         : "justify-start"
@@ -518,7 +518,7 @@ const Products = () => {
                                   />
                                 </svg>
                               </div>
-                              <div>{elem}</div>
+                              <div className="md:text-[16px] text-[14px]">{elem}</div>
                             </div>
                           );
                         })}
@@ -555,7 +555,7 @@ const Products = () => {
                 return (
                   <div
                     key={index}
-                    className={`min-w-[100%] flex items-center my-[32px] ${
+                    className={`w-[100%] flex items-center my-[32px] ${
                       d.id === 1 || d.id === 3 || d.id === 5 || d.id === 7
                         ? "justify-end"
                         : "justify-start"
@@ -592,7 +592,7 @@ const Products = () => {
                                   />
                                 </svg>
                               </div>
-                              <div>{elem}</div>
+                              <div className="md:text-[16px] text-[14px]">{elem}</div>
                             </div>
                           );
                         })}
@@ -629,7 +629,7 @@ const Products = () => {
                 return (
                   <div
                     key={index}
-                    className={`min-w-[100%] flex items-center my-[32px] ${
+                    className={`w-[100%] flex items-center my-[32px] ${
                       d.id === 1 || d.id === 3 || d.id === 5 || d.id === 7
                         ? "justify-end"
                         : "justify-start"
@@ -666,7 +666,7 @@ const Products = () => {
                                   />
                                 </svg>
                               </div>
-                              <div>{elem}</div>
+                              <div className="md:text-[16px] text-[14px]">{elem}</div>
                             </div>
                           );
                         })}
@@ -703,7 +703,7 @@ const Products = () => {
                 return (
                   <div
                     key={index}
-                    className={`min-w-[100%] flex items-center my-[32px] ${
+                    className={`w-[100%] flex items-center my-[32px] ${
                       d.id === 1 || d.id === 3 || d.id === 5 || d.id === 7
                         ? "justify-end"
                         : "justify-start"
@@ -739,7 +739,7 @@ const Products = () => {
                                   />
                                 </svg>
                               </div>
-                              <div>{elem}</div>
+                              <div className="md:text-[16px] text-[14px]">{elem}</div>
                             </div>
                           );
                         })}

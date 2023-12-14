@@ -31,7 +31,7 @@ export const ClientLogos = ({ className }) => {
         }
       />
       <img
-        className={`${property1 === "variant-2" ? "h-[70px]" : "md:w-auto w-[80px] " }`}
+        className={`${property1 === "variant-2" ? "h-[70px]" : "md:w-[120px] w-[80px] " }`}
         alt="logo"
         src={
           property1 === "variant-2"
@@ -49,7 +49,7 @@ export const ClientLogos = ({ className }) => {
         }
       />
       <img
-        className={`md:w-[120px] w-[80px] `}
+        className={`md:w-[120px] w-[80px] ${property1 === "variant-2" ? "" : "scale-75"} `}
         alt="logo"
         src={
           property1 === "variant-2"

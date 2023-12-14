@@ -12,11 +12,13 @@ export const Frame = ({
   text1 = "Healthcare Professionals",
 }) => {
   return (
-    <div className={`frame property-1-${property1} ${className}`}>
-      {icon}
-      <div className="div-4">
-        <div className="element">{text}</div>
-        <div className={`healthcare ${divClassName}`}>{text1}</div>
+    <div className={`w-[262px] bg-[#252629] opacity-70 p-[8px] flex justify-start items-center`}>
+      <div className="w-[48px] h-[48px]">
+        {icon}
+      </div>
+      <div className="ms-[12px] flex-grow-1 flex flex-col justify-center items-start">
+        <div className="font-medium text-[20px] text-white">{text}</div>
+        <div className={`font-normal text-[16px] text-white ${divClassName}`}>{text1}</div>
       </div>
     </div>
   );

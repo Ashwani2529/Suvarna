@@ -2,11 +2,9 @@ import React, { useEffect, useRef, useState, useMemo } from "react";
 import { IntegrationAppcard } from "../Components/Integrations/IntegrationAppcard/IntegrationAppcard";
 import { Footer } from "../Components/Footer";
 import "../styles/integration.css";
-import { useNavigate } from "react-router-dom";
 import SmallGreenWave from "../Components/SmallGreenWave";
 
 export const Integration = () => {
-  let navigate = useNavigate();
 
   const [isSticky, setIsSticky] = useState(false);
   const [category, setCategory] = useState("All");
@@ -64,19 +62,19 @@ export const Integration = () => {
 
   return (
     <>
-      <div className="w-screen flex flex-col justify-center items-start">
+      <div className="max-w-screen flex flex-col justify-center items-start">
         <SmallGreenWave
           heading="Supercharge your business with integrations."
           subheading="Integrate with your favourite third-party apps & medical devices for seamless operations & patient care."
         />
 
         <div
-          className={`w-screen flex flex-col justify-center items-center mt-[48px] ${
+          className={`w-screen flex flex-col justify-center items-center my-[120px] ${
             isSticky ? "sticky top-0" : ""
           }`}
         >
           <div
-            className={`lg:w-10/12 md:w-11/12 w-full md:h-[80vh]  relative flex justify-evenly items-start p-4 `}
+            className={`lg:w-10/12 md:w-11/12 w-full relative flex justify-evenly items-start p-4 `}
             id="stickToTopRef"
           >
             <div className="w-full h-full flex md:flex-row flex-col md:justify-evenly justify-center items-start relative overflow-y-scroll overflow-x-hidden removeDefaultScrollStyle">
@@ -129,7 +127,7 @@ export const Integration = () => {
               </div>
 
               {/* cards  */}
-              <div className="h-[4400px] flex flex-grow-1 flex-col justify-start items-center py-4">
+              <div className="h-auto flex flex-grow-1 flex-col justify-start items-center py-4">
                 <div
                   className="w-11/12 flex flex-col justify-center items-start"
                   id="Accounting/ERP/CRM"

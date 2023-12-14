@@ -6,20 +6,20 @@ import { Line51 } from './Homepage/icons/Line51/Line51';
 const ClientReview = () => {
   return (
     <div
-    className="w-screen min-h-screen flex flex-col justify-center items-center my-[60px] py-[60px]"
+    className="w-full flex flex-col md:justify-center justify-start items-center my-[60px] py-[60px] overflow-x-hidden"
     id="testimonial"
   >
-    <p className="md:text-[36px] text-[30px] text-[#08090A] font-bold mb-[64px]">
+    <p className="md:text-[36px] text-[30px] text-[#08090A] font-bold md:mb-[64px] mb-[20px]">
       What our customers have to say
     </p>
     <div className="lg:w-10/12 md:w-11/12 w-10/12 flex justify-center items-center">
-      <div className=" md:gap-[36px] w-45vw">
+      <div className="w-45vw">
         <TestimonialSingle
-          className="testimonial-single-instance"
+          className="testimonial-single-instance "
           frame="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/6525973795dd5c4c0357416c/img/frame-482390.svg"
         />
         <Line52
-          className="line-5-2 lg:scale-100 md:scale-75 scale-[60%] lg:my-[85px]"
+          className="line-5-2 lg:my-[36px]"
           color="url(#paint0_linear_1971_10008)"
         />
         <TestimonialSingle
@@ -30,11 +30,11 @@ const ClientReview = () => {
           text1="Mumbai, IN"
         />
       </div>
-      <div className="frame-46 lg:mx-[82px]">
-        <Line51 className="line-6 lg:scale-100 md:scale-75 scale-[60%]" color="url(#paint0_linear_1971_10012)" />
-        <Line51 className="line-6 lg:scale-100 md:scale-75 scale-[60%]" color="url(#paint0_linear_1971_10012)" />
+      <div className="frame-46 lg:mx-[36px] relative min-w-[10px]">
+        <Line51 className="line-6 my-[36px]" color="url(#paint0_linear_1971_10012)" />
+        <Line51 className="line-6  my-[36px]" color="url(#paint0_linear_1971_10012)" />
       </div>
-      <div className="frame-45 lg:gap-[36px]">
+      <div className="frame-45 ">
         <TestimonialSingle
           className="testimonial-single-instance"
           frame="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/6525973795dd5c4c0357416c/img/frame-482390-2.svg"
@@ -45,7 +45,7 @@ const ClientReview = () => {
           text2="We were confident that all our expectations would be met and Suvarna has exceeded them in every aspect to our complete satisfaction."
         />
         <Line52
-          className="line-5-2 lg:scale-100 md:scale-75 scale-[60%] lg:my-[48px]"
+          className="line-5-2 lg:my-[36px]"
           color="url(#paint0_linear_1971_10008)"
         />
         <TestimonialSingle

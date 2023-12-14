@@ -49,7 +49,7 @@ export const ClientLogos1 = ({ className }) => {
         }
       />
       <img
-        className={`md:w-[120px] w-[80px] `}
+        className={`md:w-[120px] w-[80px] ${property1 === "variant-2" ? "" : "scale-75" }`}
         alt="partners_logo"
         src={
           property1 === "variant-2"

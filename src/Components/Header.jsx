@@ -20,19 +20,21 @@ const Header = () => {
   return (
     <>
       <header
+         className="md:justify-between justify-center items-center "
         style={{
           width: "100vw",
           height: "80px",
           display: "flex",
           justifyContent: "between",
           alignItems: "center",
-          zIndex: "99999",
+          zIndex: "99999999999999999",
           top: 0,
           position: "fixed",
           backgroundColor: "white",
         }}
       >
         <div
+        className="md:block hidden"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -45,10 +47,9 @@ const Header = () => {
         </div>
 
         <nav
+           className="flex flex-grow-1 md:w-auto w-screen  "
           style={{
             height: "100%",
-            display: "flex",
-            flex: 1,
             justifyContent: "center",
             alignItems: "center",
             // backgroundColor: "yellow",
@@ -70,9 +71,9 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight: "20px",
+        
               }}
-              className="nav-link-no-dropdown"
+              className="nav-link-no-dropdown lg:mr-[20px] mr-[5px]"
             >
               <a
                 style={{
@@ -92,9 +93,9 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight: "20px",
+  
               }}
-              className="nav-item dropdown"
+              className="nav-item dropdown lg:mr-[20px] mr-[5px]"
             >
               <a
                 style={{
@@ -257,9 +258,9 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight: "20px",
+           
               }}
-              className="nav-item dropdown"
+              className="nav-item dropdown lg:mr-[20px] mr-[5px]"
             >
               <a
                 style={{
@@ -358,9 +359,9 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight: "20px",
+       
               }}
-              className="nav-item dropdown"
+              className="nav-item dropdown lg:mr-[20px] mr-[5px]"
             >
               <a
                 style={{
@@ -471,9 +472,9 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight: "20px",
+               
               }}
-              className="nav-link-no-dropdown"
+              className="nav-link-no-dropdown lg:mr-[20px] mr-[5px]"
             >
               <a
                 style={{
@@ -492,9 +493,9 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight: "20px",
+     
               }}
-              className="nav-link-no-dropdown"
+              className="nav-link-no-dropdown lg:mr-[20px] mr-[5px]"
             >
               <a
                 style={{
@@ -513,9 +514,9 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "between",
                 alignItems: "center",
-                marginRight: "20px",
+                
               }}
-              className="nav-item"
+              className="nav-item lg:mr-[20px] mr-[5px]"
             >
               <button
                 id="btnsup"

@@ -1,230 +1,124 @@
-import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 
 //  import
 import { ClientLogos } from "../Components/Homepage/ClientLogos/ClientLogos";
-import { ClientLogos1 } from "../Components/Homepage/ClientLogos/ClientLogos1";
-import { ContactUsSection } from "../Components/ContactUsSection";
+
 import { Partners } from "../Components/Homepage/Partners/Partners";
 import { SliderV } from "../Components/Homepage/SliderV/SliderV";
+import { Frame } from "../Components/Homepage/Frame/Frame.jsx";
 import { Component215 } from "../Components/Homepage/icons/Component215/Component215";
 import { Component217 } from "../Components/Homepage/icons/Component217/Component217";
 import { Component25 } from "../Components/Homepage/icons/Component25/Component25";
 import { Component27 } from "../Components/Homepage/icons/Component27/Component27";
 
-// icons
-import { Property1LeftDisabled } from "../Components/Homepage/icons/Property1LeftDisabled/Property1LeftDisabled";
-import { Property1Right } from "../Components/Homepage/icons/Property1Right/Property1Right";
-
-//  stylesimports
-import "../styles/homestyle.css";
+import Carousel from "../Components/Carousel.tsx";
+import { LargeButton } from "../Components/Homepage/LargeButton/LargeButton.jsx";
 
 //  import compoenets
 import { Footer } from "../Components/Footer";
 import Logistic from "../Components/Logistic";
 import SmallBlueWave from "../Components/SmallBlueWave";
 import ClientReview from "../Components/ClientReview";
-
-// /  import images
-import product1 from "../assets/product1.png";
-import product2 from "../assets/product2.png";
-import product3 from "../assets/product3.png";
-import product4 from "../assets/product4.png";
-
-//  blog
-import blog1 from "../assets/blog1.png";
-import blog2 from "../assets/blog2.png";
-import blog3 from "../assets/blog3.png";
-import blog4 from "../assets/blog4.png";
-
-import DMS from "../assets/Product Card Logos (2).png";
-import Edukares from "../assets/Product Card Logos (3).png";
-import BIMS from "../assets/Product Card Logos.png";
-import SLIMS from "../assets/Product Card Logos (4).png";
-import HIMS from "../assets/HIMS.png";
-import RIS from "../assets/RIS.png";
-import EMR from "../assets/EMR.png";
+import BlogCarousel from "../Components/BlogCarousel";
+import ContactUsSection from "../Components/ContactUsSection";
+import ProductCarousel from "../Components/ProductCarousel";
 
 export const Homepage = () => {
-  const scrollableProducts = useRef(null);
-  const scrollableBlogs = useRef(null);
+  let slides = [
 
-  //  states
-  const [white, setWhite] = useState("#EBEDF0");
-  const [black, setBlack] = useState("#001E41");
-  const [left, setLeft] = useState(0);
+    <div onClick={(e) => console.log(0)}>
+    <div
+      className="lg:w-[100vw]  md:w-[100vw] md:h-[970px] w-[100vw] h-[970px] relative z-40 text-xl flex flex-col justify-center items-center "
+      //  image to be chnaged
+      style={{
+        background:
+          "linear-gradient(180deg, rgba(15, 134, 77, 0.60) 21.88%, rgba(70, 144, 199, 0.7) 100%) , url('https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/pexels-artem-podrez-5878523-1.png')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      <div className="text-white lg:text-[48px] md:text-[40px] text-[23px] font-bold mb-[16px]">
+      Trusted by 1000+ healthcare providers
+      </div>
+      <div className="w-1/2 text-center text-white md:text-[20px] text-[16px] mb-[82px]">
+      Our wide range of innovative technology-enabled solutions cater to hospitals, diagnostic centres, medical colleges and other healthcare touch points.
+      </div>
+      <button className="w-[264px] h-[48px] flex justify-center items-center text-[#2B6997] text-[16px] font-bold bg-white rounded-[6px]">
+        EXPLORE PRODUCTS
+      </button>
+    </div>
+  </div>,
 
-  //  onclick functions
-  const handleRight = () => {
-    setLeft(1);
-    setWhite("#001E41");
-    setBlack("#EBEDF0");
-  };
-  const handleLeft = () => {
-    setLeft(0);
-    setWhite("#EBEDF0");
-    setBlack("#001E41");
-  };
+    <div onClick={(e) => console.log(1)}>
+      <div
+        className="lg:w-[100vw]   md:w-[100vw] md:h-[970px] w-[100vw] h-[970px] relative z-40 bg-white text-xl flex flex-col justify-center items-center "
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(15, 134, 77, 0.60) 21.88%, rgba(70, 144, 199, 0.7) 100%) , url('https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/pexels-artem-podrez-5878523-2.png')",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="text-white lg:text-[48px] md:text-[40px] text-[23px] font-bold mb-[16px]">
+        Simple. Reliable. Proven. Affordable
+        </div>
+        <div className="w-1/2 text-center text-white md:text-[20px] text-[16px] mb-[82px]">
+        Suvarna's streamlined healthcare solutions prioritize simplicity and affordability without compromising quality or reliability.
+        </div>
+        <button className="w-[264px] h-[48px] flex justify-center items-center text-[#2B6997] text-[16px] font-bold bg-white rounded-[6px]">
+          EXPLORE PRODUCTS
+        </button>
+      </div>
+    </div>,
 
-  const products = [
-    {
-      id: 1,
-      name: "DMS",
-      description: "Document Management System",
-      image: product1,
-      icon: DMS,
-      route: "/dms",
-    },
-    {
-      id: 2,
-      name: "Edukares",
-      description: "Digital Campus Management System",
-      image: product2,
-      icon: Edukares,
-      route: "/edukares",
-    },
-    {
-      id: 3,
-      name: "BI & MS",
-      description: "Business Intelligence & MIS",
-      image: product3,
-      icon: BIMS,
-      route: "/bimis",
-    },
-    {
-      id: 4,
-      name: "SLIMS",
-      description: "Suvarna Laboratory Information Management System",
-      image: product4,
-      icon: SLIMS,
-      route: "/slims",
-    },
-    {
-      id: 5,
-      name: "HIMS",
-      description: "Hospital Information Management System",
-      image: product3,
-      icon: HIMS,
-      route: "/hims",
-    },
-    {
-      id: 6,
-      name: "RIS-PACS",
-      description: "Radio Inoformation System",
-      image: product2,
-      icon: RIS,
-      route: "/products/rispacs",
-    },
-    {
-      id: 7,
-      name: "EMR",
-      description: "Electronic Management Record",
-      image: product4,
-      icon: EMR,
-      route: "/emr",
-    },
+    <div onClick={(e) => console.log(2)}>
+      <div
+        className="lg:w-[100vw]   md:w-[100vw] md:h-[970px] w-[100vw] h-[970px] relative z-40 text-xl flex flex-col justify-center items-center "
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(15, 134, 77, 0.60) 21.88%, rgba(70, 144, 199, 0.7) 100%) , url('https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/pexels-artem-podrez-5878523-3.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="text-white lg:text-[48px] md:text-[40px] text-[23px] font-bold mb-[16px]">
+           Celebrating 23+ years of innovation
+        </div>
+        <div className="w-1/2 text-center text-white md:text-[20px] text-[16px] mb-[82px]">
+        Our two-decade journey of unwavering commitment to improving health outcomes signifies a legacy built on experience, expertise, and continuous innovation.
+        </div>
+        <button className="w-[264px] h-[48px] flex justify-center items-center text-[#2B6997] text-[16px] font-bold bg-white rounded-[6px]">
+          EXPLORE PRODUCTS
+        </button>
+      </div>
+    </div>,
+
+    <div onClick={(e) => console.log(3)}>
+      <div
+        className="lg:w-[100vw] md:w-[100vw] md:h-[970px] w-[100vw] h-[970px] relative z-40 bg-white text-xl flex flex-col justify-center items-center "
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(15, 134, 77, 0.60) 21.88%, rgba(70, 144, 199, 0.7) 100%) , url('https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/pexels-artem-podrez-5878523-4.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="text-white lg:text-[48px] md:text-[40px] text-[23px] font-bold mb-[16px]">
+        Digitally transforming healthcare
+        </div>
+        <div className="w-1/2 text-center text-white md:text-[20px] text-[16px] mb-[82px]">
+        Suvarna pioneers the digital revolution in healthcare, leveraging cutting-edge technology and empowering healthcare providers to deliver superior patient care.
+        </div>
+        <button className="w-[264px] h-[48px] flex justify-center items-center text-[#2B6997] text-[16px] font-bold bg-white rounded-[6px]">
+          EXPLORE PRODUCTS
+        </button>
+      </div>
+    </div>,
   ];
-
-  const blogs = [
-    {
-      id: 1,
-      title:
-        "Revolutionising Healthcare: The Power of Custom Software Solutions",
-      image: blog1,
-      date: "Aug 30",
-      type: "News & Trends",
-    },
-
-    {
-      id: 2,
-      title:
-        "Interoperability in Healthcare: Bridging the Gap with Innovative Software",
-      image: blog2,
-      date: "Aug 30",
-      type: "Technology",
-    },
-    {
-      id: 3,
-      title:
-        "Enhancing Patient Engagement: How Suvarna's Solutions Empower Healthcare Providers",
-      image: blog3,
-      date: "Aug 30",
-      type: "Research",
-    },
-    {
-      id: 4,
-      title:
-        "Navigating Regulatory Compliance: A Guide to Healthcare Software Solutions",
-      image: blog4,
-      date: "Aug 30",
-      type: "Legal & Regulatory",
-    },
-    {
-      id: 5,
-      title:
-        "Revolutionising Healthcare: The Power of Custom Software Solutions",
-      image: blog1,
-      date: "Aug 30",
-      type: "News & Trends",
-    },
-
-    {
-      id: 6,
-      title:
-        "Interoperability in Healthcare: Bridging the Gap with Innovative Software",
-      image: blog2,
-      date: "Aug 30",
-      type: "Technology",
-    },
-    {
-      id: 7,
-      title:
-        "Enhancing Patient Engagement: How Suvarna's Solutions Empower Healthcare Providers",
-      image: blog3,
-      date: "Aug 30",
-      type: "Research",
-    },
-    {
-      id: 8,
-      title:
-        "Navigating Regulatory Compliance: A Guide to Healthcare Software Solutions",
-      image: blog4,
-      date: "Aug 30",
-      type: "Legal & Regulatory",
-    },
-  ];
-
-  const scrollTo = (direction, amount, ref) => {
-    if (ref.current) {
-      const container = ref.current;
-      const currentScrollLeft = container.scrollLeft;
-      const targetScrollLeft =
-        direction === "left"
-          ? currentScrollLeft - amount
-          : currentScrollLeft + amount;
-      const duration = 500; // Animation duration in milliseconds, adjust as needed
-      const startTime = performance.now();
-
-      function scrollStep(timestamp) {
-        const progress = (timestamp - startTime) / duration;
-        if (progress < 1) {
-          container.scrollLeft =
-            currentScrollLeft +
-            (targetScrollLeft - currentScrollLeft) * progress;
-          requestAnimationFrame(scrollStep);
-        } else {
-          container.scrollLeft = targetScrollLeft;
-        }
-      }
-
-      requestAnimationFrame(scrollStep);
-    }
-  };
 
   return (
-    <div className="index">
-      <div className="relative w-screen h-screen bg-gray-100 flex justify-center items-center">
-        <SliderV
+    <div className="w-screen h-auto flex flex-col justify-center items-center">
+      <div className="relative w-full h-[920px] bg-gray-600 flex justify-center items-center">
+        {/* <SliderV
           className="slider-v2"
           frameIcon={<Component215 className="icon-instance-node" />}
           frameIcon1={<Component27 className="icon-instance-node" />}
@@ -236,116 +130,86 @@ export const Homepage = () => {
           sliderNewVector84Color="url(#paint0_linear_2082_1182)"
           sliderNewVectorPropertyDefaultClassName="slider-v-instance"
           sliderNewVectorPropertyDefaultClassNameOverride="slider-v2-instance"
+        /> */}
+
+        <Carousel
+          slides={slides}
+          animationType="SLIDE"
+          duration={2500}
+          withNavigation={true}
+        />
+
+        <div className="absolute z-[44444] left-0 top-0 mt-[183px]">
+          <div
+            className={`w-[262px] bg-[#252629] opacity-70 p-[8px] flex justify-start items-center mb-2`}
+          >
+            <div className="w-[48px] h-[48px]">
+              <Component215 className="component-2" />
+            </div>
+            <div className="ms-[12px] flex-grow-1 flex flex-col justify-center items-start">
+              <div className="font-medium md:text-[20px] text-[16px] text-white">
+                36K+
+              </div>
+              <div
+                className={`font-normal md:text-[16px] text-[14px] text-white`}
+              >
+                Healthcare Professionals
+              </div>
+            </div>
+          </div>
+
+          <div
+            className={`w-[262px] bg-[#252629] opacity-70 p-[8px] flex justify-start items-center mb-2`}
+          >
+            <div className="w-[48px] h-[48px]">
+              <Component25 className="component-2" />
+            </div>
+            <div className="ms-[12px] flex-grow-1 flex flex-col justify-center items-start">
+              <div className="font-medium text-[20px] text-white">15K+</div>
+              <div className={`font-normal text-[16px] text-white`}>
+                Physicians
+              </div>
+            </div>
+          </div>
+
+          <div
+            className={`w-[262px] bg-[#252629] opacity-70 p-[8px] flex justify-start items-center mb-2`}
+          >
+            <div className="w-[48px] h-[48px]">
+              <Component27 className="component-2" />
+            </div>
+            <div className="ms-[12px] flex-grow-1 flex flex-col justify-center items-start">
+              <div className="font-medium text-[20px] text-white">4K+</div>
+              <div className={`font-normal text-[16px] text-white`}>
+                Organisations
+              </div>
+            </div>
+          </div>
+
+          <div
+            className={`w-[262px] bg-[#252629] opacity-70 p-[8px] flex justify-start items-center mb-2`}
+          >
+            <div className="w-[48px] h-[48px]">
+              <Component217 className="component-2" />
+            </div>
+            <div className="ms-[12px] flex-grow-1 flex flex-col justify-center items-start">
+              <div className="font-medium text-[20px] text-white">60M+</div>
+              <div className={`font-normal text-[16px] text-white`}>
+                Patient Records"s
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          className="absolute left-0 bottom-0 w-full z-[44]"
+          alt="Vector"
+          src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/vector-5.svg"
         />
       </div>
 
       {/*  product cards */}
-      <div className="w-screen relative flex justify-center items-center my-[60px] py-[84px] bg-[#F9F9F9]">
-        <div className="h-[583px] w-full flex flex-col justify-center items-center md:p-0 p-2">
-          <div className="lg:w-10/12 md:w-11/12 w-full flex justify-between items-center py-2">
-            <div className="flex flex-1 flex-col flex-grow-1">
-              <div className="md:text-[36px] text-[30px] text-[#08090A] font-bold">
-                Products
-              </div>
-              <p className="md:text-[24px] text-[20px] font-normal text-[#6D747A]">
-                Explore our wide range of healthcare solutions
-              </p>
-            </div>
-            <div
-              className="w-[120px] h-full flex justify-center items-start product-slider"
-              style={{ display: "flex" }}
-            >
-              <div
-                onClick={() => {
-                  handleLeft();
-                  scrollTo("left", window.innerWidth / 4, scrollableProducts);
-                }}
-              >
-                {" "}
-                <Property1LeftDisabled
-                  className="slider-3"
-                  color={white}
-                  stroke={black}
-                />
-              </div>
-
-              <div
-                onClick={() => {
-                  handleRight();
-                  scrollTo("right", window.innerWidth / 4, scrollableProducts);
-                }}
-              >
-                <Property1Right
-                  className="slider-3"
-                  color={black}
-                  stroke={white}
-                />
-              </div>
-            </div>
-          </div>
-
-          {/*  product-card */}
-          <div
-            className="lg:w-10/12 md:w-11/12 w-full flex justify-start items-center overflow-hidden mt-6 md:p-0 p-2"
-            ref={scrollableProducts}
-          >
-            <div className="w-[4000px] flex justify-center items-center">
-              {products?.map((d, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="bg-white flex flex-col justify-center items-center h-[420px] w-[312px] product-card overflow-hidden me-[24px] select-none"
-                  >
-                    <div className="h-1/2">
-                      <img src={d.image} alt={d.name} />
-                    </div>
-                    <div className="h-1/2 w-full p-2 flex flex-col justify-center items-start">
-                      <div className="flex justify-start items-center">
-                        <img src={d.icon} className="mx-1" alt="icon" />
-                        <div className="product-card-header">{d.name}</div>
-                      </div>
-
-                      <div className="product-card-regular-text mt-2 mb-4 px-2">
-                        {d.description}
-                      </div>
-
-                      <Link
-                        to={"/products" + d.route}
-                        className="product-card-button flex items-center justify-center px-2"
-                      >
-                        <div className="flex">know more</div>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          className="mx-1 w-[20px] h-[20px]"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <path
-                            d="M3.3335 8H12.6668"
-                            stroke="#146DFA"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M8 3.33331L12.6667 7.99998L8 12.6666"
-                            stroke="#146DFA"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </div>
+      <ProductCarousel />
 
       {/*  logistic cards */}
       <Logistic />
@@ -357,13 +221,13 @@ export const Homepage = () => {
         subheading="We have a legacy of successful collaboration with healthcare providers in their digital transformation journey"
       />
 
-      <div className="w-screen h-[300px] flex justify-center items-center my-[60px] relative">
-        <div className="lg:w-10/12 md:w-11/12 w-full h-full md:px-0 px-2 flex flex-col justify-evenly items-center relative bg-white">
+      <div className="w-screen h-[300px] flex justify-center items-center  relative">
+        <div className="lg:w-10/12 md:w-11/12 w-full h-full md:px-0 px-2 flex flex-col justify-evenly items-center relative bg-white select-none">
           <ClientLogos
             className="design-component-instance-node-2"
             property1="variant-2"
           />
-          <ClientLogos1
+          <ClientLogos
             className="design-component-instance-node-2"
             property1="variant-2"
           />
@@ -374,120 +238,10 @@ export const Homepage = () => {
 
       <Partners id="partners" text="Global strategic partners" />
 
-      <div className="mt-[60px]">
-        {/*  blog section header  */}
-        <div className="w-screen flex items-center justify-center">
-          <div className="lg:w-10/12 w-11/12 flex md:flex-row flex-col md:justify-between justify-center md:items-center items-start">
-            <div className="flex flex-grow-1 justify-start items-center">
-              <p className="w-5/6 flex flex-wrap text-[36px] font-bold">
-                Check out our latest insights
-              </p>
-            </div>
-            <div className="w-32 flex justify-center items-center">
-              <div
-                className="mx-2"
-                onClick={() => {
-                  handleLeft();
-                  scrollTo("left", window.innerWidth / 4, scrollableBlogs);
-                }}
-              >
-                {" "}
-                <Property1LeftDisabled
-                  className="slider-3"
-                  color={white}
-                  stroke={black}
-                />
-              </div>
+      <BlogCarousel />
 
-              <div
-                className="mx-2"
-                onClick={() => {
-                  handleRight();
-                  scrollTo("right", window.innerWidth / 4, scrollableBlogs);
-                }}
-              >
-                <Property1Right
-                  className="slider-3"
-                  color={black}
-                  stroke={white}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+      <ContactUsSection className="mb-[60px]" />
 
-        {/* blog cards */}
-
-        <div className="h-[583px] w-full flex flex-col justify-center items-center">
-          {/*  product-card */}
-          <div
-            className="w-10/12 flex justify-start items-center overflow-hidden"
-            ref={scrollableBlogs}
-          >
-            <div className="w-[4000px] flex justify-center items-center">
-              {blogs?.map((d, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="bg-white flex flex-col justify-center items-center h-[420px] w-[312px] overflow-hidden me-[24px] select-none"
-                    style={{
-                      borderRadius: "12px",
-                    }}
-                  >
-                    <div className="h-1/2">
-                      <img src={d.image} alt={d.name} />
-                    </div>
-                    <div className="h-1/2 w-full flex flex-col justify-start items-start">
-                      <div className="flex flex-col justify-start items-center h-1/2">
-                        {/* title */}
-                        <div className="blog-card-header">{d.title}</div>
-
-                        {/*  date and type */}
-                        <div className="w-full blog-card-regular-text mt-2 mb-4 me-2 flex justify-start items-start">
-                          <div className="mx-1">{d.date}</div>
-                          <div className="mx-1">{d.type}</div>
-                        </div>
-                      </div>
-
-                      <Link
-                        to={`/blogs/${d.id}`}
-                        className="product-card-button flex items-center justify-center my-4"
-                      >
-                        Read more
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          className="mx-1 w-[20px] h-[20px]"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <path
-                            d="M3.3335 8H12.6668"
-                            stroke="#146DFA"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M8 3.33331L12.6667 7.99998L8 12.6666"
-                            stroke="#146DFA"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <ContactUsSection />
       <Footer />
     </div>
   );

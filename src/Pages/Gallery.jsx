@@ -1,5 +1,6 @@
 import React, { useState , useEffect } from "react";
 import SmallGreenWave from "../Components/SmallGreenWave";
+import {Footer} from "../Components/Footer";
 
 const Gallery = () => {
   const [type, setType] = useState("videos");
@@ -15,7 +16,7 @@ const Gallery = () => {
 
   return (
     <>
-      <div className="w-screen h-[2413px] flex-col justify-center items-center">
+      <div className="max-w-screen h-auto flex-col justify-center items-center">
         <SmallGreenWave
           heading="Gallery"
           subheading=" Explore Suvarna’s inspiring journey through images and videos that tell our story."
@@ -95,18 +96,32 @@ const Gallery = () => {
           </div>
         </div>
       </div>
+      <Footer />
       {isModalDisplayed  && (
-        <div className="w-screen h-screen fixed z-20 flex justify-center items-center top-0 left-0">
-          <div className="w-[1048px] h-[822px] bg-white flex flex-col justify-center items-start relative z-40">
-            <div className="h-12 bg-gray-100 flex justify-start items-center">title</div>
+        <div className="w-screen h-screen fixed z-[99999999999999999999999999999999999999999] flex justify-center items-center top-0 left-0"
+        >
+          <div className="w-[1048px] h-[822px] bg-white flex flex-col justify-center items-start relative z-40 rounded-[12px] p-[24px]"
+          style={{
+           boxShadow: "0px 4px 24px 4px rgba(0, 0, 0, 0.15)",
+          }}
+          >
+            <div className="h-12 flex justify-start items-center mb-[12px]">title</div>
 
-            <div className="w-full flex-grow-1 flex justify-center items-center bg-gray-300">
+            <div className="w-full flex-grow-1 flex justify-center items-center bg-gray-300"
+             
+             
+            >
                 Video
             </div>
           </div>
           
           
-          <div className="w-screen h-screen absolute bg-white bg-opacity-10 z-30" onClick={()=>{
+          <div className="w-screen h-screen absolute bg-opacity-10 z-30"
+          style={{
+              background: "rgba(255, 255, 255, 0.90)",
+             }}
+
+          onClick={()=>{
             setIsModalDisplayed(false);
           }}>
 

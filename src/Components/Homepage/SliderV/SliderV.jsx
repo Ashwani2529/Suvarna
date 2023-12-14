@@ -131,7 +131,7 @@ export const SliderV = ({
               vectorPropertyDefaultClassNameOverride={sliderNewVectorPropertyDefaultClassName}
             />
             
-             <div className="bg-red-900 w-full justify-center items-center">
+             <div className=" w-full justify-center items-center">
              <LargeButton
               className={largeButtonPropertyOutlineClassName}
               divClassName={largeButtonDivClassName}
@@ -167,7 +167,7 @@ export const SliderV = ({
             </div>
             <Slider className="slider-instance" property1="one" />
             <img
-              className="vector-2"
+              className="vector-2 w-full"
               alt="Vector"
               src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/vector-5.svg"
             />

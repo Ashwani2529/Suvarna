@@ -1,13 +1,15 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 
 // import "./style.css";
 import "../styles/ContactUs.css";
 import { Footer } from "../Components/Footer";
 
-//  importing components 
-import { ContactUsSection } from "../Components/ContactUsSection";
-
+//  importing components
+import ContactUsSection from "../Components/ContactUsSection";
 import ContactUsVector from "../assets/ContactUs_Vector.png";
+
+// map
+import Map from "../Components/Map";
 
 //  importing icons , map and location illustrations
 import map from "../assets/Screenshot 2023-10-16 at 6.34 1.png";
@@ -16,38 +18,40 @@ import kolkata from "../assets/kolkata.png";
 import delhi from "../assets/Delhi.png";
 import bengaluru from "../assets/Bengaluru.png";
 
-
 export const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    return () => {
+      return null;
+    };
+  }, []);
 
-  useEffect(()=>{
-    window.scrollTo(0,0);
-    return(()=>{
-      return null
-    });
-  },[])
-
-    const offices = [{
-        id : 1,
-        place : "Mumbai",
-        address : "456, Ocean Heights,Nariman Point,Mumbai - 400021",
-        icon : mumbai
-    },{
-        id : 2,
-        place : "Delhi",
-        address : "14A, Westwood Avenue,Connaught Place,New Delhi - 110001",
-        icon : delhi
-    },{
-        id : 3,
-        place : "Kolkata",
-        address : "789, Greenfield Tower, Park Street,Kolkata - 700016",
-        icon : kolkata
-    },{
-        id : 3,
-        place : "Bengaluru",
-        address : "101, Skyline Residency, MG Road,Bengaluru - 560001",
-        icon : bengaluru
-    }
-]
+  const offices = [
+    {
+      id: 1,
+      place: "Mumbai",
+      address: "456, Ocean Heights,Nariman Point,Mumbai - 400021",
+      icon: mumbai,
+    },
+    {
+      id: 2,
+      place: "Delhi",
+      address: "14A, Westwood Avenue,Connaught Place,New Delhi - 110001",
+      icon: delhi,
+    },
+    {
+      id: 3,
+      place: "Kolkata",
+      address: "789, Greenfield Tower, Park Street,Kolkata - 700016",
+      icon: kolkata,
+    },
+    {
+      id: 3,
+      place: "Bengaluru",
+      address: "101, Skyline Residency, MG Road,Bengaluru - 560001",
+      icon: bengaluru,
+    },
+  ];
 
   return (
     <div className="h-auto flex-col justify-start items-center ">
@@ -61,19 +65,23 @@ export const ContactUs = () => {
         />
 
         <div className="lg:w-10/12 md:w-11/12 z-20 relative w-screen h-full flex flex-col justify-center items-start bg-transparent lg:px-0 md:px-0 px-2">
-          <div className="text-white lg:text-[48px] md:text-[40px] text-[32px]">Contact us</div>
+          <div className="text-white lg:text-[48px] md:text-[40px] text-[32px]">
+            Contact us
+          </div>
           <div className="text-white lg:text-[32px] md:text-[28px] text-[24px]">
             Get in touch, we’re here to help you.
           </div>
         </div>
       </div>
 
-      <div className="h-[1750px] w-screen flex flex-col justify-start items-center mt-[20px]">
+      <div className="w-screen flex flex-col justify-start items-center mt-[20px]">
         <div className="lg:w-10/12 md:w-11/12 w-full flex flex-col justify-center items-center">
           {/*  details */}
           <div className="w-full md:h-[500px] flex md:flex-row flex-col items-center justify-center ">
             <div className="md:w-1/2 w-full h-4/5 md:px-0 px-4 flex flex-col justify-start items-start">
-              <div className="text-[24px] font-medium text-[#3C4043]">Contact Details</div>
+              <div className="text-[24px] font-medium text-[#3C4043]">
+                Contact Details
+              </div>
               {/*  first row */}
               <div className="w-3/4 flex my-2.5 lg:text-[20px] md:text-[20px] text-[16px] ">
                 {/*  location icon */}
@@ -147,44 +155,44 @@ export const ContactUs = () => {
             </div>
 
             <div className="md:w-1/2 w-11/12 bg-gray-200 flex justify-center items-center rounded-[4px] overflow-hidden ">
-              <img src={map} alt="location-map" className="location-map" />
+              <Map
+                mapContainerStyle={{  }}
+              />
             </div>
           </div>
 
           {/*  offices */}
           <div className="w-full lg:h-[336px] md:h-auto h-auto flex flex-col justify-center items-start my-[60px]">
             <div className="font-bold lg:text-[36px] md:text-[32px] text-[28px] py-8 md:px-0 px-4">
-               Our Offices
+              Our Offices
             </div>
 
             <div className="w-full flex flex-grow-1 flex-wrap justify-evenly items-center ">
-                {offices?.map((d, index)=>{
-                    return <div key={index} className="md:w-[312px] w-[43%] h-[198px] px-[24px] py-[16px] flex flex-col justify-evenly items-start rounded-[12px] border md:m-0 m-2" > 
-                      <div>
-                        <img src={d.icon} alt={d.place} />
-                      </div>
-                      <div className="text-[20px] font-medium">
-                        {d.place}
-                      </div>
-                      <div className="text-[#3C4043] text-[16px] font-normal">
-                        {d.address}
-                      </div>
+              {offices?.map((d, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="md:w-[312px] w-[43%] h-[198px] px-[24px] py-[16px] flex flex-col justify-evenly items-start rounded-[12px] border md:m-0 m-2"
+                  >
+                    <div>
+                      <img src={d.icon} alt={d.place} />
                     </div>
-                })}
+                    <div className="text-[20px] font-medium">{d.place}</div>
+                    <div className="text-[#3C4043] text-[16px] font-normal">
+                      {d.address}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
+        </div>
+        <ContactUsSection checkSquareSvgrepo="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/check-square-svgrepo-com-1-1.svg" />
 
-           {/*  contact us form */}
-           <ContactUsSection checkSquareSvgrepo="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/check-square-svgrepo-com-1-1.svg" />
-        </div>  
-        
-        
         <Footer className="mt-[60px]" />
       </div>
 
       {/*  same for every page  */}
-    
-     
     </div>
   );
 };

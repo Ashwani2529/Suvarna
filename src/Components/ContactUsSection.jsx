@@ -1,17 +1,16 @@
-import PropTypes from "prop-types";
-import React from "react";
+ import React from "react";
 
 import ReCaptchaV2 from "react-google-recaptcha";
 
 import contact_us_vector from "../assets/pexels-gustavo-fring-4173250 1.png";
 
-export const ContactUsSection = () => {
+const ContactUsSection = () => {
   return (
     <div
-      className="w-screen md:h-10/12 my-[60px] flex justify-center items-center relative"
+      className="w-full overflow-x-hidden flex justify-center items-center  mb-[120px] relative"
     >
       <div className="lg:w-10/12 md:w-11/12 w-full h-full flex justify-end items-center">
-        <div className="min-w-[696px] h-full flex justify-start items-start overflow-hidden absolute left-0">
+        <div className="min-w-[696px] h-full lg:flex hidden justify-start items-start overflow-hidden absolute left-0">
           <img
             src={contact_us_vector}
             alt="contact_us_image"
@@ -42,6 +41,7 @@ export const ContactUsSection = () => {
                     className="w-full py-2.5 px-2.5 rounded-sm border border-[#CED4DA]"
                     placeholder="John Doe"
                     name="full_name"
+                    required
                   />
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:ms-2">
@@ -56,6 +56,7 @@ export const ContactUsSection = () => {
                     className="w-full py-2.5 px-2.5 rounded-sm border border-[#CED4DA]"
                     placeholder="e.g. First Cry Hospital"
                     name="organisation_name"
+                    required
                   />
                 </div>
               </div>
@@ -72,6 +73,7 @@ export const ContactUsSection = () => {
                     className="w-full py-2.5 px-2.5 rounded-sm border border-[#CED4DA]"
                     placeholder="contact@company.com"
                     name="email"
+                    required
                   />
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:ms-2">
@@ -86,6 +88,7 @@ export const ContactUsSection = () => {
                     className="w-full py-2.5 px-2.5 rounded-sm border border-[#CED4DA]"
                     placeholder="e.g. person@gmail.com"
                     name="phone"
+                    required
                   />
                 </div>
               </div>
@@ -102,6 +105,7 @@ export const ContactUsSection = () => {
                     className="w-full py-2.5 px-2.5 rounded-sm border border-[#CED4DA]"
                     placeholder="Ahemdabad"
                     name="city"
+                    required
                   />
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:ms-2">
@@ -116,6 +120,7 @@ export const ContactUsSection = () => {
                     className="w-full py-2.5 px-2.5 rounded-sm border border-[#CED4DA]"
                     placeholder="India"
                     name="country"
+                    required
                   />
                 </div>
               </div>
@@ -169,6 +174,4 @@ export const ContactUsSection = () => {
   );
 };
 
-ContactUsSection.propTypes = {
-  checkSquareSvgrepo: PropTypes.string,
-};
+export default ContactUsSection;

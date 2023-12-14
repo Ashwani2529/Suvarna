@@ -1,6 +1,6 @@
 .Carrers .heading {
   color: #fff;
-  font-family: "NotoSans-Regular", Helvetica;
+  font-family: "HelveticaNeue-Bold", Helvetica;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -9,7 +9,7 @@
 
 .Carrers .sub-heading {
   color: #fff;
-  font-family: "NotoSans-Regular", Helvetica;
+  font-family: "HelveticaNeue-Bold", Helvetica;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -19,7 +19,7 @@
 
 .Carrers .header-regular-text {
   color: var(--White, #fff);
-  font-family: "NotoSans-Regular", Helvetica;
+  font-family: "HelveticaNeue-Bold", Helvetica;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

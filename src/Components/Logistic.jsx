@@ -7,9 +7,9 @@ const Logistic = () => {
   const [id, setId] = useState(0);
 
   return (
-    <div className="w-screen max:h-screen bg-red-900 relative flex flex-col justify-evenly items-center my-[60px] index">
-      <div className="frame-37 md:p-0 p-2">
-        <div className="md:text-[36px] text-[30px] text-[#08090A] font-bold">
+    <div className="w-screen my-[120px] relative flex flex-col justify-center items-center">
+      <div className="text-center mb-[36px]">
+        <div className="md:text-[36px] text-[30px] text-[#08090A] font-bold mb-[16px]">
           23+ years of excellence
         </div>
         <p className="w-screen text-center md:text-[24px] text-[20px] font-normal text-[#6D747A]">

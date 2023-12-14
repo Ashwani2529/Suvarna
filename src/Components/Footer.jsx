@@ -56,8 +56,8 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="w-screen h-[536px] flex flex-col justify-center items-center bg-[#3A3D40]">
-      <div className="lg:10/12 md:w-11/12 w-full h-full md:p-0 p-3 flex flex-col justify-start items-start">
+    <footer className="w-full h-[536px] flex flex-col justify-center items-center bg-[#3A3D40]">
+      <div className="lg:10/12 md:w-11/12 w-full h-full flex flex-col justify-start items-start px-3">
         {/*  logo and search Box */}
         <div className="w-full my-5 flex md:flex-row flex-col md:justify-start justify-start md:items-center items-startpy-3">
           <div className="md:me-[117.12px] md:mb-0 mb-[20px] flex lg:justify-center items-center">
@@ -75,6 +75,7 @@ export const Footer = () => {
                 type="text"
                 className="lg:w-[40vw] md:w-[50vw] w-[70vw] h-full ps-[24px] py-[12px] bg-transparent border border-white text-[#C2C2C2] rounded-[6px]"
                 placeholder="Search products, blogs and more..."
+                required
               />
             </div>
             <input

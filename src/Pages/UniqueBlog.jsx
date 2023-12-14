@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import "../styles/Blogs.css";
 import { FaArrowRight } from "react-icons/fa";
 
-import { Property1LeftDisabled } from "../Components/Homepage/icons/Property1LeftDisabled/Property1LeftDisabled";
-import { Property1Right } from "../Components/Homepage/icons/Property1Right/Property1Right";
+import BlogCarousel from "../Components/BlogCarousel";
+
+import LeftIcon from "../Components/LeftIcon";
+import RightIcon from "../Components/RightIcon";
 
 //  blog
 import blog1 from "../assets/blog1.png";
@@ -131,20 +133,74 @@ const UniqueBlog = () => {
     },
   ];
 
-  useEffect(()=>{
-    window.scrollTo(0,0);
-    return(()=>{
-      return null
-    });
-  },[])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    return () => {
+      return null;
+    };
+  }, []);
+
+  const d = [
+    {blog_introduction : "In today's rapidly evolving healthcare landscape, technology plays a pivotal role in enhancing patient care, streamlining operations, and improving overall efficiency. Creating a comprehensive technology roadmap is crucial for hospitals looking to leverage the latest advancements. This step-by-step guide will walk you through the process of crafting a technology roadmap tailored to the specific needs of a healthcare institution.",
+    steps : [{
+      id : 1,
+      name : "Assess Current Technological Landscape",
+      intro : "Before charting a new course, it's essential to have a clear understanding of the existing technological infrastructure. This involves evaluating current hardware, software, and systems in place. Consider factors such as:",
+      content : [{
+         title : "Hardware Inventory", 
+         description : "Document all existing devices, including servers, computers, medical equipment, and networking components. Assess their age, capabilities, and compatibility with modern technologies."},{
+         title : "Software Applications", 
+         description : "Compile a list of software applications used for administrative tasks, electronic health records (EHR), billing, and clinical operations. Determine if any systems are outdated or redundant.",
+         },{
+         title : "Data Security Measures", 
+         description : "Evaluate the hospital's data security protocols, including firewalls, encryption methods, and access controls. Identify any vulnerabilities that need addressing.",
+         },{
+         title : "Integration Capabilities",
+         description : "Assess how well different systems communicate with one another. Identify areas where seamless integration can improve workflow efficiency."
+         }]
+    },{
+      id : 2,
+      name : "Define Strategic Goals and Objectives",
+      intro : "Establish clear and measurable objectives that align with the hospital's mission and long-term vision. These goals should be specific, achievable, relevant, and time-bound (SMART). Consider objectives like:",
+      content : [{
+         title : "Enhancing Patient Care", 
+         description : "Focus on technologies that can improve the quality and delivery of patient care, such as telemedicine solutions, remote monitoring tools, and patient portals."},{
+         title : "Operational Efficiency", 
+         description : "Identify opportunities to streamline administrative processes, optimize resource allocation, and reduce inefficiencies in workflows.",
+         },{
+         title : "Compliance and Data Security", 
+         description : "Ensure that the hospital's technology infrastructure complies with industry standards, regulations (e.g., HIPAA), and data protection laws.",
+         },{
+         title : "Innovation and Research",
+         description : "Allocate resources for emerging technologies, research initiatives, and pilot programs that can contribute to cutting-edge healthcare practices."
+         }]
+    },
+    {
+      id : 3,
+      name : "Conduct a Needs Assessment",
+      intro : "Engage key stakeholders, including clinicians, administrative staff, IT professionals, and department heads, to gather input on their specific technology needs. Consider factors like:",
+      content : [{
+         title : "Clinical Workflow Requirements", 
+         description : "Understand how different departments function and identify technologies that can enhance their processes. For instance, surgical departments may require advanced imaging solutions."
+        },{
+         title : "Staff Training and Support", 
+         description : "Assess the level of training required for different technologies. Plan for ongoing education and support to ensure successful adoption.",
+         },{
+         title : "Patient Engagement and Experience", 
+         description : "Consider tools that can enhance patient interaction, such as mobile apps for appointment scheduling, virtual waiting rooms, and personalized health information portals.",
+         }]
+    }
+  ]}]
+ 
+  
 
   return (
     <>
-      <div className="w-screen h-[4500px] flex flex-col justify-center items-center">
-        <div className="w-screen flex-grow-1 flex flex-col justify-start items-start ">
-          <div className="w-screen h-[100vh] flex justify-center items-center mt-32 blogs">
-            <div className="lg:w-10/12 md:w-11/12 w-full h-full flex md:flex-row flex-col justify-evenly items-center">
-              <div className="md:w-[65%] w-full md:h-full flex flex-col justify-center items-center">
+      <div className="w-screen flex flex-col justify-center items-center">
+        <div className="w-screen flex-grow-1 flex flex-col justify-start items-start">
+          <div className="w-screen md:h-[100vh] h-auto flex justify-center items-center mt-32 blogs">
+            <div className="lg:w-10/12 md:w-11/12 w-full md:h-full h-auto flex md:flex-row flex-col justify-evenly items-center">
+              <div className="md:w-[65%] w-full h-full flex flex-col justify-center items-center">
                 <div className="w-full my-2 flex">
                   <div className="rounded-full bg-[#146DFA] bg-opacity-10 px-2 py-1">
                     News & Trends
@@ -172,7 +228,7 @@ const UniqueBlog = () => {
                 </div>
               </div>
               <div className="h-full px-1 border-start border-[#EBEDF0]"></div>
-              <div className="w-[30%] h-full flex flex-col justify-center items-center">
+              <div className="md:w-[30%] w-full h-full flex flex-col justify-center items-center">
                 <div className="w-full h-32 flex flex-col justify-evenly items-start bg-[#f7f9fd] px-[24px] py-[24px]">
                   <div className="">Share this Article</div>
                   <div className="flex justify-start items-center">
@@ -283,7 +339,7 @@ const UniqueBlog = () => {
                     information on our privacy practices, please review our
                     <div className="text-[#146DFA]">Privacy Policy</div>
                   </div>
-                  <form className="w-full flex justify-center items-center">
+                  <form className="w-full flex justify-center items-center px-2">
                     <input
                       type="text"
                       placeholder="Your email address"
@@ -291,7 +347,7 @@ const UniqueBlog = () => {
                     />
                     <button
                       type="button"
-                      className="h-[48px] w-[48px] flex justify-center items-center bg-[#2B6997] rounded-full ms-[16px]"
+                      className="h-[48px] min-w-[48px] flex justify-center items-center bg-[#2B6997] rounded-full ms-[16px]"
                     >
                       <FaArrowRight className="text-white" />
                     </button>
@@ -300,14 +356,16 @@ const UniqueBlog = () => {
 
                 <div className="w-full my-3 border-bottom border-[#EBEDF0]"></div>
 
-                <div className="w-full related-article ">Related Article</div>
+                <div className="md:w-full w-2/3 related-article ">
+                  Related Article
+                </div>
 
-                <div className="w-full flex-grow-1 flex flex-col justify-evenly items-start">
+                <div className="w-full flex-grow-1 flex flex-col justify-evenly md:items-start items-center">
                   {blogs.slice(0, 3).map((d, index) => {
                     return (
                       <div
                         key={index}
-                        className={`w-full h-[129px] flex flex-col justify-center items-center mb-3 border-bottom border-[#EBEDF0]`}
+                        className={`md:w-full w-2/3 h-[129px] flex flex-col justify-center items-center mb-3 border-bottom border-[#EBEDF0]`}
                       >
                         <div className="w-full flex justify-start items-center my-2">
                           <div className="mx-1 flex justify-center items-center other_blog_regular_text">
@@ -323,11 +381,9 @@ const UniqueBlog = () => {
                           >
                             <circle cx="2" cy="2.5" r="2" fill="#6D747A" />
                           </svg>
-                          <div className="mx-1 flex w-40   other_blog_regular_text">
-                            {d.type}
-                          </div>
+                          <div className="mx-1 flex w-40">{d.type}</div>
                         </div>
-                        <div className="flex justify-start items-center other_blog_headers">
+                        <div className="flex justify-start items-center lg:text-[20px] md:text-[16px] text-[14px]">
                           {d.title}
                         </div>
                       </div>
@@ -658,126 +714,18 @@ const UniqueBlog = () => {
                   </div>
                 </div>
                 <div className="md:w-40 w-2/3 flex justify-start items-center">
-                <input type="submit" className="gradient-div-button text-white" />
+                  <input
+                    type="submit"
+                    className="gradient-div-button text-white"
+                  />
                 </div>
               </form>
             </div>
           </div>
         </div>
-
-        <div className="w-screen h-screen flex flex-col justify-center items-center index">
-          {/*  blog section header  */}
-          <div className="w-screen flex items-center justify-center">
-            <div className="lg:w-10/12 md:w-11/12 w-full flex md:flex-row flex-col justify-between items-center ">
-              <div className="frame-35">
-                <p className="text-wrapper-16">Check out our latest insights</p>
-              </div>
-              <div className="md:w-40 w-full flex md:justify-center justify-start items-center">
-                <div
-                  className="mx-2"
-                  onClick={() => {
-                    handleLeft();
-                    scrollTo("left", window.innerWidth / 4, scrollableBlogs);
-                  }}
-                >
-                  {" "}
-                  <Property1LeftDisabled
-                    className="slider-3"
-                    color={white}
-                    stroke={black}
-                  />
-                </div>
-
-                <div
-                  className="mx-2"
-                  onClick={() => {
-                    handleRight();
-                    scrollTo("right", window.innerWidth / 4, scrollableBlogs);
-                  }}
-                >
-                  <Property1Right
-                    className="slider-3"
-                    color={black}
-                    stroke={white}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* blog cards */}
-          <div className=" w-screen flex justify-center items-center">
-            <div className="h-[583px] w-full flex flex-col justify-center items-center">
-              {/*  product-card */}
-              <div
-                className="w-10/12 flex justify-start items-center overflow-hidden"
-                ref={scrollableBlogs}
-              >
-                <div className="w-[4000px] flex justify-center items-center">
-                  {blogs?.map((d, index) => {
-                    return (
-                      <div
-                        key={index}
-                        className="bg-white flex flex-col justify-center items-center h-[420px] w-[312px] overflow-hidden me-[24px] select-none"
-                        style={{
-                          borderRadius: "12px",
-                        }}
-                      >
-                        <div className="h-1/2">
-                          <img src={d.image} alt={d.name} />
-                        </div>
-                        <div className="h-1/2 w-full flex flex-col justify-start items-start">
-                          <div className="flex flex-col justify-start items-center h-1/2">
-                            {/* title */}
-                            <div className="blog-card-header">{d.title}</div>
-
-                            {/*  date and type */}
-                            <div className="w-full blog-card-regular-text mt-2 mb-4 me-2 flex justify-start items-start">
-                              <div className="mx-1">{d.date}</div>
-                              <div className="mx-1">{d.type}</div>
-                            </div>
-                          </div>
-
-                          <Link
-                            to={`/blogs/${d.id}`}
-                            className="product-card-button flex items-center justify-center my-4"
-                          >
-                            <div className="flex ">Read more</div>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              className="w-[20px] h-[20px] mx-1 "
-                              viewBox="0 0 16 16"
-                              fill="none"
-                            >
-                              <path
-                                d="M3.3335 8H12.6668"
-                                stroke="#146DFA"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                              <path
-                                d="M8 3.33331L12.6667 7.99998L8 12.6666"
-                                stroke="#146DFA"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                            </svg>
-                          </Link>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-      <Footer className="absolute bottom-0" />
+      <BlogCarousel />
+      <Footer className="" />
     </>
   );
 };

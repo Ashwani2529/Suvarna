@@ -1,8 +1,6 @@
 .clients {
   background-color: #ffffff;
-  height: 380vh;
   position: relative;
-  width: 100%;
 }
 
 /* sections */
@@ -71,9 +69,6 @@
   overflow: hidden;
 }
 
-.clients .review-card {
-  width: 426px;
-}
 
 .clients .sub-header-4 {
   font-family: "NotoSans-Regular", Helvetica;

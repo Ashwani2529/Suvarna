@@ -7,16 +7,17 @@ import partner_vector from "../assets/partner_vector.png";
 import partner_illustration from "../assets/partner_illustration.png";
 import tick_icon from "../assets/Frame 482931.png";
 import business_deal from "../assets/Business deal-amico (1) 2.png"
+import partners_vector from "../assets/partners.png";
 
 import SmallBlueWave from "../Components/SmallBlueWave";
 
 const Partners = () => {
   return (
-    <div className="w-screen h-[3700px] flex flex-col justify-start items-start">
+    <div className="w-screen flex flex-col justify-start items-start">
       {/*  hero section */}
-      <div className="h-screen w-screen flex justify-center items-center relative">
-        <div className="lg:w-10/12 md:w-11/12 w-11/12 relative flex justify-center items-center z-20">
-          <div className="w-1/2 flex flex-col justify-center items-start md:mb-[100px]">
+      <div className=" w-full h-[900px] flex justify-center items-center relative">
+        <div className="lg:w-10/12 md:w-11/12 w-11/12 flex md:flex-row flex-col justify-center items-center z-20 ">
+          <div className="md:w-1/2 h-1/2  flex flex-col justify-center items-start ">
             <div className="lg:text-[48px] md:text-[40px] text-[32px] text-white font-bold my-[8px]">
               Partner with us
             </div>
@@ -69,7 +70,7 @@ const Partners = () => {
               </li>
             </div>
           </div>
-          <div className="w-1/2 h-full flex justify-center items-center">
+          <div className="md:w-1/2  flex justify-start items-center ">
             <img
               src={partner_illustration}
               alt="partner_illustration"
@@ -77,17 +78,35 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="w-full h-full absolute flex justify-center items-center top-0 left-0 ">
-          <img
-            src={partner_vector}
-            alt="header_vector"
-            className="lg:min-w-full lg:h-auto md:min-h-[80%] md-min-w-[90%] lg:mb-[350px] min-h-[90%] min-w-[200%] relative"
-          />
+        <div className="w-screen h-[850px] absolute flex justify-center items-center top-0 end-0" >
+   
+          <img src={partners_vector} className="w-screen h-[800px] absolute top-0" alt="bg_partners" />
+
         </div>
       </div>
 
-      <div className="h-[600px] w-screen flex flex-col justify-center items-center mb-[50px]">
-        <div className="w-full h-1/2 flex flex-col justify-center items-center px-[20px]">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className="md:h-[600px] w-screen flex flex-col justify-center items-center mb-[50px] relative z-30">
+        <div className="w-full h-1/2 flex flex-col justify-center items-center">
           <div className="w-full text-center lg:text-[36px] md:text-[28px] text-[20px] text-[#3c4043] font-bold">
             Join our <span className="text-[#146DFA]">2,500+</span> strong
             Partner Program
@@ -106,7 +125,7 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="w-full h-1/2 flex justify-evenly items-center md:px-0 px-2">
+        <div className="w-full md:h-1/2 flex md:flex-row flex-col justify-evenly items-center md:px-0 px-2">
           {/*  card 1 */}
           <div className=" w-[264px] h-[221px] flex flex-col justify-center items-start">
             <div className="h-1/4">
@@ -249,7 +268,7 @@ const Partners = () => {
  +91 8125772299 or jagdeesh@suvarna.co.in"
       />
 
-<div className="w-screen flex flex-grow-1 justify-center items-center mt-[32px]  " >
+<div className="w-screen flex flex-grow-1 justify-center items-center my-[120px]  " >
       <div className="lg:w-10/12 md:w-11/12 w-full h-full flex justify-center items-center ">
       <div className="w-1/2 h-full md:flex hidden justify-start items-center">
         <img

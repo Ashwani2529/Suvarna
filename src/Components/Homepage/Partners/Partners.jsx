@@ -4,7 +4,7 @@ import "../../../styles/Partnerstyle.css";
 
 export const Partners = ({ text = "Trusted by partners across the globe" }) => {
   return (
-    <div className={`h-[300px] w-screen mb-[60px] flex justify-center items-center my-[60px]`}>
+    <div className={`h-[300px] w-screen flex justify-center items-center`}>
       <div className="lg:w-10/12 md:w-11/12 w-full flex flex-col justify-center items-start ">
         <div className="w-full  md:text-[28px] text-[30px] text-[#6D747A] font-medium mb-[64px] text-center">
           {text}

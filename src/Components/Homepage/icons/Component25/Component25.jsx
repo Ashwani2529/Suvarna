@@ -8,11 +8,11 @@ import React from "react";
 export const Component25 = ({ className }) => {
   return (
     <svg
-      className={`component-2-5 ${className}`}
       fill="none"
       height="48"
       viewBox="0 0 48 48"
       width="48"
+      className="w-[48px] h-[48px]"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

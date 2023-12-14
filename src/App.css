@@ -14,3 +14,16 @@
 body::-webkit-scrollbar{
   display: none;
 }
+
+
+#vector_partners{
+  background-image: url('./assets/partners.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#vector_clients{
+  background-image: url("./assets/Ellipse 301.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
