@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import {React,useEffect,useState} from "react";
+import { React, useEffect, useState } from "react";
 import "../../../styles/ClientLogosstyle.css";
 
 export const ClientLogos = ({ className }) => {
@@ -11,7 +11,7 @@ export const ClientLogos = ({ className }) => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className={`client-logos ${className}`}>
+    <div className={`client-logos ${className} `}>
       <img
         className={`md:w-[120px] w-[80px] `}
         alt="logo"

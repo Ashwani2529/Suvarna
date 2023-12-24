@@ -1,24 +1,39 @@
 import axios from "axios";
 
-const BASE_QUERY = `http://127.0.0.1:8000/`;
+const BASE_QUERY = process.env.REACT_APP_API_URL;
 
 const OPTIONS = {
-  headers : {
+  headers: {
     'Content-Type': 'application/json',
-    'Authorization' : 'Bearer '.concat('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAyNDcxNTg2LCJqdGkiOiIyMzJiZjc3YWE2ZDY0MDM1YWQ5ZjIzNjBjYjUwNjYwOCIsInVzZXJfaWQiOjV9.jF7rIC7g6FHtlinNFCqctB3TOjO6yVO4OURTFM33gfI')
+    'Authorization': 'Bearer '.concat(process.env.REACT_APP_API_KEY)
   },
 }
 
-const fetchData = async (method, apiRoutes) => {
+
+
+const fetchData = async (method,apiRoutes,formData) => {
+  console.log(method,apiRoutes,formData);
   try {
     if (method.toLowerCase() === "get") {
-      const response = await axios.get(BASE_QUERY.concat(apiRoutes),OPTIONS);
-      console.log(response.data);
-      return response.data;
+      if (!formData) {
+        const response = await axios.get(BASE_QUERY.concat(apiRoutes),OPTIONS);
+        console.log(response.data);
+        return response.data;
+      } else {
+        const response = await axios.get(BASE_QUERY.concat(apiRoutes),formData,OPTIONS);
+        console.log(response.data);
+        return response.data;
+      }
     } else if (method.toLowerCase() === "post") {
-      const response = await axios.post(BASE_QUERY.concat(apiRoutes),OPTIONS);
-      console.log(response.data);
-      return response.data;
+      if (formData) {
+        const response = await axios.post(BASE_QUERY.concat(apiRoutes),formData,OPTIONS);
+        return response.data;
+      } else {
+        const response = await axios.post(BASE_QUERY.concat(apiRoutes),OPTIONS);
+        return response.data;
+      }
+
+
     } else if (method.toLowerCase() === "put") {
       const response = await axios.put(BASE_QUERY.concat(apiRoutes),OPTIONS);
       console.log(response.data);
@@ -29,7 +44,7 @@ const fetchData = async (method, apiRoutes) => {
       return response.data;
     }
   } catch (error) {
-    console.error("Error: ", error);
+    console.error("Error: ",error);
   }
 };
 

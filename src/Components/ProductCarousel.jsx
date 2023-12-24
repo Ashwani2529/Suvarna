@@ -125,7 +125,7 @@ const ProductCarousel = () => {
   ];
 
   return (
-    <div className="w-screen relative flex justify-center items-center bg-[#F9F9F9] py-[84px]">
+    <div className="w-screen relative flex justify-center items-center bg-[#F9F9F9] py-[60px]" id="products">
       <div className="h-[583px] w-full flex flex-col justify-center items-center md:p-0 p-2">
         <div className="lg:w-10/12 md:w-11/12 w-full flex justify-between items-center py-2 mb-[64px]">
           <div className="flex flex-1 flex-col flex-grow-1">

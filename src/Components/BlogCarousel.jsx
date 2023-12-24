@@ -110,7 +110,6 @@ const BlogCarousel = () => {
       }).catch((e)=>{
         console.error("ERROR" , e)
       });
-      console.log("DATA==>",data);
       setLoading(true);
     }, [])
 
@@ -124,7 +123,6 @@ const BlogCarousel = () => {
       }).catch((e)=>{
         console.error("ERROR" , e)
       });
-      console.log("DATA==>",data);
       setLoading(true);
     }, [])
     
@@ -145,7 +143,7 @@ const BlogCarousel = () => {
       setWhite("#EBEDF0");
       setBlack("#001E41");
     };
-
+    console.log(data);
     const scrollTo = (direction, amount, ref) => {
       if (ref.current) {
         const container = ref.current;
@@ -174,7 +172,7 @@ const BlogCarousel = () => {
     };
 
   return (
-    <div className="w-screen flex flex-col justify-center items-center my-[120px] bg-white">
+    <div className="w-screen flex flex-col justify-center items-center  ">
     {/*  blog section header  */}
     <div className="w-screen flex items-center justify-center">
       <div className="lg:w-10/12 w-11/12 flex md:flex-row flex-col md:justify-between justify-center md:items-center items-start">
@@ -225,8 +223,7 @@ const BlogCarousel = () => {
         ref={scrollableBlogs}
       >
         <div className="w-[4000px] flex justify-start items-center">
-          {loading ? <Loader /> : data?.map((d, index) => {
-              console.log(d.category);
+          {loading ? <div className='lg:w-10/12 md:w-11/12 w-screen h-full justify-center items-center'><Loader /></div> : data?.map((d, index) => {
             return (
               <div
                 key={index}

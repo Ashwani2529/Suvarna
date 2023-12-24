@@ -7,8 +7,8 @@ const Logistic = () => {
   const [id, setId] = useState(0);
 
   return (
-    <div className="w-screen my-[120px] relative flex flex-col justify-center items-center">
-      <div className="text-center mb-[36px]">
+    <div className="w-screen mt-[30px] relative flex flex-col justify-center items-center">
+      <div className="text-center mb-[10px]">
         <div className="md:text-[36px] text-[30px] text-[#08090A] font-bold mb-[16px]">
           23+ years of excellence
         </div>
@@ -16,8 +16,8 @@ const Logistic = () => {
           in delivering innovative solutions to 1000+ healthcare providers
         </p>
       </div>
-      <div className="lg:w-10/12 md:w-11/12 w-full flex items-center justify-center select-none ">
-        <div className="w-[968px] md:h-[576px] flex flex-row flex-wrap justify-evenly items-center">
+      <div className="lg:w-10/12 md:w-11/12 w-full flex items-center justify-center select-none">
+        <div className="w-[968px] md:h-[476px] flex flex-row flex-wrap justify-evenly items-center">
           {/*  1st card */}
           <div
             className="md:w-[352px] w-[46vw] h-[228px] flex flex-col justify-center items-start p-[24px] bg-white logistic_card_hover md:mt-0 mt-2"

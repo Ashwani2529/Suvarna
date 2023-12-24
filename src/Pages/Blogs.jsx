@@ -121,8 +121,8 @@ const Blogs = () => {
                 </div>
               </div>
             </div>
-            <div className="h-full px-1 border-start border-[#EBEDF0]"></div>
-            <div className="md:w-[30%] w-2/3 md:h-full h-auto flex flex-col justify-center items-center md:p-0 p-2">
+            <div className="h-full px-1 border-start border-[#EBEDF0] "></div>
+            <div className=" w-full md:w-[30%] md:h-full h-auto flex flex-col justify-center items-center md:p-0 p-3">
               <div className="w-full flex-grow-1 flex flex-col justify-evenly items-start">
                 {blogs.slice(0, 4).map((d, index) => {
                   return (
@@ -186,7 +186,6 @@ const Blogs = () => {
         {/* blogCarousel carousel */}
         <BlogCarousel />
       </div>
-      <Footer />
     </>
   );
 };

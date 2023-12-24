@@ -132,7 +132,7 @@ export const Integration = () => {
                   className="w-11/12 flex flex-col justify-center items-start"
                   id="Accounting/ERP/CRM"
                 >
-                  <div className="text-[28px] text-[#2B6997] font-medium  ps-16">
+                  <div className="text-[28px] text-[#2B6997] font-medium  sm:ps-16 mb-4">
                     Accounting/ ERP/ CRM
                   </div>
                   <div className="w-full flex flex-grow flex-wrap justify-center items-start ">
@@ -269,7 +269,7 @@ export const Integration = () => {
                   className="w-11/12 flex flex-col justify-center items-start"
                   id="Picture Archiving and Communications System (PACS)"
                 >
-                  <div className="text-[28px] text-[#2B6997] font-medium  ps-16">
+                  <div className="text-[28px] text-[#2B6997] font-medium  sm:ps-16 pb-4 pt-5">
                     Picture Archiving and Communications System (PACS)
                   </div>
                   <div className="w-full flex flex-grow flex-wrap justify-center items-start">
@@ -430,7 +430,6 @@ export const Integration = () => {
           </div>
         </div>
       </div>
-      <Footer />
 
     </>
   );

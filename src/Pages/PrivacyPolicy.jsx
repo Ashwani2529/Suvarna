@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-import "../styles/PrivacyPolicy.css";
-import Navbar from "../Components/Homepage/Navbar/Navbar";
-import { Footer } from "../Components/Footer";
 import SmallBlueWave from "../Components/SmallBlueWave";
+import "../styles/PrivacyPolicy.css";
 
 export const PrivacyPolicy = () => {
   useEffect(() => {
@@ -214,7 +212,6 @@ export const PrivacyPolicy = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

@@ -1,9 +1,6 @@
 import React from "react";
 
 import smallBlueWave from "../assets/smallBlueWave.png";
-import money_bag from "../assets/money-bag-svgrepo-com 1 (2).png";
-import location from "../assets/location-pin-svgrepo-com 1.png";
-import timer from "../assets/Group.png";
 
 const SmallBlueWave = (props) => {
   return (
@@ -17,7 +14,6 @@ const SmallBlueWave = (props) => {
               alt="vector"
             />
           </div>
-
           <div className="lg:w-10/12 md:w-11/12 relative w-full h-full flex flex-col justify-center items-center z-50 lg:mb-[40px] md:mb-[80px] mb-[120px]">
             <div className="w-full lg:text-[48px] md:text-[40px] text-[32px] font-bold text-center flex justify-center items-center text-white">
               {props.role}

@@ -1,14 +1,50 @@
- import React from "react";
+import React, { useState } from "react";
 
 import ReCaptchaV2 from "react-google-recaptcha";
 
 import contact_us_vector from "../assets/pexels-gustavo-fring-4173250 1.png";
+import axios from "axios";
+import fetchData from "../utils/Api";
+import Loader from "../Components/Loader";
 
 const ContactUsSection = () => {
+  
+  const [loading, setLoading] = useState(false);
+  const [response, setResponse] = useState({});
+
+  const [formData, setFormData] = useState({
+    name: "",
+    organisation_name: "",
+    email: "",
+    phone: "",
+    city: "",
+    country: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+     fetchData("POST", "api/contact_us/create/", formData).then((res) => {
+      setResponse(res);
+      setLoading(false);
+      alert(`Welcome ${response.name}! Our team will respond within 24 hours !`)
+    });
+     
+ 
+  };
+
   return (
-    <div
-      className="w-full overflow-x-hidden flex justify-center items-center  mb-[120px] relative"
-    >
+    <div className="w-full overflow-x-hidden flex justify-center items-start mb-[60px] relative">
       <div className="lg:w-10/12 md:w-11/12 w-full h-full flex justify-end items-center">
         <div className="min-w-[696px] h-full lg:flex hidden justify-start items-start overflow-hidden absolute left-0">
           <img
@@ -17,7 +53,14 @@ const ContactUsSection = () => {
             className="w-full"
           />
         </div>
-        <form className="lg:w-1/2 w-full h-full flex flex-col justify-center items-center px-4 z-40">
+        <form
+          method="POST"
+          action={`${process.env.REACT_APP_API_URL}api/contact_us/create/`}
+          className="lg:w-1/2 w-full h-full flex flex-col justify-center items-center px-4 z-40"
+          onSubmit={(e)=>{
+            handleSubmit(e)        
+          }}
+        >
           <div className="w-full h-full flex flex-col justify-between items-start">
             <div className="w-full h-36 flex flex-col justify-start items-start ">
               <p className="text-[28px] font-medium">
@@ -40,13 +83,16 @@ const ContactUsSection = () => {
                     type="text"
                     className="w-full py-2.5 px-2.5 rounded-sm border border-[#CED4DA]"
                     placeholder="John Doe"
-                    name="full_name"
-                    required
+                    name="name"
+                    onChange={(e) => {
+                      handleChange(e);
+                    }}
+                    required={true}
                   />
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:ms-2">
                   <label
-                    htmlFor="name"
+                    htmlFor="organisation_name"
                     className="py-2 font-medium text-[16px]"
                   >
                     Organization Name
@@ -56,14 +102,17 @@ const ContactUsSection = () => {
                     className="w-full py-2.5 px-2.5 rounded-sm border border-[#CED4DA]"
                     placeholder="e.g. First Cry Hospital"
                     name="organisation_name"
-                    required
+                    onChange={(e) => {
+                      handleChange(e);
+                    }}
+                    required={true}
                   />
                 </div>
               </div>
               <div className="w-full flex md:flex-row flex-col justify-start items-center">
                 <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:me-2">
                   <label
-                    htmlFor="name"
+                    htmlFor="email"
                     className="py-2 font-medium text-[16px]"
                   >
                     Email
@@ -73,12 +122,15 @@ const ContactUsSection = () => {
                     className="w-full py-2.5 px-2.5 rounded-sm border border-[#CED4DA]"
                     placeholder="contact@company.com"
                     name="email"
-                    required
+                    onChange={(e) => {
+                      handleChange(e);
+                    }}
+                    required={true}
                   />
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:ms-2">
                   <label
-                    htmlFor="name"
+                    htmlFor="phone"
                     className="py-2 font-medium text-[16px]"
                   >
                     Phone
@@ -88,14 +140,17 @@ const ContactUsSection = () => {
                     className="w-full py-2.5 px-2.5 rounded-sm border border-[#CED4DA]"
                     placeholder="e.g. person@gmail.com"
                     name="phone"
-                    required
+                    onChange={(e) => {
+                      handleChange(e);
+                    }}
+                    required={true}
                   />
                 </div>
               </div>
               <div className="w-full flex md:flex-row flex-col justify-start items-center">
                 <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:me-2">
                   <label
-                    htmlFor="name"
+                    htmlFor="city"
                     className="py-2 font-medium text-[16px]"
                   >
                     City
@@ -105,12 +160,15 @@ const ContactUsSection = () => {
                     className="w-full py-2.5 px-2.5 rounded-sm border border-[#CED4DA]"
                     placeholder="Ahemdabad"
                     name="city"
-                    required
+                    onChange={(e) => {
+                      handleChange(e);
+                    }}
+                    required={true}
                   />
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col justify-start items-start md:ms-2">
                   <label
-                    htmlFor="name"
+                    htmlFor="country"
                     className="py-2 font-medium text-[16px]"
                   >
                     Country
@@ -120,14 +178,17 @@ const ContactUsSection = () => {
                     className="w-full py-2.5 px-2.5 rounded-sm border border-[#CED4DA]"
                     placeholder="India"
                     name="country"
-                    required
+                    onChange={(e) => {
+                      handleChange(e);
+                    }}
+                    required={true}
                   />
                 </div>
               </div>
               <div className="w-full flex justify-start items-start">
                 <div className="w-[90%] flex flex-col justify-start items-start">
                   <label
-                    htmlFor="name"
+                    htmlFor="message"
                     className="py-2 font-medium text-[16px]"
                   >
                     Message
@@ -135,6 +196,9 @@ const ContactUsSection = () => {
                   <textarea
                     className="w-full py-2.5 px-2.5 rounded-sm border border-[#CED4DA]"
                     placeholder="Leave us a message..."
+                    onChange={(e) => {
+                      handleChange(e);
+                    }}
                     name="message"
                   />
                 </div>
@@ -148,7 +212,7 @@ const ContactUsSection = () => {
                     type="checkbox"
                   />
                   <p className="you-agree-to-our">
-                    <span className="text-[#08090A] font-normal mx-2">
+                    <span className="text-[#08090A] font-normal mx-2" required>
                       You agree to our friendly
                     </span>
                     <span className="text-[#146DFA] font-normal">
@@ -158,13 +222,12 @@ const ContactUsSection = () => {
                 </div>
               </div>
               <div className="w-full flex justify-start items-center my-2">
-                <button
-                  className="btn btn-primary"
+                <input
+                  type="submit"
+                  className="bg-[#146DFA] w-[118px] h-[48px] rounded-[6px] text-white font-medium flex justify-center items-center "
                   property1="default-small"
-                  text="Submit"
-                >
-                  Submit
-                </button>
+                  value={loading ? <Loader /> : `Submit`}
+                />
               </div>
             </div>
           </div>

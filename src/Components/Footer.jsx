@@ -26,8 +26,8 @@ export const Footer = () => {
     },
     {
       id: 4,
-      name: "Carrers",
-      route: "/carrers",
+      name: "careers",
+      route: "/careers",
     },
     {
       id: 5,
@@ -94,9 +94,9 @@ export const Footer = () => {
             <div className="">
               {contactInfo?.map((d, index) => {
                 return (
-                  <div className="flex justify-start items-start my-[6px] ">
+                  <div key={index} className="flex justify-start items-start my-[6px] ">
                     <div
-                      key={index}
+                      
                       className="min-w-[20px] h-full flex justify-start items-start me-[12px] pt-1"
                     >
                       {/*  svg- contacts-icon */}

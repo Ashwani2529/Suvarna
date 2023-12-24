@@ -1,32 +1,206 @@
-import React, { useState , useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import galleyVideo4 from "../assets/gallery-thumbnail-1.png";
+import {
+  default as galleyVideo3,
+  default as galleyVideo7,
+} from "../assets/gallery-thumbnail-2.png";
+import {
+  default as galleyVideo2,
+  default as galleyVideo6,
+} from "../assets/gallery-thumbnail-3.png";
+import {
+  default as galleyVideo1,
+  default as galleyVideo5,
+} from "../assets/gallery-thumbnail-4.png";
+import VideoCard from "../Components/Gallery/VideoCard";
 import SmallGreenWave from "../Components/SmallGreenWave";
-import {Footer} from "../Components/Footer";
+
+import galleryImage1 from "../assets/gallery-image-1.png";
+import galleryImage2 from "../assets/gallery-image-2.png";
+import galleryImage3 from "../assets/gallery-image-3.png";
+import galleryImage4 from "../assets/gallery-image-4.png";
+import galleryImage5 from "../assets/gallery-image-5.png";
+import galleryImage6 from "../assets/gallery-image-6.png";
+import galleryImage7 from "../assets/gallery-image-7.png";
+import galleryImage8 from "../assets/gallery-image-8.png";
+import ImageCard from "../Components/Gallery/ImageCard";
 
 const Gallery = () => {
-  const [type, setType] = useState("videos");
-  const [id, setId] = useState(0);
-  const [isModalDisplayed, setIsModalDisplayed] = useState(false);
+  // videos data
+  const videos = [
+    {
+      title: "About Company",
+      duration: "00:03:43",
+      thumbnail: galleyVideo1,
+    },
+    {
+      title: "About Company",
+      duration: "00:03:43",
+      thumbnail: galleyVideo2,
+    },
+    {
+      title: "About Company",
+      duration: "00:03:43",
+      thumbnail: galleyVideo3,
+    },
+    {
+      title: "About Company",
+      duration: "00:03:43",
+      thumbnail: galleyVideo4,
+    },
+    {
+      title: "About Company",
+      duration: "00:03:43",
+      thumbnail: galleyVideo5,
+    },
+    {
+      title: "About Company",
+      duration: "00:03:43",
+      thumbnail: galleyVideo6,
+    },
+    {
+      title: "About Company",
+      duration: "00:03:43",
+      thumbnail: galleyVideo7,
+    },
+  ];
 
-  useEffect(()=>{
-    window.scrollTo(0,0);
-    return(()=>{
-      return null
-    });
-  },[])
+  const images = [
+    {
+      coverImage: galleryImage1,
+      title: "Jamaica Conference 2023",
+      qty: 22,
+      images: [
+        galleryImage1,
+        galleryImage2,
+        galleryImage3,
+        galleryImage4,
+        galleryImage5,
+        galleryImage6,
+      ],
+    },
+    {
+      coverImage: galleryImage2,
+      title: "Patholabs Intl’ Chapter",
+      qty: 17,
+      images: [
+        galleryImage2,
+        galleryImage1,
+        galleryImage3,
+        galleryImage4,
+        galleryImage5,
+        galleryImage6,
+      ],
+    },
+    {
+      coverImage: galleryImage3,
+      title: "ANIDS University Seminar",
+      qty: 17,
+      images: [
+        galleryImage3,
+        galleryImage1,
+        galleryImage2,
+        galleryImage4,
+        galleryImage5,
+        galleryImage6,
+      ],
+    },
+    {
+      coverImage: galleryImage4,
+      title: "Jamaica Conference 2023 ",
+      qty: 22,
+      images: [
+        galleryImage4,
+        galleryImage1,
+        galleryImage2,
+        galleryImage3,
+
+        galleryImage5,
+        galleryImage6,
+      ],
+    },
+    {
+      coverImage: galleryImage5,
+      title: "Technology in childcare ",
+      qty: 31,
+      images: [
+        galleryImage5,
+        galleryImage1,
+        galleryImage2,
+        galleryImage3,
+        galleryImage4,
+        galleryImage5,
+        galleryImage6,
+      ],
+    },
+    {
+      coverImage: galleryImage6,
+      title: "Elantrix Surgery Onboarding",
+      qty: 14,
+      images: [
+        galleryImage6,
+        galleryImage1,
+        galleryImage2,
+        galleryImage3,
+        galleryImage4,
+        galleryImage5,
+      ],
+    },
+    {
+      coverImage: galleryImage7,
+      title: "IMRJA Seminar July 2022",
+      qty: 18,
+      images: [
+        galleryImage7,
+        galleryImage2,
+        galleryImage3,
+        galleryImage4,
+        galleryImage5,
+        galleryImage6,
+      ],
+    },
+    {
+      coverImage: galleryImage8,
+      title: "ASTRIX Vaccine Conventio...",
+      qty: 16,
+      images: [
+        galleryImage8,
+        galleryImage1,
+        galleryImage2,
+        galleryImage3,
+        galleryImage4,
+        galleryImage5,
+        galleryImage6,
+      ],
+    },
+  ];
+
+  const [type, setType] = useState("videos" | "images");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    return () => {
+      return null;
+    };
+  }, []);
 
   return (
     <>
-      <div className="max-w-screen h-auto flex-col justify-center items-center">
+      <div className='max-w-screen h-auto flex-col justify-center items-center mb-[120px]'>
+        {/* gallery banner shape here */}
         <SmallGreenWave
-          heading="Gallery"
-          subheading=" Explore Suvarna’s inspiring journey through images and videos that tell our story."
+          heading='Gallery'
+          subheading=' Explore Suvarna’s inspiring journey through images and videos that tell our story.'
         />
+        {/* gallery banner shape close here */}
 
-        <div className="w-full flex flex-grow-1 justify-center items-center mt-64">
-          <div className="lg:w-10/12 w-11/12 flex flex-col justify-start items-center">
-            <div className="w-full flex justify-start items-center">
+        {/* gallery here */}
+        <div className='w-full flex flex-grow-1 justify-center items-center mt-64'>
+          <div className='lg:w-10/12 w-11/12 flex flex-col justify-start items-center'>
+            {/* gallery switch here */}
+            <div className='w-full flex justify-start items-center'>
               <button
-                type="button"
+                type='button'
                 className={`text-[20px] font-medium me-4 ${
                   type === "videos" ? "border-b-2 border-[#146DFA]" : ""
                 }`}
@@ -37,7 +211,7 @@ const Gallery = () => {
                 Videos
               </button>
               <button
-                type="button"
+                type='button'
                 className={`text-[20px] font-medium me-4 ${
                   type === "images" ? "border-b-2 border-[#146DFA]" : ""
                 }`}
@@ -48,86 +222,25 @@ const Gallery = () => {
                 Images
               </button>
             </div>
+            {/* gallery switch close here */}
 
-            <div className="w-full flex flex-row-1 justify-start items-center py-4">
-              {/*  map through data and onClick set Id and isModalDisplayed = true */}
-              <div
-                className="h-[424px] w-[385px] flex flex-col justify-center items-center bg-white cursor-pointer"
-                id="card"
-                onClick={() => {
-                  setId(1);
-                  setIsModalDisplayed(true);
-                }}
-              >
-                <div className="w-full flex flex-grow-1 bg-gray-100">
-                  {/*  file */}
-                </div>
-                <div className="h-20 w-full flex flex-col justify-center items-start">
-                  <div className="text-[28px] font-medium">title</div>
-                  <div className="text-[14px] text-[#3c4043] font-normal flex ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="17"
-                      className="w-[20px] h-[20px] me-2"
-                      viewBox="0 0 16 17"
-                      fill="none"
-                    >
-                      <path
-                        d="M8.00016 15.1654C11.6821 15.1654 14.6668 12.1806 14.6668 8.4987C14.6668 4.8168 11.6821 1.83203 8.00016 1.83203C4.31826 1.83203 1.3335 4.8168 1.3335 8.4987C1.3335 12.1806 4.31826 15.1654 8.00016 15.1654Z"
-                        stroke="#6D747A"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M8 4.5V8.5L10.6667 9.83333"
-                        stroke="#6D747A"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    duration
-                  </div>
-                </div>
+            {/* gallery navigate here */}
+            {type === "videos" ? (
+              <div className='flex flex-wrap items-center gap-4 md:gap-8 lg:gap-12 mt-4 md:mt-8'>
+                {videos.map((item, index) => (
+                  <VideoCard key={index} item={item} />
+                ))}
               </div>
-            </div>
+            ) : (
+              <div className='flex flex-wrap items-center gap-4 md:gap-8 lg:gap-12 mt-4 md:mt-8'>
+                {images.map((item, index) => (
+                  <ImageCard key={index} item={item} />
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
-      <Footer />
-      {isModalDisplayed  && (
-        <div className="w-screen h-screen fixed z-[99999999999999999999999999999999999999999] flex justify-center items-center top-0 left-0"
-        >
-          <div className="w-[1048px] h-[822px] bg-white flex flex-col justify-center items-start relative z-40 rounded-[12px] p-[24px]"
-          style={{
-           boxShadow: "0px 4px 24px 4px rgba(0, 0, 0, 0.15)",
-          }}
-          >
-            <div className="h-12 flex justify-start items-center mb-[12px]">title</div>
-
-            <div className="w-full flex-grow-1 flex justify-center items-center bg-gray-300"
-             
-             
-            >
-                Video
-            </div>
-          </div>
-          
-          
-          <div className="w-screen h-screen absolute bg-opacity-10 z-30"
-          style={{
-              background: "rgba(255, 255, 255, 0.90)",
-             }}
-
-          onClick={()=>{
-            setIsModalDisplayed(false);
-          }}>
-
-          </div>
-        </div>
-      )}
     </>
   );
 };
