@@ -44,7 +44,7 @@ const ContactUsSection = () => {
   };
 
   return (
-    <div className="w-full overflow-x-hidden flex justify-center items-start mb-[60px] relative">
+    <div className="w-full overflow-x-hidden flex justify-center items-center  mb-[120px] relative">
       <div className="lg:w-10/12 md:w-11/12 w-full h-full flex justify-end items-center">
         <div className="min-w-[696px] h-full lg:flex hidden justify-start items-start overflow-hidden absolute left-0">
           <img

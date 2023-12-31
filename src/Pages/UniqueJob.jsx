@@ -70,7 +70,8 @@ export const UniqueJob = () => {
             <img src={resume} className="w-[400px] h-[400px]" alt="resume" />
         </div>
       </div>
-      
+
+      <Footer />
     </div>
   );
 };

@@ -143,7 +143,7 @@ const BlogCarousel = () => {
       setWhite("#EBEDF0");
       setBlack("#001E41");
     };
-    console.log(data);
+
     const scrollTo = (direction, amount, ref) => {
       if (ref.current) {
         const container = ref.current;
@@ -172,7 +172,7 @@ const BlogCarousel = () => {
     };
 
   return (
-    <div className="w-screen flex flex-col justify-center items-center  ">
+    <div className="w-screen flex flex-col justify-center items-center my-[120px] bg-white">
     {/*  blog section header  */}
     <div className="w-screen flex items-center justify-center">
       <div className="lg:w-10/12 w-11/12 flex md:flex-row flex-col md:justify-between justify-center md:items-center items-start">

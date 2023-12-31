@@ -1,27 +1,16 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { ProductsPre } from "../Components/ProductsPre";
+import { Footer } from "../Components/Footer";
 
-import KeyModules from "../Components/KeyModules/KeyModules";
 import vector_products from "../VectorDMS.png";
-import module_image_even from "../assets/Product_Module_Image (1).png";
 import module_image_odd from "../assets/Product_Module_Image.png";
-import useWindowDimensions from "../utils/windowDimension";
+import module_image_even from "../assets/Product_Module_Image (1).png";
+import { AboutUs } from "./AboutUs";
 
 const Products = () => {
-  const [laptop, setLaptop] = React.useState(false);
   var { type } = useParams();
-  const { width,height } = useWindowDimensions();
-  
-  React.useEffect(() => {
-    if (((width <= 1366) && (width >= 1024)) && (height <= 769)) {
-      setLaptop(true);
-    } else {
-      setLaptop(false);
-    }
-  },[width,height]);
-  
-console.log(laptop);
+
   const hims = [
     {
       id: 1,
@@ -188,6 +177,7 @@ console.log(laptop);
         "Used by 300 + Hospitals of all sizes",
       ],
     },
+   
   ];
 
   const slims = [
@@ -267,9 +257,7 @@ console.log(laptop);
         head={`${type === "bimis" ? "Business Intelligence & MIS" : ""}
 
                 ${
-                  type === "hims"
-                    ? "Hospital Information Management System"
-                    : ""
+                  type === "hims" ? "Hospital Information Management System" : ""
                 }
                 
                 ${type === "rispacs" ? "Radiology Information System" : ""}
@@ -328,18 +316,19 @@ console.log(laptop);
         ${type === "hims" ? "min-h-[4000px]" : ""} 
         ${type === "rispacs" ? "min-h-[1800px]" : ""} 
         ${type === "dms" ? "min-h-[1000px]" : ""} 
-        ${type === "bimis" ? "min-h-[500px]" : ""} 
+        ${type === "bimis" ? "min-h-[1000px]" : ""} 
         ${type === "edukares" ? "min-h-[1000px]" : ""} 
         ${type === "slims" ? "min-h-[2400px]" : ""} 
         relative flex justify-center items-center overflow-hidden`}
+
         style={{
-          backgroundImage: `url(${vector_products})`,
-          backgroundRepeat: "none",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
+          backgroundImage : `url(${vector_products})`,
+          backgroundRepeat : "none",
+          backgroundPosition : "center",
+          backgroundSize : "cover"
         }}
       >
-        <div className="absolute min-h-fit lg:w-10/12 md:w-11/12 w-full flex flex-col items-center justify-center mt-[100px] z-30">
+        <div className="absolute h-auto lg:w-10/12 md:w-11/12 w-full flex flex-col items-center justify-center mt-[100px] z-30">
           {type === "hims"
             ? hims?.map((d, index) => {
                 return (
@@ -352,7 +341,8 @@ console.log(laptop);
                     }`}
                   >
                     <div
-                      className="md:w-[1096px] w-full h-fit flex justify-center items-center relative bg-white py-5"
+                      className="md:w-[1096px] w-full h-[480px] flex justify-center items-center relative bg-white"
+                      
                       style={{
                         "box-shadow": "0px 4px 24px 2px rgba(0, 0, 0, 0.15)",
                       }}
@@ -381,18 +371,13 @@ console.log(laptop);
                                   />
                                 </svg>
                               </div>
-                              <div className="md:text-[16px] text-[14px]">
-                                {elem} fgff
-                              </div>
+                              <div className="md:text-[16px] text-[14px]">{elem}</div>
                             </div>
                           );
                         })}
                       </div>
                       <div className="w-1/2 h-full flex justify-center items-center relative">
-                        {d.id === 1 ||
-                        d.id === 3 ||
-                        d.id === 5 ||
-                        d.id === 7 ? (
+                        {d.id === 1 || d.id === 3 || d.id === 5 || d.id === 7 ? (
                           <img src={module_image_even} alt="evenImage" />
                         ) : (
                           <img src={module_image_odd} alt="oddImage" />
@@ -430,7 +415,8 @@ console.log(laptop);
                     }`}
                   >
                     <div
-                      className="md:w-[1096px] w-full h-fit flex justify-center items-center relative bg-white py-5"
+                      className="md:w-[1096px] w-full h-[480px] flex justify-center items-center relative bg-white"
+
                       style={{
                         "box-shadow": "0px 4px 24px 2px rgba(0, 0, 0, 0.15)",
                       }}
@@ -459,18 +445,13 @@ console.log(laptop);
                                   />
                                 </svg>
                               </div>
-                              <div className="md:text-[16px] text-[14px]">
-                                {elem}
-                              </div>
+                              <div className="md:text-[16px] text-[14px]">{elem}</div>
                             </div>
                           );
                         })}
                       </div>
                       <div className="w-1/2 h-full flex justify-center items-center relative">
-                        {d.id === 1 ||
-                        d.id === 3 ||
-                        d.id === 5 ||
-                        d.id === 7 ? (
+                        {d.id === 1 || d.id === 3 || d.id === 5 || d.id === 7 ? (
                           <img src={module_image_even} alt="evenImage" />
                         ) : (
                           <img src={module_image_odd} alt="oddImage" />
@@ -508,7 +489,7 @@ console.log(laptop);
                     }`}
                   >
                     <div
-                      className="md:w-[1096px] w-full h-fit flex justify-center items-center relative bg-white py-5"
+                      className="md:w-[1096px] w-full h-[480px] flex justify-center items-center relative bg-white"
                       style={{
                         "box-shadow": "0px 4px 24px 2px rgba(0, 0, 0, 0.15)",
                       }}
@@ -537,18 +518,13 @@ console.log(laptop);
                                   />
                                 </svg>
                               </div>
-                              <div className="md:text-[16px] text-[14px]">
-                                {elem}
-                              </div>
+                              <div className="md:text-[16px] text-[14px]">{elem}</div>
                             </div>
                           );
                         })}
                       </div>
                       <div className="w-1/2 h-full flex justify-center items-center relative">
-                        {d.id === 1 ||
-                        d.id === 3 ||
-                        d.id === 5 ||
-                        d.id === 7 ? (
+                        {d.id === 1 || d.id === 3 || d.id === 5 || d.id === 7 ? (
                           <img src={module_image_even} alt="evenImage" />
                         ) : (
                           <img src={module_image_odd} alt="oddImage" />
@@ -574,7 +550,7 @@ console.log(laptop);
               })
             : ""}
 
-          {type === "slims"
+{type === "slims"
             ? slims?.map((d, index) => {
                 return (
                   <div
@@ -586,7 +562,8 @@ console.log(laptop);
                     }`}
                   >
                     <div
-                      className="md:w-[1096px] w-full h-fit flex justify-center items-center relative bg-white py-5"
+                      className="md:w-[1096px] w-full h-[480px] flex justify-center items-center relative bg-white"
+                      
                       style={{
                         "box-shadow": "0px 4px 24px 2px rgba(0, 0, 0, 0.15)",
                       }}
@@ -615,18 +592,13 @@ console.log(laptop);
                                   />
                                 </svg>
                               </div>
-                              <div className="md:text-[16px] text-[14px]">
-                                {elem}
-                              </div>
+                              <div className="md:text-[16px] text-[14px]">{elem}</div>
                             </div>
                           );
                         })}
                       </div>
                       <div className="w-1/2 h-full flex justify-center items-center relative">
-                        {d.id === 1 ||
-                        d.id === 3 ||
-                        d.id === 5 ||
-                        d.id === 7 ? (
+                        {d.id === 1 || d.id === 3 || d.id === 5 || d.id === 7 ? (
                           <img src={module_image_even} alt="evenImage" />
                         ) : (
                           <img src={module_image_odd} alt="oddImage" />
@@ -664,7 +636,8 @@ console.log(laptop);
                     }`}
                   >
                     <div
-                      className="md:w-[1096px] w-full h-fit flex justify-center items-center relative bg-white py-5"
+                      className="md:w-[1096px] w-full h-[480px] flex justify-center items-center relative bg-white"
+
                       style={{
                         "box-shadow": "0px 4px 24px 2px rgba(0, 0, 0, 0.15)",
                       }}
@@ -693,18 +666,13 @@ console.log(laptop);
                                   />
                                 </svg>
                               </div>
-                              <div className="md:text-[16px] text-[14px]">
-                                {elem}
-                              </div>
+                              <div className="md:text-[16px] text-[14px]">{elem}</div>
                             </div>
                           );
                         })}
                       </div>
                       <div className="w-1/2 h-full flex justify-center items-center relative">
-                        {d.id === 1 ||
-                        d.id === 3 ||
-                        d.id === 5 ||
-                        d.id === 7 ? (
+                        {d.id === 1 || d.id === 3 || d.id === 5 || d.id === 7 ? (
                           <img src={module_image_even} alt="evenImage" />
                         ) : (
                           <img src={module_image_odd} alt="oddImage" />
@@ -742,7 +710,7 @@ console.log(laptop);
                     }`}
                   >
                     <div
-                      className="md:w-[1096px] w-full h-fit flex justify-center items-center relative bg-white py-5"
+                      className="md:w-[1096px] w-full h-[480px] flex justify-center items-center relative bg-white"
                       style={{
                         "box-shadow": "0px 4px 24px 2px rgba(0, 0, 0, 0.15)",
                       }}
@@ -771,18 +739,13 @@ console.log(laptop);
                                   />
                                 </svg>
                               </div>
-                              <div className="md:text-[16px] text-[14px]">
-                                {elem}
-                              </div>
+                              <div className="md:text-[16px] text-[14px]">{elem}</div>
                             </div>
                           );
                         })}
                       </div>
                       <div className="w-1/2 h-full flex justify-center items-center relative">
-                        {d.id === 1 ||
-                        d.id === 3 ||
-                        d.id === 5 ||
-                        d.id === 7 ? (
+                        {d.id === 1 || d.id === 3 || d.id === 5 || d.id === 7 ? (
                           <img src={module_image_even} alt="evenImage" />
                         ) : (
                           <img src={module_image_odd} alt="oddImage" />
@@ -812,7 +775,6 @@ console.log(laptop);
         {/* vector bg */}
         <div></div>
       </div>
-      <KeyModules />
 
       {type === "hims" ? <div></div> : ""}
 
@@ -822,10 +784,13 @@ console.log(laptop);
         </div>
         <Link
           to={"/contactus"}
-          className="bg-[#146DFA] text-white h-[44px] w-[117px] flex justify-center items-center rounded-[6px]">
+          className="bg-[#146DFA] text-white h-[44px] w-[117px] flex justify-center items-center rounded-[6px]"
+        >
           Contact us
         </Link>
       </div>
+
+      <Footer />
     </div>
   );
 };

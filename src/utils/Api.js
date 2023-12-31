@@ -3,37 +3,37 @@ import axios from "axios";
 const BASE_QUERY = process.env.REACT_APP_API_URL;
 
 const OPTIONS = {
-  headers: {
+  headers : {
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer '.concat(process.env.REACT_APP_API_KEY)
+    'Authorization' : 'Bearer '.concat(process.env.REACT_APP_API_KEY)
   },
 }
 
+ 
 
-
-const fetchData = async (method,apiRoutes,formData) => {
-  console.log(method,apiRoutes,formData);
+const fetchData = async (method, apiRoutes, formData ) => {
+  console.log(method , apiRoutes , formData);
   try {
     if (method.toLowerCase() === "get") {
-      if (!formData) {
+      if(!formData){
         const response = await axios.get(BASE_QUERY.concat(apiRoutes),OPTIONS);
-        console.log(response.data);
-        return response.data;
-      } else {
+      console.log(response.data);
+      return response.data;
+      }else{
         const response = await axios.get(BASE_QUERY.concat(apiRoutes),formData,OPTIONS);
-        console.log(response.data);
-        return response.data;
+      console.log(response.data);
+      return response.data;
       }
     } else if (method.toLowerCase() === "post") {
-      if (formData) {
-        const response = await axios.post(BASE_QUERY.concat(apiRoutes),formData,OPTIONS);
+      if(formData){
+        const response = await axios.post(BASE_QUERY.concat(apiRoutes),formData,OPTIONS);  
         return response.data;
-      } else {
-        const response = await axios.post(BASE_QUERY.concat(apiRoutes),OPTIONS);
-        return response.data;
+      }else{
+         const response = await axios.post(BASE_QUERY.concat(apiRoutes),OPTIONS);  
+         return response.data;
       }
-
-
+      
+    
     } else if (method.toLowerCase() === "put") {
       const response = await axios.put(BASE_QUERY.concat(apiRoutes),OPTIONS);
       console.log(response.data);
@@ -44,7 +44,7 @@ const fetchData = async (method,apiRoutes,formData) => {
       return response.data;
     }
   } catch (error) {
-    console.error("Error: ",error);
+    console.error("Error: ", error);
   }
 };
 

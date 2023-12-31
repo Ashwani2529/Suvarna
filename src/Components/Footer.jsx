@@ -26,8 +26,8 @@ export const Footer = () => {
     },
     {
       id: 4,
-      name: "careers",
-      route: "/careers",
+      name: "Carrers",
+      route: "/carrers",
     },
     {
       id: 5,

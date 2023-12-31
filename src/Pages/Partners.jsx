@@ -59,7 +59,7 @@ const Partners = () => {
   return (
     <div className="w-screen flex flex-col justify-start items-start">
       {/*  hero section */}
-      <div className=" w-full h-[900px] flex justify-center items-center relative mt-20 sm:mt-0">
+      <div className=" w-full h-[900px] flex justify-center items-center relative">
         <div className="lg:w-10/12 md:w-11/12 w-11/12 flex md:flex-row flex-col justify-center items-center z-20 ">
           <div className="md:w-1/2 h-1/2  flex flex-col justify-center items-start ">
             <div className="lg:text-[48px] md:text-[40px] text-[32px] text-white font-bold my-[8px]">
@@ -122,7 +122,7 @@ const Partners = () => {
             />
           </div>
         </div>
-        <div className="w-screen h-[850px] absolute flex justify-center items-center top-0 end-0 ">
+        <div className="w-screen h-[850px] absolute flex justify-center items-center top-0 end-0">
           <img
             src={partners_vector}
             className="w-screen h-[800px] absolute top-0"
@@ -457,6 +457,7 @@ const Partners = () => {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

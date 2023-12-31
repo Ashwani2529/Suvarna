@@ -18,9 +18,6 @@ import lotus_logo from "../assets/image 133.png";
 import omega_logo from "../assets/image 128.png";
 import hema from "../assets/pexels-cottonbro-studio-4100672 1.png";
 
-import polygon from "../assets/Ellipse 301.png";
-import SupportService from "./SupportService";
-
 export const Clients = () => {
   const [filter, setFilter] = useState("all");
   const [index, setIndex] = useState(1);
@@ -194,6 +191,7 @@ export const Clients = () => {
           container.scrollLeft = targetScrollLeft;
         }
       }
+
       requestAnimationFrame(scrollStep);
     }
   };
@@ -207,11 +205,8 @@ export const Clients = () => {
 
   return (
     <>
-      <div
-        className="clients w-screen flex flex-col justify-start items-center relative overflow-hidden mt-14 sm:mt-0"
-        id="clients"
-      >
-        <div className="w-screen h-[755px] flex flex-col items-center justify-end relative mb-[60px]">
+      <div className="clients w-screen flex flex-col justify-start items-center relative overflow-hidden">
+        <div className="w-screen h-[755px] flex flex-col items-center justify-end relative mb-[120px]">
           {/*  frame -6 */}
           <div className="lg:w-10/12 md:w-11/12 w-full h-full flex flex-col justify-end items-start relative z-10 md:p-0 p-2 mb-[101px]">
             <div className="lg:text-[48px] md:text-[40px] text-[32px] text-white font-bold lg:w-[90%] ">
@@ -243,16 +238,17 @@ export const Clients = () => {
           </div>
           {/*  frame-6 ends here */}
 
-          <div className="w-full h-full absolute top-0 ">
+          <div className="w-full absolute top-0" >
             <img
-              src={polygon}
+              src="../../assets/Ellipse 301.png"
               alt="polygon"
               className="w-full h-[800px] flex justify-center items-center"
             />
           </div>
         </div>
+
         {/*  clients  */}
-        <div className="w-screen md:h-[990px] h-auto flex flex-col justify-start items-center relative mt-[30px]">
+        <div className="w-screen md:h-[990px] h-auto flex flex-col justify-start items-center relative my-[120px]">
           <div className="w-10/12 lg:text-[48px] md:text-[40px] text-[32px]  font-bold text-black flex justify-start items-center">
             Our Clientele
           </div>
@@ -287,59 +283,58 @@ export const Clients = () => {
             })}
           </div>
 
-          <div className="lg:w-10/12 md:w-11/12 h-[750px] flex justify-start items-start overflow-hidden relative ">
+          <div className="lg:w-10/12 md:w-11/12 h-[750px] flex justify-start items-start overflow-hidden ">
             <div
-              className="sm:w-[4000px] h-full overflow-x-scroll removeScrollDefaultStyling flex flex-col flex-wrap justify-start items-start"
+              className="w-[4000px] h-full overflow-x-scroll removeScrollDefaultStyling flex flex-col flex-wrap justify-start items-start"
               ref={scrollableClientRef}
             >
               {filteredData?.map((d, index) => {
                 return (
                   <div
                     key={index}
-                    className="sm:w-[200px] my-3 lg:mx-[30px] md:mx-[8px] mx-[4px]"
+                    className="w-[200px] my-3 lg:mx-[30px] md:mx-[8px] mx-[4px]"
                   >
                     <img src={d.logo} alt="logo" className="w-full " />
                   </div>
                 );
               })}
             </div>
-            <div className="w-full flex justify-between items-center lg:py-4 md:py-8 py-[60px] z-10 absolute top-[40%] sm:top-[50%]">
-              <button
-                type="button"
-                onClick={(e) => {
+          </div>
+
+          <div className="w-[324px] flex justify-between items-center lg:py-4 md:py-8 py-[60px]">
+            <button
+              type="button"
+              onClick={(e) => {
+               
                   scrollTo(
                     "left",
                     window.innerWidth - 200,
                     scrollableClientRef
                   );
-                }}
-              >
-                <LeftIcon />
-              </button>
-
-              <button
-                type="button"
-                onClick={(e) => {
-                  scrollTo(
-                    "right",
-                    window.innerWidth - 200,
-                    scrollableClientRef
-                  );
-                }}
-              >
-                <RightIcon />
-              </button>
+                
+              }}
+            >
+              <LeftIcon />
+            </button>
+            <div className="text-[#6D747A] font-medium sub-header-4 md:block hidden">
+              {index}/4
             </div>
+
+            <button
+              type="button"
+              onClick={(e) => {
+               
+                scrollTo("right", window.innerWidth - 200, scrollableClientRef);
+              }}
+            >
+              <RightIcon />
+            </button>
           </div>
-          {/* <div className="text-[#6D747A] font-medium sub-header-4 md:block hidden">
-            {index}/4
-          </div> */}
         </div>
+
         {/*  reviews */}
-        <div
-          className="w-screen h-screen flex justify-center items-center bg-white relative mt-5 sm:mt-0"
-          id="testimonial"
-        >
+
+        <div className="w-screen h-screen flex justify-center items-center bg-white relative">
           <div className="lg:w-10/12 md:w-11/12 w-full md:h-full min-h-full flex md:flex-row flex-col justify-start items-center relative bg-white">
             <div className="md:w-1/3 w-full md:h-5/6  text-black flex justify-start items-start">
               <div className="md:w-3/4 w-full px-2 lg:text-[48px] md:text-[40px] text-[32px] font-medium">
@@ -415,21 +410,26 @@ export const Clients = () => {
                 <button
                   type="button"
                   onClick={(e) => {
-                    scrollTo("left", 850, scrollableReviewRef);
+                    scrollTo(
+                      "left",
+                      850,
+                      scrollableReviewRef
+                    );
                   }}
                 >
                   <LeftIcon />
                 </button>
-                <div
-                  className="sub-header-4  md:block hidden"
-                  id="pageIndicator"
-                >
+                <div className="sub-header-4  md:block hidden" id="pageIndicator">
                   {reviewIndex}/4
                 </div>
                 <button
                   type="button"
                   onClick={(e) => {
-                    scrollTo("right", 850, scrollableReviewRef);
+                    scrollTo(
+                      "right",
+                      850,
+                      scrollableReviewRef
+                    );
                   }}
                 >
                   <RightIcon />
@@ -438,11 +438,8 @@ export const Clients = () => {
             </div>
           </div>
         </div>
-        {/* support  */}
-        <div id="support">
-          <SupportService />
-        </div>
       </div>
+      <Footer />
     </>
   );
 };

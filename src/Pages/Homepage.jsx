@@ -12,58 +12,58 @@ import { Component27 } from "../Components/Homepage/icons/Component27/Component2
 
 import Carousel from "../Components/Carousel.tsx";
 
+
 //  import compoenets
-import BlogCarousel from "../Components/BlogCarousel";
-import ClientReview from "../Components/ClientReview";
-import ContactUsSection from "../Components/ContactUsSection";
+import { Footer } from "../Components/Footer";
 import Logistic from "../Components/Logistic";
-import ProductCarousel from "../Components/ProductCarousel";
 import SmallBlueWave from "../Components/SmallBlueWave";
+import ClientReview from "../Components/ClientReview";
+import BlogCarousel from "../Components/BlogCarousel";
+import ContactUsSection from "../Components/ContactUsSection";
+import ProductCarousel from "../Components/ProductCarousel";
 
 export const Homepage = () => {
   let slides = [
-    <div>
-      <div
-        className='h-screen relative z-40 text-xl flex flex-col justify-center items-center '
-        //  image to be chnaged
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(15, 134, 77, 0.60) 21.88%, rgba(70, 144, 199, 0.7) 100%) , url('https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/pexels-artem-podrez-5878523-1.png')",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      >
-        <div className='text-white lg:text-[48px] md:text-[40px] text-[23px] font-bold mb-[16px]'>
-          Trusted by 1000+ healthcare providers
-        </div>
-        <div className='w-1/2 text-center text-white md:text-[20px] text-[16px] mb-[82px]'>
-          Our wide range of innovative technology-enabled solutions cater to
-          hospitals, diagnostic centres, medical colleges and other healthcare
-          touch points.
-        </div>
-        <button className='w-[264px] h-[48px] flex justify-center items-center text-[#2B6997] text-[16px] font-bold bg-white rounded-[6px]'>
-          EXPLORE PRODUCTS
-        </button>
+
+    <div onClick={(e) => console.log(0)}>
+    <div
+      className="lg:w-[100vw]  md:w-[100vw] md:h-[970px] w-[100vw] h-[970px] relative z-40 text-xl flex flex-col justify-center items-center "
+      //  image to be chnaged
+      style={{
+        background:
+          "linear-gradient(180deg, rgba(15, 134, 77, 0.60) 21.88%, rgba(70, 144, 199, 0.7) 100%) , url('https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/pexels-artem-podrez-5878523-1.png')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      <div className="text-white lg:text-[48px] md:text-[40px] text-[23px] font-bold mb-[16px]">
+      Trusted by 1000+ healthcare providers
       </div>
-    </div>,
+      <div className="w-1/2 text-center text-white md:text-[20px] text-[16px] mb-[82px]">
+      Our wide range of innovative technology-enabled solutions cater to hospitals, diagnostic centres, medical colleges and other healthcare touch points.
+      </div>
+      <button className="w-[264px] h-[48px] flex justify-center items-center text-[#2B6997] text-[16px] font-bold bg-white rounded-[6px]">
+        EXPLORE PRODUCTS
+      </button>
+    </div>
+  </div>,
 
     <div onClick={(e) => console.log(1)}>
       <div
-        className='h-screen relative z-40 bg-white text-xl flex flex-col justify-center items-center '
+        className="lg:w-[100vw]   md:w-[100vw] md:h-[970px] w-[100vw] h-[970px] relative z-40 bg-white text-xl flex flex-col justify-center items-center "
         style={{
           background:
             "linear-gradient(180deg, rgba(15, 134, 77, 0.60) 21.88%, rgba(70, 144, 199, 0.7) 100%) , url('https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/pexels-artem-podrez-5878523-2.png')",
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className='text-white lg:text-[48px] md:text-[40px] text-[23px] font-bold mb-[16px]'>
-          Simple. Reliable. Proven. Affordable
+        <div className="text-white lg:text-[48px] md:text-[40px] text-[23px] font-bold mb-[16px]">
+        Simple. Reliable. Proven. Affordable
         </div>
-        <div className='w-1/2 text-center text-white md:text-[20px] text-[16px] mb-[82px]'>
-          Suvarna's streamlined healthcare solutions prioritize simplicity and
-          affordability without compromising quality or reliability.
+        <div className="w-1/2 text-center text-white md:text-[20px] text-[16px] mb-[82px]">
+        Suvarna's streamlined healthcare solutions prioritize simplicity and affordability without compromising quality or reliability.
         </div>
-        <button className='w-[264px] h-[48px] flex justify-center items-center text-[#2B6997] text-[16px] font-bold bg-white rounded-[6px]'>
+        <button className="w-[264px] h-[48px] flex justify-center items-center text-[#2B6997] text-[16px] font-bold bg-white rounded-[6px]">
           EXPLORE PRODUCTS
         </button>
       </div>
@@ -71,7 +71,7 @@ export const Homepage = () => {
 
     <div onClick={(e) => console.log(2)}>
       <div
-        className='h-screen relative z-40 text-xl flex flex-col justify-center items-center '
+        className="lg:w-[100vw]   md:w-[100vw] md:h-[970px] w-[100vw] h-[970px] relative z-40 text-xl flex flex-col justify-center items-center "
         style={{
           background:
             "linear-gradient(180deg, rgba(15, 134, 77, 0.60) 21.88%, rgba(70, 144, 199, 0.7) 100%) , url('https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/pexels-artem-podrez-5878523-3.png')",
@@ -79,15 +79,13 @@ export const Homepage = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className='text-white lg:text-[48px] md:text-[40px] text-[23px] font-bold mb-[16px]'>
-          Celebrating 23+ years of innovation
+        <div className="text-white lg:text-[48px] md:text-[40px] text-[23px] font-bold mb-[16px]">
+           Celebrating 23+ years of innovation
         </div>
-        <div className='w-1/2 text-center text-white md:text-[20px] text-[16px] mb-[82px]'>
-          Our two-decade journey of unwavering commitment to improving health
-          outcomes signifies a legacy built on experience, expertise, and
-          continuous innovation.
+        <div className="w-1/2 text-center text-white md:text-[20px] text-[16px] mb-[82px]">
+        Our two-decade journey of unwavering commitment to improving health outcomes signifies a legacy built on experience, expertise, and continuous innovation.
         </div>
-        <button className='w-[264px] h-[48px] flex justify-center items-center text-[#2B6997] text-[16px] font-bold bg-white rounded-[6px]'>
+        <button className="w-[264px] h-[48px] flex justify-center items-center text-[#2B6997] text-[16px] font-bold bg-white rounded-[6px]">
           EXPLORE PRODUCTS
         </button>
       </div>
@@ -95,7 +93,7 @@ export const Homepage = () => {
 
     <div onClick={(e) => console.log(3)}>
       <div
-        className='h-screen relative z-40 bg-white text-xl flex flex-col justify-center items-center '
+        className="lg:w-[100vw] md:w-[100vw] md:h-[970px] w-[100vw] h-[970px] relative z-40 bg-white text-xl flex flex-col justify-center items-center "
         style={{
           background:
             "linear-gradient(180deg, rgba(15, 134, 77, 0.60) 21.88%, rgba(70, 144, 199, 0.7) 100%) , url('https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/pexels-artem-podrez-5878523-4.png')",
@@ -103,15 +101,13 @@ export const Homepage = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className='text-white lg:text-[48px] md:text-[40px] text-[23px] font-bold mb-[16px]'>
-          Digitally transforming healthcare
+        <div className="text-white lg:text-[48px] md:text-[40px] text-[23px] font-bold mb-[16px]">
+        Digitally transforming healthcare
         </div>
-        <div className='w-1/2 text-center text-white md:text-[20px] text-[16px] mb-[82px]'>
-          Suvarna pioneers the digital revolution in healthcare, leveraging
-          cutting-edge technology and empowering healthcare providers to deliver
-          superior patient care.
+        <div className="w-1/2 text-center text-white md:text-[20px] text-[16px] mb-[82px]">
+        Suvarna pioneers the digital revolution in healthcare, leveraging cutting-edge technology and empowering healthcare providers to deliver superior patient care.
         </div>
-        <button className='w-[264px] h-[48px] flex justify-center items-center text-[#2B6997] text-[16px] font-bold bg-white rounded-[6px]'>
+        <button className="w-[264px] h-[48px] flex justify-center items-center text-[#2B6997] text-[16px] font-bold bg-white rounded-[6px]">
           EXPLORE PRODUCTS
         </button>
       </div>
@@ -119,8 +115,8 @@ export const Homepage = () => {
   ];
 
   return (
-    <div className='w-screen h-auto flex flex-col justify-center items-center'>
-      <div className='relative w-full h-screen bg-gray-600 flex justify-center items-center'>
+    <div className="w-screen h-auto flex flex-col justify-center items-center">
+      <div className="relative w-full h-[920px] bg-gray-600 flex justify-center items-center">
         {/* <SliderV
           className="slider-v2"
           frameIcon={<Component215 className="icon-instance-node" />}
@@ -137,21 +133,20 @@ export const Homepage = () => {
 
         <Carousel
           slides={slides}
-          animationType='SLIDE'
+          animationType="SLIDE"
           duration={2500}
           withNavigation={true}
         />
 
-        <div className={`absolute z-50 left-0 top-0 mt-[183px]`}>
+        <div className="absolute z-[44444] left-0 top-0 mt-[183px]">
           <div
             className={`w-[262px] bg-[#252629] opacity-70 p-[8px] flex justify-start items-center mb-2`}
           >
-            <div className='w-[48px] h-[48px]'>
-              <Component215 className='component-2' />
+            <div className="w-[48px] h-[48px]">
+              <Component215 className="component-2" />
             </div>
-            {/* slider mini card */}
-            <div className='ms-[12px] flex-grow-1 flex flex-col justify-center items-start'>
-              <div className='font-medium md:text-[20px] text-[16px] text-white'>
+            <div className="ms-[12px] flex-grow-1 flex flex-col justify-center items-start">
+              <div className="font-medium md:text-[20px] text-[16px] text-white">
                 36K+
               </div>
               <div
@@ -165,11 +160,11 @@ export const Homepage = () => {
           <div
             className={`w-[262px] bg-[#252629] opacity-70 p-[8px] flex justify-start items-center mb-2`}
           >
-            <div className='w-[48px] h-[48px]'>
-              <Component25 className='component-2' />
+            <div className="w-[48px] h-[48px]">
+              <Component25 className="component-2" />
             </div>
-            <div className='ms-[12px] flex-grow-1 flex flex-col justify-center items-start'>
-              <div className='font-medium text-[20px] text-white'>15K+</div>
+            <div className="ms-[12px] flex-grow-1 flex flex-col justify-center items-start">
+              <div className="font-medium text-[20px] text-white">15K+</div>
               <div className={`font-normal text-[16px] text-white`}>
                 Physicians
               </div>
@@ -177,13 +172,13 @@ export const Homepage = () => {
           </div>
 
           <div
-            className={`w-[262px] bg-[#252629] opacity-70 p-[8px] flex justify-start items-center mb-2}`}
+            className={`w-[262px] bg-[#252629] opacity-70 p-[8px] flex justify-start items-center mb-2`}
           >
-            <div className='w-[48px] h-[48px]'>
-              <Component27 className='component-2' />
+            <div className="w-[48px] h-[48px]">
+              <Component27 className="component-2" />
             </div>
-            <div className='ms-[12px] flex-grow-1 flex flex-col justify-center items-start'>
-              <div className='font-medium text-[20px] text-white'>4K+</div>
+            <div className="ms-[12px] flex-grow-1 flex flex-col justify-center items-start">
+              <div className="font-medium text-[20px] text-white">4K+</div>
               <div className={`font-normal text-[16px] text-white`}>
                 Organisations
               </div>
@@ -193,11 +188,11 @@ export const Homepage = () => {
           <div
             className={`w-[262px] bg-[#252629] opacity-70 p-[8px] flex justify-start items-center mb-2`}
           >
-            <div className='w-[48px] h-[48px]'>
-              <Component217 className='component-2' />
+            <div className="w-[48px] h-[48px]">
+              <Component217 className="component-2" />
             </div>
-            <div className='ms-[12px] flex-grow-1 flex flex-col justify-center items-start'>
-              <div className='font-medium text-[20px] text-white'>60M+</div>
+            <div className="ms-[12px] flex-grow-1 flex flex-col justify-center items-start">
+              <div className="font-medium text-[20px] text-white">60M+</div>
               <div className={`font-normal text-[16px] text-white`}>
                 Patient Records"s
               </div>
@@ -206,9 +201,9 @@ export const Homepage = () => {
         </div>
 
         <img
-          className='absolute left-0 bottom-0 w-full z-[44]'
-          alt='Vector'
-          src='https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/vector-5.svg'
+          className="absolute left-0 bottom-0 w-full z-[44]"
+          alt="Vector"
+          src="https://cdn.animaapp.com/projects/64e8772352986c5d15a0377d/releases/65258581d0b8c0b30f5bfba1/img/vector-5.svg"
         />
       </div>
 
@@ -221,30 +216,32 @@ export const Homepage = () => {
       {/*  blue small wave */}
 
       <SmallBlueWave
-        heading='Our top clients'
-        subheading='We have a legacy of successful collaboration with healthcare providers in their digital transformation journey'
+        heading="Our top clients"
+        subheading="We have a legacy of successful collaboration with healthcare providers in their digital transformation journey"
       />
 
-      <div className='w-screen h-[300px] flex justify-center items-center  relative '>
-        <div className='lg:w-10/12 md:w-11/12 w-full h-full md:px-0 flex flex-col justify-evenly items-center relative bg-white select-none'>
+      <div className="w-screen h-[300px] flex justify-center items-center  relative">
+        <div className="lg:w-10/12 md:w-11/12 w-full h-full md:px-0 px-2 flex flex-col justify-evenly items-center relative bg-white select-none">
           <ClientLogos
-            className='design-component-instance-node-2'
-            property1='variant-2'
+            className="design-component-instance-node-2"
+            property1="variant-2"
           />
           <ClientLogos
-            className='design-component-instance-node-2'
-            property1='variant-2'
+            className="design-component-instance-node-2"
+            property1="variant-2"
           />
         </div>
       </div>
 
       <ClientReview />
 
-      <Partners id='partners' text='Global strategic partners' />
+      <Partners id="partners" text="Global strategic partners" />
 
       <BlogCarousel />
 
-      <ContactUsSection />
+      <ContactUsSection className="mb-[60px]" />
+
+      <Footer />
     </div>
   );
 };
